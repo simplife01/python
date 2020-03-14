@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="輸入與變數.html" />
+    
     
     <link rel="prev" href="新手村任務.html" />
     
@@ -140,14 +142,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" >
+        <li class="chapter " data-level="1.3.2" data-path="輸入與變數.html">
             
-                <span>
+                <a href="輸入與變數.html">
             
                     
                     輸入與變數
             
-                </span>
+                </a>
             
 
             
@@ -309,9 +311,28 @@
                                 
                                 <h1 id="&#x8F38;&#x51FA;">&#x8F38;&#x51FA;</h1>
 <h6 id="tags-python">tags: <code>Python</code></h6>
-<h3 id="&#x4EC0;&#x9EBC;&#x662F;&#x8F38;&#x51FA;">&#x4EC0;&#x9EBC;&#x662F;&#x8F38;&#x51FA;</h3>
-<p>&#x5C31;&#x662F;&#x8B93;&#x7A0B;&#x5F0F;&#x5728;&#x87A2;&#x5E55;&#x4E0A;&#x986F;&#x793A;&#x51FA;&#x6771;&#x897F;</p>
-<h3 id="&#x5370;&#x51FA;&#x4E00;&#x5217;&#x5B57;">&#x5370;&#x51FA;&#x4E00;&#x5217;&#x5B57;</h3>
+<blockquote>
+<p>&#x5728;&#x65B0;&#x624B;&#x6751;&#x7AE0;&#x7BC0;&#x4E2D;&#xFF0C;&#x8F38;&#x51FA;&#x5C31;&#x662F;&#x6307;&#x5370;(show)&#x51FA;</p>
+</blockquote>
+<h2 id="python&#x7684;&#x8A3B;&#x89E3;&#x65B9;&#x5F0F;">Python&#x7684;&#x8A3B;&#x89E3;&#x65B9;&#x5F0F;</h2>
+<p><strong>&#x8A3B;&#x89E3;</strong>&#xFF1A;&#x7528;&#x65BC;&#x5C0D;&#x7A0B;&#x5F0F;&#x78BC;&#x9032;&#x884C;&#x8AAA;&#x660E;&#xFF0C;&#x88AB;&#x8996;&#x70BA;&#x8A3B;&#x89E3;&#x7684;&#x6587;&#x5B57;&#x5747;&#x4E0D;&#x6703;&#x88AB;&#x96FB;&#x8166;&#x6240;&#x57F7;&#x884C;(&#x4E0D;&#x5F71;&#x97FF;&#x57F7;&#x884C;&#x7D50;&#x679C;)</p>
+<p><strong>&#x65B9;&#x6CD5;&#x4E00;</strong> (&#x55AE;&#x5217;&#x8A3B;&#x89E3;)
+<code>#</code> &#x5F8C;&#x65B9;&#x7684;&#x5373;&#x70BA;&#x8A3B;&#x89E3;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python">.......... <span class="hljs-comment">#&#x9019;&#x908A;&#x5373;&#x70BA;&#x8A3B;&#x89E3;&#xFF0C;&#x53EA;&#x6703;&#x57F7;&#x884C;&#x524D;&#x9762;&#x7684;&quot;......&quot;&#x7A0B;&#x5F0F;&#x78BC;</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6CD5;&#x4E8C;</strong> (&#x591A;&#x5217;&#x8A3B;&#x89E3;)
+<code>&quot;&quot;&quot;</code>
+<code>&#x5169;&#x500B;&#x4E09;&#x96D9;&#x5F15;&#x865F;&#x5167;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x5373;&#x70BA;&#x8A3B;&#x89E3;</code>
+<code>&quot;&quot;&quot;</code></p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-string">&quot;&quot;&quot;
+&#x9019;&#x662F;&#x7B2C;&#x4E00;&#x5217;&#x8A3B;&#x89E3;
+&#x9019;&#x662F;&#x7B2C;&#x4E8C;&#x5217;&#x8A3B;&#x89E3;
+&#x4EE5;&#x4E0A;&#x4E09;&#x5217;&#x90FD;&#x662F;&#x8A3B;&#x89E3;&#xFF0C;&#x4E0D;&#x6703;&#x88AB;&#x57F7;&#x884C;
+&quot;&quot;&quot;</span>
+</code></pre>
+<h2 id="&#x5370;&#x51FA;&#x4E00;&#x5217;&#x5B57;">&#x5370;&#x51FA;&#x4E00;&#x5217;&#x5B57;</h2>
 <p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span> <code>print</code>&#x5F8C;&#x4E00;&#x5B9A;&#x8981;&#x52A0;&#x4E0A;&#x4E00;&#x5C0D;&#x5C0F;&#x62EC;&#x865F;&#xFF0C;&#x62EC;&#x865F;&#x4E2D;&#x7684;&#x96D9;&#x5F15;&#x865F;&#x662F;&#x6B32;&#x5370;&#x51FA;&#x5B57;&#x4E32;&#x6642;&#x6240;&#x4F7F;&#x7528;</p>
 <pre><code class="lang-python">print(<span class="hljs-string">&quot;Hello&quot;</span>) <span class="hljs-comment">#Hello</span>
 </code></pre>
@@ -320,10 +341,10 @@
 <pre><code class="lang-python">print(<span class="hljs-string">&quot;&#x65B0;&#x7AF9;&#x91D1;&#x57CE;&#x6B66; &#x662F;&#x6211;!&quot;</span>) <span class="hljs-comment">#&#x65B0;&#x7AF9;&#x91D1;&#x57CE;&#x6B66; &#x662F;&#x6211;!</span>
 </code></pre>
 <blockquote>
-<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
+&#x5370;&#x51FA;&#xFF1A;Hello&#x8B19;&#x777F;</p>
 </blockquote>
-<h3 id="&#x5370;&#x51FA;&#x591A;&#x5217;&#x5B57;">&#x5370;&#x51FA;&#x591A;&#x5217;&#x5B57;</h3>
+<h2 id="&#x5370;&#x51FA;&#x591A;&#x5217;&#x5B57;">&#x5370;&#x51FA;&#x591A;&#x5217;&#x5B57;</h2>
 <pre><code class="lang-python">print(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x7B2C;&#x4E00;&#x5217;&quot;</span>)
 print(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x7B2C;&#x4E8C;&#x5217;&quot;</span>)
 </code></pre>
@@ -331,15 +352,16 @@ print(<span class="hljs-string">&quot;&#x6211;&#x662F;&#x7B2C;&#x4E8C;&#x5217;&q
 <pre><code class="lang-python">&#x6211;&#x662F;&#x7B2C;&#x4E00;&#x5217;
 &#x6211;&#x662F;&#x7B2C;&#x4E8C;&#x5217;
 </code></pre>
-<p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span>&#x5728;Python&#x4E2D;&#xFF0C;<code>print</code>&#x5167;&#x5DF2;&#x7D93;&#x6084;&#x6084;&#x5167;&#x5EFA;&#x63DB;&#x5217;&#x529F;&#x80FD;</p>
+<p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span> &#x5728;Python&#x4E2D;&#xFF0C;<code>print</code>&#x5167;&#x5DF2;&#x7D93;&#x6084;&#x6084;&#x5167;&#x5EFA;&#x63DB;&#x5217;&#x529F;&#x80FD;</p>
 <p>&#x8A31;&#x591A;&#x5176;&#x4ED6;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x6703;&#x5982;&#x4E0B;&#x65B9;&#x986F;&#x793A;</p>
 <p><code>&#x6211;&#x662F;&#x7B2C;&#x4E00;&#x5217;&#x6211;&#x662F;&#x7B2C;&#x4E8C;&#x5217;</code></p>
 <blockquote>
-<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-
-
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
+&#x5370;&#x51FA;&#xFF1A;<br>&#x661F;&#x671F;&#x4E00;
+&#x661F;&#x671F;&#x4E8C;
+&#x661F;&#x671F;&#x4E09;</p>
 </blockquote>
-<h3 id="&#x5370;&#x51FA;&#x904B;&#x7B97;&#x7D50;&#x679C;">&#x5370;&#x51FA;&#x904B;&#x7B97;&#x7D50;&#x679C;</h3>
+<h2 id="&#x5370;&#x51FA;&#x904B;&#x7B97;&#x7D50;&#x679C;">&#x5370;&#x51FA;&#x904B;&#x7B97;&#x7D50;&#x679C;</h2>
 <pre><code class="lang-python">print(<span class="hljs-number">3</span>) <span class="hljs-comment">#3</span>
 print(<span class="hljs-number">3</span>+<span class="hljs-number">3</span>) <span class="hljs-comment">#6</span>
 print(<span class="hljs-number">3</span><span class="hljs-number">-3</span>) <span class="hljs-comment">#0</span>
@@ -352,40 +374,33 @@ print(<span class="hljs-number">3</span>//<span class="hljs-number">3</span>) <s
 <blockquote>
 <p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
 <ol>
-<li>&#x8A08;&#x7B97;&#x770B;&#x770B; (8+10)*6/4-3 &#x7B54;&#x6848;&#x70BA;&#x591A;&#x5C11;</li>
-<li>&#x5370;&#x51FA; 1+3=4 2X9=18</li>
+<li>&#x8A08;&#x7B97;&#x770B;&#x770B; (8+10)&#xD7;6/4-3 &#x7B54;&#x6848;&#x70BA;&#x591A;&#x5C11;</li>
+<li>&#x5370;&#x51FA; 1+3=4 2&#xD7;9=18</li>
 </ol>
 </blockquote>
-<h3 id="&#x5370;&#x51FA;&#x7B26;&#x865F;">&#x5370;&#x51FA;&#x7B26;&#x865F;</h3>
-<pre><code class="lang-python">print(<span class="hljs-string">&quot;___|.&#x3002;&quot;</span>) <span class="hljs-comment">#___|.&#x3002;</span>
+<h2 id="&#x5370;&#x51FA;&#x7B26;&#x865F;">&#x5370;&#x51FA;&#x7B26;&#x865F;</h2>
+<pre><code class="lang-python">print(<span class="hljs-string">&quot;(&#x3002;&#xB4;&#x8278;`&#x3002;)&quot;</span>) <span class="hljs-comment">#(&#x3002;&#xB4;&#x8278;`&#x3002;)</span>
 </code></pre>
-<p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span> &#x6709;&#x4E9B;&#x7B26;&#x865F;&#x70BA;<strong>&#x8DF3;&#x812B;&#x5B57;&#x5143;</strong>&#xFF0C;&#x5FC5;&#x9808;&#x8981;&#x5728;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x4E00;&#x500B;<code>\</code>&#x624D;&#x986F;&#x793A;&#x5F97;&#x51FA;&#x4F86;&#x5537;!
-&#x4F8B;&#x5982;&#xFF1A;</p>
+<h3 id="&#x8DF3;&#x812B;&#x5B57;&#x5143;&#xFF1A;">&#x8DF3;&#x812B;&#x5B57;&#x5143;&#xFF1A;</h3>
+<p>&#x6709;&#x4E9B;&#x7B26;&#x865F;&#x70BA;<strong>&#x8DF3;&#x812B;&#x5B57;&#x5143;</strong>&#xFF0C;&#x5FC5;&#x9808;&#x8981;&#x5728;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x4E00;&#x500B;<code>\</code>&#x624D;&#x986F;&#x793A;&#x5F97;&#x51FA;&#x4F86;&#x5537;!</p>
 <pre><code class="lang-python">print(<span class="hljs-string">&quot;\\&quot;</span>) <span class="hljs-comment">#\</span>
 print(<span class="hljs-string">&quot;\&apos;&quot;</span>) <span class="hljs-comment">#&apos;</span>
 print(<span class="hljs-string">&quot;\&quot;&quot;</span>) <span class="hljs-comment">#&quot;</span>
 </code></pre>
+<h3 id="&#x5E38;&#x7528;&#x529F;&#x80FD;&#x578B;&#x8DF3;&#x812B;&#x5B57;&#x5143;&#xFF1A;">&#x5E38;&#x7528;&#x529F;&#x80FD;&#x578B;&#x8DF3;&#x812B;&#x5B57;&#x5143;&#xFF1A;</h3>
 <p><code>\n</code>&#xFF1A;&#x63DB;&#x5217;
 <code>\t</code>&#xFF1A;&#x6C34;&#x5E73;&#x8DF3;&#x683C;
-<code>\v</code>&#xFF1A;&#x5782;&#x76F4;&#x8DF3;&#x683C;
 <code>\r</code>&#xFF1A;Enter
-<code>\b</code>&#xFF1A;&#x9000;&#x683C;
-<code>\f</code>&#xFF1A;&#x63DB;&#x9801;</p>
+<code>\b</code>&#xFF1A;&#x9000;&#x683C;</p>
 <blockquote>
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
+<code>print(&quot;Hello \nWorld&quot;)</code>&#xFF0C;<code>\n</code>&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x63DB;&#x6210;&#x4E0A;&#x65B9;&#x529F;&#x80FD;&#x578B;&#x8DF3;&#x812B;&#x5B57;&#x5143;&#x8A66;&#x8A66;&#x770B; </p>
 <p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
 &#x8A66;&#x8457;&#x5370;&#x51FA;&#x4E0B;&#x65B9;&#x65B9;&#x6846;&#x5167;&#x5716;&#x6A23;
 <img src="https://i.imgur.com/Bz67qLM.png" alt=""></p>
 </blockquote>
-<h3 id="python&#x7684;&#x8A3B;&#x89E3;&#x65B9;&#x5F0F;">Python&#x7684;&#x8A3B;&#x89E3;&#x65B9;&#x5F0F;</h3>
-<p><strong>&#x8A3B;&#x89E3;</strong>&#xFF1A;&#x7528;&#x65BC;&#x5C0D;&#x7A0B;&#x5F0F;&#x78BC;&#x9032;&#x884C;&#x8AAA;&#x660E;&#xFF0C;&#x88AB;&#x8996;&#x70BA;&#x8A3B;&#x89E3;&#x7684;&#x6587;&#x5B57;&#x5747;&#x4E0D;&#x6703;&#x88AB;&#x96FB;&#x8166;&#x6240;&#x57F7;&#x884C;(&#x4E0D;&#x5F71;&#x97FF;&#x57F7;&#x884C;&#x7D50;&#x679C;)</p>
-<p><strong>&#x65B9;&#x6CD5;&#x4E00;</strong> (&#x55AE;&#x5217;&#x8A3B;&#x89E3;)
-<code>#</code>&#x5F8C;&#x65B9;&#x7684;&#x5373;&#x70BA;&#x8A3B;&#x89E3;</p>
-<p><strong>&#x65B9;&#x6CD5;&#x4E8C;</strong> (&#x591A;&#x5217;&#x8A3B;&#x89E3;)
-<code>&quot;&quot;&quot;</code>
-<code>&#x5169;&#x500B;&#x4E09;&#x96D9;&#x5F15;&#x865F;&#x5167;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x5373;&#x70BA;&#x8A3B;&#x89E3;</code>
-<code>&quot;&quot;&quot;</code></p>
 <hr>
-<h2 id="&#x7279;&#x6B8A;&#x8F38;&#x51FA;&#x65B9;&#x5F0F;">&#x7279;&#x6B8A;&#x8F38;&#x51FA;&#x65B9;&#x5F0F;</h2>
+<h2 id="&#x88DC;&#x5145;&#x7279;&#x6B8A;&#x8F38;&#x51FA;&#x65B9;&#x5F0F;">(&#x88DC;&#x5145;)&#x7279;&#x6B8A;&#x8F38;&#x51FA;&#x65B9;&#x5F0F;</h2>
 <h3 id="python2-vs-python3">Python2 V.S. Python3</h3>
 <pre><code class="lang-python">print(<span class="hljs-string">&quot;%d %d&quot;</span> % (one, two)) <span class="hljs-comment"># Python2</span>
 print(<span class="hljs-string">&quot;{} {}&quot;</span> .format(one, two)) <span class="hljs-comment"># Python3</span>
@@ -438,10 +453,14 @@ data = {<span class="hljs-string">&apos;count&apos;</span>:<span class="hljs-num
 
             
                 
-                <a href="新手村任務.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Python新手村">
+                <a href="新手村任務.html" class="navigation navigation-prev " aria-label="Previous page: Python新手村">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="輸入與變數.html" class="navigation navigation-next " aria-label="Next page: 輸入與變數">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -450,7 +469,7 @@ data = {<span class="hljs-string">&apos;count&apos;</span>:<span class="hljs-num
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"輸出","level":"1.3.1","depth":2,"next":{"title":"輸入與變數","level":"1.3.2","depth":2,"ref":"","articles":[]},"previous":{"title":"Python新手村","level":"1.3","depth":1,"path":"新手村任務.md","ref":"新手村任務.md","articles":[{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},{"title":"輸入與變數","level":"1.3.2","depth":2,"ref":"","articles":[]},{"title":"四則運算","level":"1.3.3","depth":2,"ref":"","articles":[]},{"title":"IF條件判斷","level":"1.3.4","depth":2,"ref":"","articles":[]},{"title":"While迴圈","level":"1.3.5","depth":2,"ref":"","articles":[]},{"title":"For迴圈","level":"1.3.6","depth":2,"ref":"","articles":[]},{"title":"陣列(List)","level":"1.3.7","depth":2,"ref":"","articles":[]},{"title":"字典","level":"1.3.8","depth":2,"ref":"","articles":[]},{"title":"字串處理","level":"1.3.9","depth":2,"ref":"","articles":[]},{"title":"Import","level":"1.3.10","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸出.md","mtime":"2020-03-13T08:30:29.555Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-13T09:06:14.097Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"輸出","level":"1.3.1","depth":2,"next":{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},"previous":{"title":"Python新手村","level":"1.3","depth":1,"path":"新手村任務.md","ref":"新手村任務.md","articles":[{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},{"title":"四則運算","level":"1.3.3","depth":2,"ref":"","articles":[]},{"title":"IF條件判斷","level":"1.3.4","depth":2,"ref":"","articles":[]},{"title":"While迴圈","level":"1.3.5","depth":2,"ref":"","articles":[]},{"title":"For迴圈","level":"1.3.6","depth":2,"ref":"","articles":[]},{"title":"陣列(List)","level":"1.3.7","depth":2,"ref":"","articles":[]},{"title":"字典","level":"1.3.8","depth":2,"ref":"","articles":[]},{"title":"字串處理","level":"1.3.9","depth":2,"ref":"","articles":[]},{"title":"Import","level":"1.3.10","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸出.md","mtime":"2020-03-14T16:05:16.092Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-14T16:10:49.710Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
