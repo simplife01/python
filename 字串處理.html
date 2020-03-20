@@ -330,175 +330,192 @@ print(s[<span class="hljs-number">0</span>]) <span class="hljs-comment">#H</span
 print(s[<span class="hljs-number">2</span>]) <span class="hljs-comment">#r</span>
 </code></pre>
 <font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
+
 <blockquote>
 &#x63A5;&#x7E8C;&#x4E0A;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C; <code>print(s[4])</code> &#x6703;&#x5370;&#x51FA;&#x4EC0;&#x9EBC;
 </blockquote>
 
-### &#x5B57;&#x4E32;&#x5207;&#x7247;(String Slicing)
-&#x7522;&#x751F;&#x7684;&#x5B57;&#x4E32;&#x5207;&#x7247;&#x6703;&#x5F9E;&#x4F4D;&#x65BC;&#x958B;&#x982D;&#x6578;&#x5B57;&#x7684;&#x5B57;&#x5143;&#xFF0C;&#x5230;&#x7D50;&#x675F;&#x6578;&#x5B57; -1 &#x4F4D;&#x5B57;&#x5143;(&#x542B;&#x982D;&#x4E0D;&#x542B;&#x5C3E;)
-
-```python
-s = &quot;Hello, World!&quot;
-print(s[2:5]) #llo
-```
-&#x5982;&#x679C;&#x6709;&#x53F3;&#x908A;&#x4E0D;&#x653E;&#x7684;&#x8A71;&#x5C31;&#x4EE3;&#x8868;&#x5230;&#x6700;&#x672B;&#x4E00;&#x500B;&#x7DE8;&#x865F;
-```python
-s = &quot;Hello, World!&quot;
-print(s[2:]) #llo, World!
-```
-&#x5982;&#x679C;&#x6709;&#x5DE6;&#x908A;&#x4E0D;&#x653E;&#x7684;&#x8A71;&#x5C31;&#x4EE3;&#x8868;&#x5F9E;&#x7DE8;&#x865F; 0 &#x958B;&#x59CB;
-```python
-s = &quot;Hello, World!&quot;
-print(s[:4]) #Hell
-```
-
+<h3 id="&#x5B57;&#x4E32;&#x5207;&#x7247;string-slicing">&#x5B57;&#x4E32;&#x5207;&#x7247;(String Slicing)</h3>
+<p>&#x7522;&#x751F;&#x7684;&#x5B57;&#x4E32;&#x5207;&#x7247;&#x6703;&#x5F9E;&#x4F4D;&#x65BC;&#x958B;&#x982D;&#x6578;&#x5B57;&#x7684;&#x5B57;&#x5143;&#xFF0C;&#x5230;&#x7D50;&#x675F;&#x6578;&#x5B57; -1 &#x4F4D;&#x5B57;&#x5143;(&#x542B;&#x982D;&#x4E0D;&#x542B;&#x5C3E;)</p>
+<pre><code class="lang-python">s = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(s[<span class="hljs-number">2</span>:<span class="hljs-number">5</span>]) <span class="hljs-comment">#llo</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6709;&#x53F3;&#x908A;&#x4E0D;&#x653E;&#x7684;&#x8A71;&#x5C31;&#x4EE3;&#x8868;&#x5230;&#x6700;&#x672B;&#x4E00;&#x500B;&#x7DE8;&#x865F;</p>
+<pre><code class="lang-python">s = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(s[<span class="hljs-number">2</span>:]) <span class="hljs-comment">#llo, World!</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6709;&#x5DE6;&#x908A;&#x4E0D;&#x653E;&#x7684;&#x8A71;&#x5C31;&#x4EE3;&#x8868;&#x5F9E;&#x7DE8;&#x865F; 0 &#x958B;&#x59CB;</p>
+<pre><code class="lang-python">s = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(s[:<span class="hljs-number">4</span>]) <span class="hljs-comment">#Hell</span>
+</code></pre>
 <font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-&gt; ```python
-&gt; s = &quot;Hello, World!&quot;
-&gt; print(s[:]) #????
-&gt; ```
-&gt; ```python
-&gt; s = &quot;Hello, World!&quot;
-&gt; print(s[:-3]) #????
-&gt; ```
-&gt; ```python
-&gt; s = &quot;Hello, World!&quot;
-&gt; print(s[-5:]) #????
-&gt; ```
 
-### &#x5B57;&#x4E32;&#x9577;&#x5EA6;
-&#x6709;&#x6642;&#x5B57;&#x4E32;&#x592A;&#x9577;&#x4E0D;&#x6613;&#x7528;&#x773C;&#x775B;&#x8A08;&#x7B97;&#x51FA;&#xFF0C;&#x9019;&#x6642;&#x6211;&#x5011;&#x5C31;&#x80FD;&#x5229;&#x7528;&#x5167;&#x5EFA;&#x7684;**&#x51FD;&#x5F0F;**&#xFF1A;`len()` &#x4F86;&#x5354;&#x52A9;&#x5FEB;&#x901F;&#x8A08;&#x7B97;
-```python
-s = &quot;Hello, World!&quot;
-len(s) #&#x8A08;&#x7B97;&#x5B57;&#x4E32;s&#x7684;&#x9577;&#x5EA6;
-```
+<blockquote>
+<pre><code class="lang-python">s = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(s[:]) <span class="hljs-comment">#????</span>
+</code></pre>
+<pre><code class="lang-python">s = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(s[:<span class="hljs-number">-3</span>]) <span class="hljs-comment">#????</span>
+</code></pre>
+<pre><code class="lang-python">s = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(s[<span class="hljs-number">-5</span>:]) <span class="hljs-comment">#????</span>
+</code></pre>
+</blockquote>
+<h3 id="&#x5B57;&#x4E32;&#x9577;&#x5EA6;">&#x5B57;&#x4E32;&#x9577;&#x5EA6;</h3>
+<p>&#x6709;&#x6642;&#x5B57;&#x4E32;&#x592A;&#x9577;&#x4E0D;&#x6613;&#x7528;&#x773C;&#x775B;&#x8A08;&#x7B97;&#x51FA;&#xFF0C;&#x9019;&#x6642;&#x6211;&#x5011;&#x5C31;&#x80FD;&#x5229;&#x7528;&#x5167;&#x5EFA;&#x7684;<strong>&#x51FD;&#x5F0F;</strong>&#xFF1A;<code>len()</code> &#x4F86;&#x5354;&#x52A9;&#x5FEB;&#x901F;&#x8A08;&#x7B97;</p>
+<pre><code class="lang-python">s = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+len(s) <span class="hljs-comment">#&#x8A08;&#x7B97;&#x5B57;&#x4E32;s&#x7684;&#x9577;&#x5EA6;</span>
+</code></pre>
 <font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
+
 <blockquote>
 &#x5229;&#x7528; <code>len()</code> &#x8A08;&#x7B97;&#x51FA; <code>&quot;How do you turn this on?&quot;</code> &#x7684;&#x5B57;&#x4E32;&#x9577;&#x5EA6;&#x4E26;&#x5370;&#x51FA;&#x4F86;
 </blockquote>
 
-### &#x5E38;&#x7528;&#x7684;&#x5B57;&#x4E32;&#x5167;&#x5BB9;&#x64CD;&#x4F5C;
-#### &#x82F1;&#x6587;&#x5B57;&#x6BCD;&#x5927;&#x5C0F;&#x5BEB;&#x8F49;&#x63DB;
-```python
-a = &quot;Hello, World!&quot;
-print(a.lower()) #&#x8A66;&#x8A66;&#x770B;&#x7D50;&#x679C;&#x5982;&#x4F55;
-```
-```python
-a = &quot;Hello, World!&quot;
-print(a.upper()) #&#x8A66;&#x8A66;&#x770B;&#x7D50;&#x679C;&#x5982;&#x4F55;
-```
-
-#### &#x53D6;&#x4EE3;&#x5B57;&#x4E32;&#x4E2D;&#x7684;&#x67D0;&#x500B;&#x5B57;&#x5143;
-```python
-a = &quot;Hello, World!&quot;
-print(a.replace(&quot;H&quot;, &quot;J&quot;)) #&#x8A66;&#x8A66;&#x770B;&#x7D50;&#x679C;&#x5982;&#x4F55;
-```
-
-#### &#x5C07;&#x5B57;&#x4E32;&#x5206;&#x958B;&#x6210;&#x591A;&#x500B;&#x5B50;&#x5B57;&#x4E32;
-* **&#x5B50;&#x5B57;&#x4E32;**&#xFF1A;&#x5B57;&#x4E32;&#x4E2D;&#x7684;&#x67D0;&#x500B;&#x5C0F;&#x6BB5;&#x5B57;&#x4E32;
-```python
-a = &quot;Hello, World!&quot;
-print(a.split(&quot;,&quot;)) #&#x9047;&#x5230;&apos;,&apos;&#x5C31;&#x5206;&#x51FA;&#x5B50;&#x5B57;&#x4E32;&#xFF0C; [&apos;Hello&apos;, &apos; World!&apos;] &#x88AB;&#x5206;&#x6210;&#x5169;&#x500B;&#x5B50;&#x5B57;&#x4E32;&#x4E86;
-```
+<h3 id="&#x5E38;&#x7528;&#x7684;&#x5B57;&#x4E32;&#x5167;&#x5BB9;&#x64CD;&#x4F5C;">&#x5E38;&#x7528;&#x7684;&#x5B57;&#x4E32;&#x5167;&#x5BB9;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x82F1;&#x6587;&#x5B57;&#x6BCD;&#x5927;&#x5C0F;&#x5BEB;&#x8F49;&#x63DB;">&#x82F1;&#x6587;&#x5B57;&#x6BCD;&#x5927;&#x5C0F;&#x5BEB;&#x8F49;&#x63DB;</h4>
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(a.lower()) <span class="hljs-comment">#&#x8A66;&#x8A66;&#x770B;&#x7D50;&#x679C;&#x5982;&#x4F55;</span>
+</code></pre>
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(a.upper()) <span class="hljs-comment">#&#x8A66;&#x8A66;&#x770B;&#x7D50;&#x679C;&#x5982;&#x4F55;</span>
+</code></pre>
+<h4 id="&#x53D6;&#x4EE3;&#x5B57;&#x4E32;&#x4E2D;&#x7684;&#x67D0;&#x500B;&#x5B57;&#x5143;">&#x53D6;&#x4EE3;&#x5B57;&#x4E32;&#x4E2D;&#x7684;&#x67D0;&#x500B;&#x5B57;&#x5143;</h4>
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(a.replace(<span class="hljs-string">&quot;H&quot;</span>, <span class="hljs-string">&quot;J&quot;</span>)) <span class="hljs-comment">#&#x8A66;&#x8A66;&#x770B;&#x7D50;&#x679C;&#x5982;&#x4F55;</span>
+</code></pre>
+<h4 id="&#x5C07;&#x5B57;&#x4E32;&#x5206;&#x958B;&#x6210;&#x591A;&#x500B;&#x5B50;&#x5B57;&#x4E32;">&#x5C07;&#x5B57;&#x4E32;&#x5206;&#x958B;&#x6210;&#x591A;&#x500B;&#x5B50;&#x5B57;&#x4E32;</h4>
+<ul>
+<li><strong>&#x5B50;&#x5B57;&#x4E32;</strong>&#xFF1A;&#x5B57;&#x4E32;&#x4E2D;&#x7684;&#x67D0;&#x500B;&#x5C0F;&#x6BB5;&#x5B57;&#x4E32;</li>
+</ul>
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(a.split(<span class="hljs-string">&quot;,&quot;</span>)) <span class="hljs-comment">#&#x9047;&#x5230;&apos;,&apos;&#x5C31;&#x5206;&#x51FA;&#x5B50;&#x5B57;&#x4E32;&#xFF0C; [&apos;Hello&apos;, &apos; World!&apos;] &#x88AB;&#x5206;&#x6210;&#x5169;&#x500B;&#x5B50;&#x5B57;&#x4E32;&#x4E86;</span>
+</code></pre>
 <font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-```python
-a = &quot;Hello, World!&quot;
-print(a.split(&quot; &quot;)) #&#x6703;&#x5370;&#x51FA;&#x4EC0;&#x9EBC;&#x7D50;&#x679C;? &#x4E26;&#x89E3;&#x91CB;&#x770B;&#x770B;&#x70BA;&#x4EC0;&#x9EBC;
-```
 
-#### &#x627E;&#x51FA;&#x5B57;&#x4E32;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x67D0;&#x500B;&#x5B50;&#x5B57;&#x4E32;
-```python
-txt = &quot;The rain in Spain stays mainly in the plain&quot;
-x = &quot;ain&quot; in txt #True(&#x4EE3;&#x8868;&#x662F;) False(&#x4EE3;&#x8868;&#x5426;)
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;Hello, World!&quot;</span>
+print(a.split(<span class="hljs-string">&quot; &quot;</span>)) <span class="hljs-comment">#&#x6703;&#x5370;&#x51FA;&#x4EC0;&#x9EBC;&#x7D50;&#x679C;? &#x4E26;&#x89E3;&#x91CB;&#x770B;&#x770B;&#x70BA;&#x4EC0;&#x9EBC;</span>
+</code></pre>
+<h4 id="&#x627E;&#x51FA;&#x5B57;&#x4E32;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x67D0;&#x500B;&#x5B50;&#x5B57;&#x4E32;">&#x627E;&#x51FA;&#x5B57;&#x4E32;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x67D0;&#x500B;&#x5B50;&#x5B57;&#x4E32;</h4>
+<pre><code class="lang-python">txt = <span class="hljs-string">&quot;The rain in Spain stays mainly in the plain&quot;</span>
+x = <span class="hljs-string">&quot;ain&quot;</span> <span class="hljs-keyword">in</span> txt <span class="hljs-comment">#True(&#x4EE3;&#x8868;&#x662F;) False(&#x4EE3;&#x8868;&#x5426;)</span>
 print(x)
-```
-```python
-txt = &quot;The rain in Spain stays mainly in the plain&quot;
-x = &quot;ain&quot; not in txt #&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x52A0;&#x500B; &apos;not&apos; &#x99AC;&#x4E0A;&#x8B8A;&#x76F8;&#x53CD;&#x7684;&#x610F;&#x601D;
+</code></pre>
+<pre><code class="lang-python">txt = <span class="hljs-string">&quot;The rain in Spain stays mainly in the plain&quot;</span>
+x = <span class="hljs-string">&quot;ain&quot;</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> txt <span class="hljs-comment">#&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x52A0;&#x500B; &apos;not&apos; &#x99AC;&#x4E0A;&#x8B8A;&#x76F8;&#x53CD;&#x7684;&#x610F;&#x601D;</span>
 print(x)
-```
-
-## &#x5B57;&#x4E32;&#x7684;&#x4E32;&#x63A5;
-&#x5728;&#x524D;&#x9762;&#x55AE;&#x5143;&#x61C9;&#x8A72;&#x6709;&#x7A0D;&#x7A0D;&#x8B93;&#x5927;&#x5BB6;&#x64CD;&#x4F5C;&#x904E;&#x9019;&#x985E;&#x7684;&#x5BEB;&#x6CD5;&#xFF0C;&#x76F8;&#x4FE1;&#x4E0D;&#x6703;&#x592A;&#x904E;&#x964C;&#x751F;
-```python
-a = &quot;Hello&quot;
-b = &quot;World&quot;
+</code></pre>
+<h2 id="&#x5B57;&#x4E32;&#x7684;&#x4E32;&#x63A5;">&#x5B57;&#x4E32;&#x7684;&#x4E32;&#x63A5;</h2>
+<p>&#x5728;&#x524D;&#x9762;&#x55AE;&#x5143;&#x61C9;&#x8A72;&#x6709;&#x7A0D;&#x7A0D;&#x8B93;&#x5927;&#x5BB6;&#x64CD;&#x4F5C;&#x904E;&#x9019;&#x985E;&#x7684;&#x5BEB;&#x6CD5;&#xFF0C;&#x76F8;&#x4FE1;&#x4E0D;&#x6703;&#x592A;&#x904E;&#x964C;&#x751F;</p>
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;Hello&quot;</span>
+b = <span class="hljs-string">&quot;World&quot;</span>
 c = a + b
-print(c) #Hello World
-```
+print(c) <span class="hljs-comment">#Hello World</span>
+</code></pre>
 <font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-```python
-a = &quot;&#x6211;&#x7684;&#x5E74;&#x7D00;&#x662F;&quot;
-b = 18
-c = a + &quot; &quot; + b
-print(c) #&#x9019;&#x6A23;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x55CE;?&#x932F;&#x5728;&#x54EA;?
-```
 
-## &#x5B57;&#x4E32;&#x8207;&#x8B8A;&#x6578;&#x7684;&#x4E32;&#x63A5;
-&#x5229;&#x7528; `.format()` &#x5C07;&#x8B8A;&#x6578;&#x8207;&#x5B57;&#x4E32;&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;
-### &#x4E32;&#x63A5;&#x55AE;&#x500B;&#x8B8A;&#x6578;
-```python
-age = 36
-txt = &quot;My name is John, and I am {}&quot;
-print(txt.format(age)) #My name is John, and I am 36
-```
-```python
-age = input(&quot;&#x8ACB;&#x8F38;&#x5165;&#x4F60;&#x7684;&#x5E74;&#x9F61;&#xFF1A;&quot;)
-print(&quot;My name is John, and I am {}&quot;.format(age)) #My name is John, and I am ___
-```
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;&#x6211;&#x7684;&#x5E74;&#x7D00;&#x662F;&quot;</span>
+b = <span class="hljs-number">18</span>
+c = a + <span class="hljs-string">&quot; &quot;</span> + b
+print(c) <span class="hljs-comment">#&#x9019;&#x6A23;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x55CE;?&#x932F;&#x5728;&#x54EA;?</span>
+</code></pre>
+<h2 id="&#x5B57;&#x4E32;&#x8207;&#x8B8A;&#x6578;&#x7684;&#x4E32;&#x63A5;">&#x5B57;&#x4E32;&#x8207;&#x8B8A;&#x6578;&#x7684;&#x4E32;&#x63A5;</h2>
+<p>&#x5229;&#x7528; <code>.format()</code> &#x5C07;&#x8B8A;&#x6578;&#x8207;&#x5B57;&#x4E32;&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;</p>
+<h3 id="&#x4E32;&#x63A5;&#x55AE;&#x500B;&#x8B8A;&#x6578;">&#x4E32;&#x63A5;&#x55AE;&#x500B;&#x8B8A;&#x6578;</h3>
+<pre><code class="lang-python">age = <span class="hljs-number">36</span>
+txt = <span class="hljs-string">&quot;My name is John, and I am {}&quot;</span>
+print(txt.format(age)) <span class="hljs-comment">#My name is John, and I am 36</span>
+</code></pre>
+<pre><code class="lang-python">age = input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4F60;&#x7684;&#x5E74;&#x9F61;&#xFF1A;&quot;</span>)
+print(<span class="hljs-string">&quot;My name is John, and I am {}&quot;</span>.format(age)) <span class="hljs-comment">#My name is John, and I am ___</span>
+</code></pre>
+<h3 id="&#x4E32;&#x63A5;&#x591A;&#x500B;&#x8B8A;&#x6578;">&#x4E32;&#x63A5;&#x591A;&#x500B;&#x8B8A;&#x6578;</h3>
+<pre><code class="lang-python">quantity = <span class="hljs-number">3</span>
+itemno = <span class="hljs-number">567</span>
+price = <span class="hljs-number">49.95</span>
+myorder = <span class="hljs-string">&quot;I want {} pieces of item {} for {} dollars.&quot;</span>
+print(myorder.format(quantity, itemno, price)) <span class="hljs-comment">#I want 3 pieces of item 567 for 49.95 dollars.</span>
+</code></pre>
+<p>&#x9084;&#x6709;&#x5176;&#x4ED6;&#x4E0B;&#x65B9;&#x5F88;&#x9177;&#x7684;&#x65B9;&#x5F0F;&#x7576;&#x88DC;&#x5145;&#x5537;!&#xFF0C;&#x6709;&#x7A7A;&#x53EF;&#x81EA;&#x5DF1;&#x52D5;&#x624B;&#x4EE5;&#x8A66;&#x8A66;</p>
+<pre><code class="lang-python">print(<span class="hljs-string">&quot;{}. {} appears {} times.&quot;</span>.format(<span class="hljs-number">1</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-number">3.1</span>)) <span class="hljs-comment"># 1. b appears 3.1 times</span>
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">print</span> (<span class="hljs-string">&quot;{0}. {2} appears {1} times.&quot;</span>.format(<span class="hljs-number">1</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-number">3.1</span>)) 
+<span class="hljs-comment"># 1. 3.1 appears b times</span>
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">print</span> (<span class="hljs-string">&quot;{index}. {word} appears {count} times&quot;</span>.format(count=<span class="hljs-number">42</span>, index=<span class="hljs-number">1</span>, word=<span class="hljs-string">&apos;Hello&apos;</span>)) 
+<span class="hljs-comment"># 1. Hello appears 42 times</span>
+</code></pre>
+<pre><code class="lang-python">data = {<span class="hljs-string">&apos;count&apos;</span>:<span class="hljs-number">42</span>, <span class="hljs-string">&apos;index&apos;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&apos;word&apos;</span>:<span class="hljs-string">&apos;Hello&apos;</span>}
+<span class="hljs-keyword">print</span> (<span class="hljs-string">&quot;{index}. {word} appears {count} times.&quot;</span>.format(**data))
+<span class="hljs-comment"># 1. Hello appears 42 times</span>
+</code></pre>
+<pre><code class="lang-python">my_list = [<span class="hljs-string">&apos;GOOGLE&apos;</span>, <span class="hljs-string">&apos;www.google.com&apos;</span>]
+print(<span class="hljs-string">&quot;&#x7DB2;&#x7AD9;&#x540D;&#xFF1A;{0[0]}, &#x4F4D;&#x5740;&#xFF1A;{0[1]}&quot;</span>.format(my_list))
+</code></pre>
+<h3 id="&#x683C;&#x5F0F;&#x5316;&#x6578;&#x5B57;">&#x683C;&#x5F0F;&#x5316;&#x6578;&#x5B57;</h3>
+<p>&#x81EA;&#x4E32;&#x4E32;&#x63A5;&#x4E2D;&#x7684; <code>{}</code> &#x53EF;&#x4EE5;&#x6709;&#x5F88;&#x591A;&#x6709;&#x610F;&#x601D;&#x7684;&#x8B8A;&#x5316;&#xFF0C;&#x4EE5;&#x4E0B;&#x6703;&#x6162;&#x6162;&#x8209;&#x4F8B;</p>
+<p>&#x683C;&#x5F0F;&#x5316;&#x6578;&#x5B57;&#x6709;&#x5F88;&#x591A;&#x7A2E;&#x985E;&#xFF0C;&#x5728;&#x6B64;&#x53EA;&#x8209;&#x4E00;&#x4E9B;&#x8F03;&#x5E38;&#x7528;&#x7684;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6578;&#x5B57;</th>
+<th style="text-align:center">&#x683C;&#x5F0F;</th>
+<th style="text-align:center">&#x8F38;&#x51FA;</th>
+<th style="text-align:center">&#x89E3;&#x91CB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">3.1415926</td>
+<td style="text-align:center">{:.2f}</td>
+<td style="text-align:center">3.14</td>
+<td style="text-align:center">&#x4FDD;&#x7559;&#x5C0F;&#x6578;&#x9EDE;&#x5F8C;&#x5169;&#x4F4D;(4&#x6368;5&#x5165;)</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">{:0&gt;2d}</td>
+<td style="text-align:center">05</td>
+<td style="text-align:center">&#x6578;&#x5B57;&#x88DC;0(&#x586B;&#x5145;&#x5DE6;&#x908A;, &#x5BEC;&#x5EA6;&#x70BA;2)</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">{:x&lt;4d}</td>
+<td style="text-align:center">5xxx</td>
+<td style="text-align:center">&#x6578;&#x5B57;&#x88DC;x(&#x586B;&#x5145;&#x53F3;&#x908A;, &#x5BEC;&#x5EA6;&#x70BA;4)</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">{:&gt;5d}</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">&#x53F3;&#x5C0D;&#x9F4A;(&#x5BEC;&#x5EA6;&#x70BA;5)</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">{:&lt;5d}</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">&#x5DE6;&#x5C0D;&#x9F4A;(&#x5BEC;&#x5EA6;&#x70BA;5)</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">{:^5d}</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">&#x4E2D;&#x5C0D;&#x9F4A;(&#x5BEC;&#x5EA6;&#x70BA;5)</td>
+</tr>
+</tbody>
+</table>
+<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
 
-### &#x4E32;&#x63A5;&#x591A;&#x500B;&#x8B8A;&#x6578;
-```python
-quantity = 3
-itemno = 567
-price = 49.95
-myorder = &quot;I want {} pieces of item {} for {} dollars.&quot;
-print(myorder.format(quantity, itemno, price)) #I want 3 pieces of item 567 for 49.95 dollars.
-```
-&#x9084;&#x6709;&#x5176;&#x4ED6;&#x4E0B;&#x65B9;&#x5F88;&#x9177;&#x7684;&#x65B9;&#x5F0F;&#x7576;&#x88DC;&#x5145;&#x5537;!&#xFF0C;&#x6709;&#x7A7A;&#x53EF;&#x81EA;&#x5DF1;&#x52D5;&#x624B;&#x4EE5;&#x8A66;&#x8A66;
-```python
-print(&quot;{}. {} appears {} times.&quot;.format(1, &apos;b&apos;, 3.1)) # 1. b appears 3.1 times
-```
-```python
-print (&quot;{0}. {2} appears {1} times.&quot;.format(1, &apos;b&apos;, 3.1)) 
-# 1. 3.1 appears b times
-```
-```python
-print (&quot;{index}. {word} appears {count} times&quot;.format(count=42, index=1, word=&apos;Hello&apos;)) 
-# 1. Hello appears 42 times
-```
-```python
-data = {&apos;count&apos;:42, &apos;index&apos;:1, &apos;word&apos;:&apos;Hello&apos;}
-print (&quot;{index}. {word} appears {count} times.&quot;.format(**data))
-# 1. Hello appears 42 times
-```
-```python
-my_list = [&apos;GOOGLE&apos;, &apos;www.google.com&apos;]
-print(&quot;&#x7DB2;&#x7AD9;&#x540D;&#xFF1A;{0[0]}, &#x4F4D;&#x5740;&#xFF1A;{0[1]}&quot;.format(my_list))
-```
-
-### &#x683C;&#x5F0F;&#x5316;&#x6578;&#x5B57;
-&#x81EA;&#x4E32;&#x4E32;&#x63A5;&#x4E2D;&#x7684; `{}` &#x53EF;&#x4EE5;&#x6709;&#x5F88;&#x591A;&#x6709;&#x610F;&#x601D;&#x7684;&#x8B8A;&#x5316;&#xFF0C;&#x4EE5;&#x4E0B;&#x6703;&#x6162;&#x6162;&#x8209;&#x4F8B;
-
-&#x683C;&#x5F0F;&#x5316;&#x6578;&#x5B57;&#x6709;&#x5F88;&#x591A;&#x7A2E;&#x985E;&#xFF0C;&#x5728;&#x6B64;&#x53EA;&#x8209;&#x4E00;&#x4E9B;&#x8F03;&#x5E38;&#x7528;&#x7684;
-
-|&#x6578;&#x5B57;|&#x683C;&#x5F0F;|&#x8F38;&#x51FA;|&#x89E3;&#x91CB;|
-|:---:|:---:|:---:|:---:|
-|3.1415926|{:.2f}|3.14|&#x4FDD;&#x7559;&#x5C0F;&#x6578;&#x9EDE;&#x5F8C;&#x5169;&#x4F4D;(4&#x6368;5&#x5165;)|
-|5|{:0&gt;2d}|05|&#x6578;&#x5B57;&#x88DC;0(&#x586B;&#x5145;&#x5DE6;&#x908A;, &#x5BEC;&#x5EA6;&#x70BA;2)|
-|5|{:x<4d}|5xxx|數字補x(填充右邊, 寬度為4)|="" |13|{:="">5d}||&#x53F3;&#x5C0D;&#x9F4A;(&#x5BEC;&#x5EA6;&#x70BA;5)|
-|13|{:<5d}||左對齊(寬度為5)| |13|{:^5d}||中對齊(寬度為5)|="" <font="" color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;
-```python
-myorder = &quot;I want {0} pieces of item {2} for {1} dollars.&quot;
-print(myorder.format(10, 2.075, 30))
-```
-```python
-myorder = &quot;I want {0:M&gt;5d} pieces of item {2} for {1:.2f} dollars.&quot;
-print(myorder.format(10, 2.075, 30))
-```
-&#x683C;&#x5F0F;&#x80FD;&#x5920;&#x758A;&#x52A0;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x56DB;&#x6368;&#x4E94;&#x5165;&#x540C;&#x6642;&#x53C8;&#x8981;&#x7F6E;&#x4E2D;
-```python
-myorder = &quot;I want {0:X&gt;5d} pieces of item {2:<15} for="" {1:^10.2f}="" dollars."="" print(myorder.format(10,="" 2.075,="" 30))="" ```="" <font="" color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;
+<pre><code class="lang-python">myorder = <span class="hljs-string">&quot;I want {0} pieces of item {2} for {1} dollars.&quot;</span>
+print(myorder.format(<span class="hljs-number">10</span>, <span class="hljs-number">2.075</span>, <span class="hljs-number">30</span>))
+</code></pre>
+<pre><code class="lang-python">myorder = <span class="hljs-string">&quot;I want {0:M&gt;5d} pieces of item {2} for {1:.2f} dollars.&quot;</span>
+print(myorder.format(<span class="hljs-number">10</span>, <span class="hljs-number">2.075</span>, <span class="hljs-number">30</span>))
+</code></pre>
+<p>&#x683C;&#x5F0F;&#x80FD;&#x5920;&#x758A;&#x52A0;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x56DB;&#x6368;&#x4E94;&#x5165;&#x540C;&#x6642;&#x53C8;&#x8981;&#x7F6E;&#x4E2D;</p>
+<pre><code class="lang-python">myorder = <span class="hljs-string">&quot;I want {0:X&gt;5d} pieces of item {2:&lt;15} for {1:^10.2f} dollars.&quot;</span>
+print(myorder.format(<span class="hljs-number">10</span>, <span class="hljs-number">2.075</span>, <span class="hljs-number">30</span>))
+</code></pre>
+<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
 
 <p>&#x7D9C;&#x5408;&#x7DF4;&#x7FD2;&#xFF0C;&#x8A66;&#x8457;&#x505A;&#x51FA;&#x4E0B;&#x5716;&#x7684;&#x5716;&#x8868;</p>
 <p><img src="https://i.imgur.com/TwfX3Uh.png" width="400" height="170"></p>
@@ -506,7 +523,7 @@ myorder = &quot;I want {0:X&gt;5d} pieces of item {2:<15} for="" {1:^10.2f}="" d
 <p>&#x90E8;&#x5206;&#x7A0B;&#x5F0F;&#x78BC;&#x63D0;&#x793A;&#xFF1A;</p>
 <p><img src="https://i.imgur.com/zfUoqmc.png" width="800" height="50"></p>
 </blockquote>
-</15}></5d}||左對齊(寬度為5)|></4d}|5xxx|數字補x(填充右邊,>
+
                                 
                                 </section>
                             
@@ -545,7 +562,7 @@ myorder = &quot;I want {0:X&gt;5d} pieces of item {2:<15} for="" {1:^10.2f}="" d
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"字串處理","level":"1.3.3","depth":2,"next":{"title":"與陣列(List)","level":"1.3.4","depth":2,"ref":"","articles":[]},"previous":{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"字串處理.md","mtime":"2020-03-20T18:13:25.950Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-20T18:14:06.186Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"字串處理","level":"1.3.3","depth":2,"next":{"title":"與陣列(List)","level":"1.3.4","depth":2,"ref":"","articles":[]},"previous":{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"字串處理.md","mtime":"2020-03-20T18:27:48.068Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-20T18:28:11.820Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
