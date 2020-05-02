@@ -294,33 +294,65 @@
 </blockquote>
 <h2 id="while&#x8FF4;&#x5708;"><code>while</code>&#x8FF4;&#x5708;</h2>
 <h3 id="while&#x8FF4;&#x5708;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x69CB;"><code>while</code>&#x8FF4;&#x5708;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x69CB;</h3>
-<pre><code class="lang-=python">i = 0 # &#x5F9E;0&#x958B;&#x59CB;
-while i &lt; 10:  # i&lt;10 &#x5C31;&#x662F;&#x6BCF;&#x4E00;&#x6B21;&#x9032;&#x5165;&#x8FF4;&#x5708;&#x8207;&#x5426;&#x7684;&#x689D;&#x4EF6;&#x5224;&#x65B7;
+<blockquote>
+&#x901A;&#x5E38;&#x8FF4;&#x5708;&#x90FD;&#x6703;&#x9700;&#x8981;&#x6709;&#x500B;&#x8B8A;&#x6578;&#x7528;&#x4F86;&#x8A08;&#x7B97;&#x76EE;&#x524D;&#x57F7;&#x884C;&#x4E86;&#x5E7E;&#x5708;<br>
+&#x6B64;&#x8B8A;&#x6578;&#x540D;&#x7A31;&#x53EF;&#x4EE5;&#x7528;&#x7A0D;&#x5FAE;&#x7C21;&#x6613;&#x4E00;&#x4E9B;&#x7684;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#xFF49;
+</blockquote>
+
+
+<pre><code class="lang-python">i = <span class="hljs-number">0</span> <span class="hljs-comment">#&#x7528;&#x65BC;&#x8A08;&#x7B97;&#x57F7;&#x884C;&#x4E86;&#x5E7E;&#x5708;&#x5F9E;&#xFF0C;0&#x958B;&#x59CB;</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>:  <span class="hljs-comment"># i&lt;10 &#x5C31;&#x662F;&#x6BCF;&#x4E00;&#x6B21;&#x9032;&#x5165;&#x8FF4;&#x5708;&#x8207;&#x5426;&#x7684;&#x689D;&#x4EF6;&#x5224;&#x65B7;</span>
     print(i)
-    i += 1
+    i += <span class="hljs-number">1</span> <span class="hljs-comment">#&#x6BCF;&#x5708;&#x7D50;&#x675F;&#x5F8C;&#x8B93;&#x8A08;&#x7B97;&#x8B8A;&#x6578;&#x503C;&#x6539;&#x8B8A;</span>
 </code></pre>
 <p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span> <strong>&#x7E2E;&#x6392;</strong>&#x4E5F;&#x5225;&#x5FD8;&#x4E86;&#x5537;!</p>
 <font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
 &#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x5206;&#x5225;&#x6703;&#x5370;&#x51FA;&#x4EC0;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?
-```=python
+
+```python
+
+while i &lt; 10:
+    print(i)
+    i += 1
+```
+
+```python
+
+while i &lt; 10:
+    i = 0
+    print(i)
+    i += 1
+```
+
+```python
+i = 0
+while i &lt; 10:
+    print(i)
+```
+
+```python
 i = 0
 while 0:
     print(i)
     i += 1
 ```
-```=python
+
+```python
 i = 8
-while i &lt; 6:
+while i &lt; 16:
     print(i)
-    i += 1
+    i += 2
 ```
 
 <font color="orange">&#x3010;&#x4F8B;&#x984C;1&#x3011;</font>
-&gt; &#x5C0F;&#x90B1;&#x5F88;&#x559C;&#x6B61;`~`&#x7B26;&#x865F;
-&gt; &#x8ACB;&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#x80FD;&#x5920;&#x8B80;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578;
-&gt; &#x518D;&#x5370;&#x51FA;&#x8A72;&#x6574;&#x6578;&#x500B;`~`&#x7B26;&#x865F;
+<blockquote>
+&#x5C0F;&#x90B1;&#x5F88;&#x559C;&#x6B61;&quot;~&quot;&#x7B26;&#x865F;<br>
+&#x8ACB;&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#x80FD;&#x5920;&#x8B80;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578;<br>
+&#x518D;&#x5370;&#x51FA;&#x8A72;&#x6574;&#x6578;&#x500B;&quot;~&quot;&#x7B26;&#x865F;
+</blockquote>
 
-#### &#x770B;&#x5B8C;&#x984C;&#x76EE;&#x5F8C;&#xFF0C;&#x5148;&#x60F3;&#xFF1A;
+
+&#x770B;&#x5B8C;&#x984C;&#x76EE;&#x5F8C;&#xFF0C;&#x5148;&#x60F3;&#xFF1A;
 1. &#x4EC0;&#x9EBC;&#x52D5;&#x4F5C;&#x662F;&#x8981;&#x4E00;&#x76F4;&#x91CD;&#x8907;&#x505A;&#x7684;&#xFF1F; &#x7B54;&#xFF1A;&#x5370;&#x51FA;`~`&#x7B26;&#x865F;
 2. &#x627F;&#x4E0A;&#xFF0C;&#x5728;&#x4EC0;&#x9EBC;&#x689D;&#x4EF6;&#x4E0B;&#x624D;&#x8981;&#x505A;&#xFF1F; &#x7B54;&#xFF1A;&#x6B21;&#x6578;&#x9084;&#x6C92;&#x5230;&#x9054;&#x76EE;&#x6A19;&#x6642;
 
@@ -386,7 +418,7 @@ money, goal = map(int, input().split())
         print(<span class="hljs-string">&quot;&#x6B7B;&#x7576;&quot;</span>)
 </code></pre>
 <p>&#x627F;&#x4E0A;&#x984C;&#xFF0C;&#x82E5;&#x5E0C;&#x671B;&#x53EA;&#x5224;&#x65B7;10&#x6B21;&#x5C31;&#x597D;&#x5462;?</p>
-<pre><code class="lang-python">i=<span class="hljs-number">0</span>
+<pre><code class="lang-python">i=<span class="hljs-number">0</span> <span class="hljs-comment"># i&#x8B8A;&#x6578;&#x7684;&#x4F4D;&#x7F6E;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x5537;!</span>
 <span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>:
     num = int(input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x5206;&#x6578;:&quot;</span>))
     <span class="hljs-keyword">if</span> num &gt;= <span class="hljs-number">60</span>:
@@ -401,7 +433,7 @@ money, goal = map(int, input().split())
 <blockquote>
 <ol>
 <li>&#x5BEB;&#x51FA;&#x4E00;&#x500B;&#x731C;&#x6578;&#x5B57;&#x904A;&#x6232;&#x7BC4;&#x570D;&#x8A2D;&#x5B9A;&#x5728;1~100&#x4E4B;&#x9593;&#x7684;&#x6574;&#x6578;&#xFF0C;&#x4E8B;&#x5148;&#x5BEB;&#x4E00;&#x500B;&#x7B54;&#x6848;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;&#x6BCF;&#x6B21;&#x8F38;&#x5165;&#x6578;&#x5B57;&#x7A0B;&#x5F0F;&#x90FD;&#x6703;&#x986F;&#x793A;&#x51FA;<strong>&#x5927;&#x65BC;</strong>&#x6216;<strong>&#x5C0F;&#x65BC;</strong>&#x76F4;&#x5230;&#x986F;&#x793A;<strong>&#x7B49;&#x65BC;</strong>&#x5F8C;&#x7D50;&#x675F;</li>
-<li>&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#x80FD;&#x5920;&#x4E0D;&#x65B7;&#x5224;&#x65B7;&#x8F38;&#x5165;&#x7684;&#x6B63;&#x6574;&#x6578;&#x662F;&#x5426;&#x70BA;&#x8CEA;&#x6578;</li>
+<li>&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#x80FD;&#x5920;&#x4E0D;&#x65B7;&#x5224;&#x65B7;&#x8F38;&#x5165;&#x7684;&#x6B63;&#x6574;&#x6578;&#x662F;&#x5426;&#x70BA;&#x8CEA;&#x6578;&#x3010;&#x4EC0;&#x9EBC;&#x662F;&#x8CEA;&#x6578;?&#x3011;</li>
 </ol>
 </blockquote>
 <p><font color="green">&#x3010;&#x6311;&#x6230;&#x770B;&#x770B;&#x3011;</font></p>
@@ -455,9 +487,73 @@ money, goal = map(int, input().split())
 
 <p>&#x4E0A;&#x8FF0;&#x60C5;&#x6CC1;&#x5C31;&#x6BD4;&#x8F03;&#x9069;&#x5408;&#x4F7F;&#x7528;<code>for</code>&#x8FF4;&#x5708;</p>
 <h3 id="for&#x8FF4;&#x5708;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x69CB;"><code>for</code>&#x8FF4;&#x5708;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x69CB;</h3>
-<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range
-</code></pre>
+<blockquote>
+for&#x8FF4;&#x5708;&#x4E2D;&#x4E5F;&#x5FC5;&#x9808;&#x6709;&#x4E00;&#x500B;&#x8B8A;&#x6578;&#x7528;&#x4F86;&#x8A08;&#x7B97;&#x76EE;&#x524D;&#x57F7;&#x884C;&#x4E86;&#x5E7E;&#x5708;<br>
+&#x8A08;&#x7B97;&#x5708;&#x6578;&#x7684;&#x8B8A;&#x6578;&#x4E0D;&#x9808;&#x984D;&#x5916;&#x5BEB;&#x5728;&#x8FF4;&#x5708;&#x5916;<br>
+&#x6BCF;&#x5C64;&#x8FF4;&#x5708;&#x5B8C;&#x7562;&#x5F8C;&#x8A08;&#x7B97;&#x5708;&#x6578;&#x8B8A;&#x6578;&#x6703;&#x81EA;&#x52D5;&#x52A0;&#x4E00;
+</blockquote>
 
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">6</span>): <span class="hljs-comment">#&#x5F9E;0-5&#xFF0C;&#x6CE8;&#x610F;&#x4E0D;&#x5305;&#x542B;6</span>
+    print(i)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>, <span class="hljs-number">6</span>):  <span class="hljs-comment">#&#x5F9E;2-5&#xFF0C;&#x6CE8;&#x610F;&#x4E0D;&#x5305;&#x542B;6</span>
+    print(i)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">21</span>, <span class="hljs-number">3</span>, <span class="hljs-number">-3</span>): <span class="hljs-comment">#&#x4E00;&#x6B21;-3</span>
+    print(x)
+</code></pre>
+<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
+&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x8F38;&#x51FA;&#x751A;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>, <span class="hljs-number">6</span>):  
+    i=<span class="hljs-number">6</span>
+    print(i)
+print(<span class="hljs-string">&quot;finish&quot;</span>)
+</code></pre>
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
+<blockquote>
+&#x9084;&#x8A18;&#x5F97;&#x90A3;&#x5E74;&#x53BB;&#x53C3;&#x52A0;&#x8DE8;&#x5E74;&#x665A;&#x6703;&#x7684;&#x60C5;&#x666F;&#x55CE;&#xFF1F;&#x7576;&#x53F0;&#x4E0A;&#x7684;&#x4E3B;&#x6301;&#x4EBA;&#x5927;&#x8072;&#x558A;&#x8457;&#xFF1A;&#x300C;&#x5012;&#x6578;&#x8A08;&#x6642;10&#x79D2;&#x3001;9&#x3001;8&#x3001;7&#x3001;6&#x2026;&#x2026;&#x300D;&#xFF0C;&#x96A8;&#x8457;&#x6578;&#x5B57;&#x6162;&#x6162;&#x63A5;&#x8FD1;&#xFF0C;&#x5927;&#x5BB6;&#x7684;&#x5FC3;&#x60C5;&#x4E5F;&#x96A8;&#x4E4B;&#x4EA2;&#x596E;&#x4E86;&#x8D77;&#x4F86;<br>
+<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N&#xFF0C;&#x4EE3;&#x8868;&#x8981;&#x958B;&#x59CB;&#x5012;&#x6578;&#x7684;&#x79D2;&#x6578;<br>
+<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8ACB;&#x8F38;&#x51FA;&#x5F9E; N &#x5230; 0 &#x4E4B;&#x9593;&#x7684;&#x6240;&#x6709;&#x6574;&#x6578;&#xFF0C;&#x5169;&#x500B;&#x6578;&#x5B57;&#x4E4B;&#x9593;&#x8ACB;&#x7A7A;&#x4E00;&#x683C;
+</blockquote>
+
+<blockquote>
+&#x968E;&#x5C64;&#x8A08;&#x7B97;&#xFF0C;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578;&#xFF0C;&#x8A08;&#x7B97;&#x6B64;&#x6574;&#x6578;&#x7684;&#x968E;&#x5C64;&#x3010;&#x4EC0;&#x9EBC;&#x662F;&#x968E;&#x5C64;?&#x3011;
+</blockquote>
+
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;1&#x3011;</font>
+&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#xFF0C;&#x8A08;&#x7B97;2&#x7684;10&#x6B21;&#x65B9;&#x52A0;20&#x6B21;&#x7684;&#x7D50;&#x679C;</p>
+<pre><code class="lang-python">sum = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">20</span>):
+    sum += <span class="hljs-number">2</span>**<span class="hljs-number">10</span>
+print(sum)
+</code></pre>
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
+<blockquote>
+<p>&#x8ACB;&#x5370;&#x51FA;1-50&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5947;&#x6578;</p>
+</blockquote>
+<h3 id="&#x5B57;&#x4E32;&#x4E2D;&#x7684;for&#x8FF4;&#x5708;">&#x5B57;&#x4E32;&#x4E2D;&#x7684;<code>for</code>&#x8FF4;&#x5708;</h3>
+<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
+&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x8F38;&#x51FA;&#x751A;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;banana&quot;</span>:
+  print(x) <span class="hljs-comment">#b a n a n a</span>
+</code></pre>
+<h3 id="&#x9663;&#x5217;&#x4E2D;&#x7684;for&#x8FF4;&#x5708;">&#x9663;&#x5217;&#x4E2D;&#x7684;<code>for</code>&#x8FF4;&#x5708;</h3>
+<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
+&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x8F38;&#x51FA;&#x751A;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?</p>
+<pre><code class="lang-python">fruits = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> fruits:
+  <span class="hljs-keyword">if</span> x == <span class="hljs-string">&quot;banana&quot;</span>:
+    <span class="hljs-keyword">break</span>
+  print(x)
+</code></pre>
+<h3 id="&#x5DE2;&#x72C0;&#x8FF4;&#x5708;">&#x5DE2;&#x72C0;&#x8FF4;&#x5708;</h3>
+<p><font color="green">&#x3010;&#x6311;&#x6230;&#x770B;&#x770B;&#x3011;</font></p>
+<blockquote>
+1. &#x8ACB;&#x627E;&#x51FA;1-100&#x4E2D;&#x6240;&#x6709;&#x7684;&#x8CEA;&#x6578;<br>
+2. &#x627E;&#x51FA;&#x5169;&#x6578;&#x7684;&#x6700;&#x5927;&#x516C;&#x56E0;&#x6578;&#x3010;&#x8981;?&#x3011;
+</blockquote>
                                 
                                 </section>
                             
@@ -496,7 +592,7 @@ money, goal = map(int, input().split())
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.3.5","depth":2,"next":{"title":"與陣列(List)","level":"1.3.6","depth":2,"ref":"","articles":[]},"previous":{"title":"邏輯條件判斷","level":"1.3.4","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"迴圈.md","mtime":"2020-04-25T16:24:10.027Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-25T16:47:36.472Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.3.5","depth":2,"next":{"title":"與陣列(List)","level":"1.3.6","depth":2,"ref":"","articles":[]},"previous":{"title":"邏輯條件判斷","level":"1.3.4","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"迴圈.md","mtime":"2020-05-02T14:59:12.783Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-02T16:02:14.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
