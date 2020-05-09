@@ -286,7 +286,7 @@
 <h2 id="&#x8FF4;&#x5708;&#x7684;&#x7528;&#x9014;">&#x8FF4;&#x5708;&#x7684;&#x7528;&#x9014;</h2>
 <ul>
 <li>&#x91CD;&#x8907;&#x5730;&#x505A;&#x4E00;&#x6A23;&#x7684;&#x4E8B;&#x60C5;</li>
-<li>&#x4E0D;&#x77E5;&#x9053;&#x8981;&#x505A;&#x5E7E;&#x6B21;&#x624D;&#x7D50;&#x675F;&#xFF0C;&#x4F46;&#x7528;&#x67D0;&#x500B;&#x689D;&#x4EF6;&#x5224;&#x65B7;&#x6C7A;&#x5B9A;&#x662F;&#x5426;&#x7D50;&#x675F;</li>
+<li>&#x7528;&#x67D0;&#x500B;&#x689D;&#x4EF6;&#x5224;&#x65B7;&#x6C7A;&#x5B9A;&#x662F;&#x5426;&#x7D50;&#x675F;&#x4E0D;&#x65B7;&#x91CD;&#x8907;&#x7684;&#x8F2A;&#x8FF4;</li>
 </ul>
 <blockquote>
 <p>&#x60F3;&#x60F3;&#x770B;&#xFF0C;&#x65E5;&#x5E38;&#x751F;&#x6D3B;&#x4E2D;&#x6709;&#x90A3;&#x4E9B;&#x4E0D;&#x65B7;&#x91CD;&#x8907;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5462;?
@@ -309,13 +309,11 @@
 <font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
 
 <p>&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x5206;&#x5225;&#x6703;&#x5370;&#x51FA;&#x4EC0;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?</p>
-<pre><code class="lang-python">
-<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>:
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>:
     print(i)
     i += <span class="hljs-number">1</span>
 </code></pre>
-<pre><code class="lang-python">
-<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>:
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span>:
     i = <span class="hljs-number">0</span>
     print(i)
     i += <span class="hljs-number">1</span>
@@ -419,11 +417,12 @@ money, goal = map(int, input().split())
         print(<span class="hljs-string">&quot;&#x6B7B;&#x7576;&quot;</span>)
     i += <span class="hljs-number">1</span>  <span class="hljs-comment">#&#x9019;&#x653E;&#x5728;&#x54EA;&#x908A;&#x6709;&#x5DEE;&#x5225;&#x55CE;?</span>
 </code></pre>
-<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-&gt; 1. &#x5BEB;&#x51FA;&#x4E00;&#x500B;&#x731C;&#x6578;&#x5B57;&#x904A;&#x6232;&#x7BC4;&#x570D;&#x8A2D;&#x5B9A;&#x5728;1~100&#x4E4B;&#x9593;&#x7684;&#x6574;&#x6578;&#xFF0C;&#x4E8B;&#x5148;&#x5BEB;&#x4E00;&#x500B;&#x7B54;&#x6848;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;&#x6BCF;&#x6B21;&#x8F38;&#x5165;&#x6578;&#x5B57;&#x7A0B;&#x5F0F;&#x90FD;&#x6703;&#x986F;&#x793A;&#x51FA;**&#x5927;&#x65BC;**&#x6216;**&#x5C0F;&#x65BC;**&#x76F4;&#x5230;&#x986F;&#x793A;**&#x7B49;&#x65BC;**&#x5F8C;&#x7D50;&#x675F;
-&gt; 2. &#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#x80FD;&#x5920;&#x4E0D;&#x65B7;&#x5224;&#x65B7;&#x8F38;&#x5165;&#x7684;&#x6B63;&#x6574;&#x6578;&#x662F;&#x5426;&#x70BA;&#x8CEA;&#x6578;&#x3010;&#x4EC0;&#x9EBC;&#x662F;&#x8CEA;&#x6578;?&#x3011;
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
+<blockquote>
+&#x5BEB;&#x51FA;&#x4E00;&#x500B;&#x731C;&#x6578;&#x5B57;&#x904A;&#x6232;&#x7BC4;&#x570D;&#x8A2D;&#x5B9A;&#x5728;1~100&#x4E4B;&#x9593;&#x7684;&#x6574;&#x6578;&#xFF0C;&#x4E8B;&#x5148;&#x5BEB;&#x4E00;&#x500B;&#x7B54;&#x6848;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;&#x6BCF;&#x6B21;&#x8F38;&#x5165;&#x6578;&#x5B57;&#x7A0B;&#x5F0F;&#x90FD;&#x6703;&#x986F;&#x793A;&#x51FA;<strong>&#x5927;&#x65BC;</strong>&#x6216;<strong>&#x5C0F;&#x65BC;</strong>&#x76F4;&#x5230;&#x986F;&#x793A;<strong>&#x7B49;&#x65BC;</strong>&#x5F8C;&#x7D50;&#x675F;
+</blockquote>
 
-<font color="green">&#x3010;&#x6311;&#x6230;&#x770B;&#x770B;&#x3011;</font>
+<p><font color="green">&#x3010;&#x6311;&#x6230;&#x770B;&#x770B;&#x3011;</font></p>
 <blockquote>
 &#x7D66;&#x4F60;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&#xFF0C;&#x8ACB;&#x4F60;&#x6C42;&#x51FA;&#x6240;&#x6709;&#x4F4D;&#x6578;&#x7684;&#x548C;&#x662F;&#x591A;&#x5C11;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;12345&#xFF0C;&#x56E0;&#x70BA;1+2+3+4+5=15&#xFF0C;&#x5247;&#x8F38;&#x51FA;15<br>
 <strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
@@ -433,120 +432,283 @@ money, goal = map(int, input().split())
 &#x63D0;&#x793A;&#xFF1A;45 % 10 = 5
 </blockquote>
 
-### `while`&#x8FF4;&#x5708;&#x642D;&#x914D;`break`&#x6216;`continue`
-&#x6709;&#x6642;&#x5019;&#x5728;&#x8FF4;&#x5708;&#x4E2D;&#x7684;&#x67D0;&#x500B;&#x60C5;&#x6CC1;&#x767C;&#x751F;&#x6642;&#xFF0C;&#x6211;&#x5011;&#x5E0C;&#x671B;&#x7D42;&#x6B62;&#x8FF4;&#x5708;&#x6216;&#x8DF3;&#x904E;&#x6B64;&#x5708;&#x7E7C;&#x7E8C;&#x57F7;&#x884C;&#x4E0B;&#x4E00;&#x56DE;&#x5708;&#xFF0C;&#x9019;&#x6642;&#x6211;&#x5011;&#x5C31;&#x6703;&#x4F7F;&#x7528;&#x5230;`break`&#x6216;`continue`
+<h3 id="while&#x8FF4;&#x5708;&#x642D;&#x914D;break&#x6216;continue"><code>while</code>&#x8FF4;&#x5708;&#x642D;&#x914D;<code>break</code>&#x6216;<code>continue</code></h3>
+<blockquote>
+&#x6709;&#x6642;&#x5019;&#x5728;&#x8FF4;&#x5708;&#x4E2D;&#x7684;&#x67D0;&#x500B;&#x60C5;&#x6CC1;&#x767C;&#x751F;&#x6642;&#xFF0C;&#x6211;&#x5011;&#x5E0C;&#x671B;&#x7D42;&#x6B62;&#x8FF4;&#x5708;&#x6216;&#x8DF3;&#x904E;&#x6B64;&#x5708;&#x7E7C;&#x7E8C;&#x57F7;&#x884C;&#x4E0B;&#x4E00;&#x56DE;&#x5708;&#xFF0C;&#x9019;&#x6642;&#x6211;&#x5011;&#x5C31;&#x6703;&#x4F7F;&#x7528;&#x5230; break &#x6216; continue
+</blockquote>
 
-* `break`&#xFF1A;&#x7576;&#x96FB;&#x8166;&#x57F7;&#x884C;&#x5230;`break`&#x6642;&#x6703;**&#x7ACB;&#x5373;**&#x7D42;&#x6B62;&#x8A72;&#x5C64;&#x8FF4;&#x5708;
-* `continue`&#xFF1A;&#x7576;&#x96FB;&#x8166;&#x57F7;&#x884C;&#x5230;`continue`&#x6642;&#x6703;**&#x7ACB;&#x5373;**&#x8DF3;&#x904E;&#x8A72;&#x8F2A;&#x8FF4;&#x5708;&#xFF0C;&#x76F4;&#x63A5;&#x9032;&#x884C;&#x4E0B;&#x4E00;&#x8F2A;
-
-<font color="orange">&#x3010;&#x4F8B;&#x984C;1&#x3011;</font>
+<ul>
+<li><code>break</code>&#xFF1A;&#x7576;&#x96FB;&#x8166;&#x57F7;&#x884C;&#x5230;<code>break</code>&#x6642;&#x6703;<strong>&#x7ACB;&#x5373;</strong>&#x7D42;&#x6B62;&#x8A72;&#x5C64;&#x8FF4;&#x5708;<br></li>
+<li><code>continue</code>&#xFF1A;&#x7576;&#x96FB;&#x8166;&#x57F7;&#x884C;&#x5230;<code>continue</code>&#x6642;&#x6703;<strong>&#x7ACB;&#x5373;</strong>&#x8DF3;&#x904E;&#x8A72;&#x8F2A;&#x8FF4;&#x5708;&#xFF0C;&#x76F4;&#x63A5;&#x9032;&#x884C;&#x4E0B;&#x4E00;&#x8F2A;<br></li>
+</ul>
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;1&#x3011;</font></p>
+<blockquote>
 &#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#xFF0C;&#x5370;&#x51FA;1-15&#x4F46;&#x4E0D;&#x5370;&#x51FA;13
+</blockquote>
 
-```python
-i = 1
 
-while i <= 15:="" if="" i="=" 13:="" i+="1" #想想看為什麼要有這一列，如果這一列放在continue後會如何?="" continue="" #跳過i="=13&#x9019;&#x8AD6;&#x8FF4;&#x5708;" print(i)="" ```="" <font="" color="orange">&#x3010;&#x4F8B;&#x984C;2&#x3011;
+<pre><code class="lang-python">i = <span class="hljs-number">1</span>
+
+<span class="hljs-keyword">while</span> i &lt;= <span class="hljs-number">15</span>:
+    <span class="hljs-keyword">if</span> i == <span class="hljs-number">13</span>:
+        i+=<span class="hljs-number">1</span> <span class="hljs-comment">#&#x60F3;&#x60F3;&#x770B;&#x70BA;&#x4EC0;&#x9EBC;&#x8981;&#x6709;&#x9019;&#x4E00;&#x5217;&#xFF0C;&#x5982;&#x679C;&#x9019;&#x4E00;&#x5217;&#x653E;&#x5728;continue&#x5F8C;&#x6703;&#x5982;&#x4F55;?</span>
+        <span class="hljs-keyword">continue</span> <span class="hljs-comment">#&#x8DF3;&#x904E;i==13&#x9019;&#x8AD6;&#x8FF4;&#x5708;</span>
+    print(i)
+    i+=<span class="hljs-number">1</span>
+</code></pre>
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;2&#x3011;</font></p>
+<blockquote>
 &#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#xFF0C;&#x80FD;&#x5920;&#x4E0D;&#x65B7;&#x8F38;&#x5165;&#x6210;&#x7E3E;&#x5224;&#x65B7;&#x662F;&#x5426;&#x53CA;&#x683C;&#xFF0C;&#x4F46;&#x82E5;&#x8F38;&#x5165;&#x503C;&#x70BA;-1&#x6642;&#xFF0C;&#x7D50;&#x675F;&#x57F7;&#x884C;&#x8A72;&#x7A0B;&#x5F0F;
+</blockquote>
 
-```python
-while 1:
-    num = int(input(&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x5206;&#x6578;:&quot;))
-    if num == -1:
-        break
-    if num &gt;= 60:
-        print(&quot;&#x53CA;&#x683C;&quot;)
-    elif 40 <= num="" <="" 60:="" print("可補考")="" else:="" print("死當")="" ```="" ##="" `for`迴圈="" `for`迴圈則跟`while`迴圈非常相似，最主要區別是在`while`迴圈通常會用在不知道要執行多少次的情況下，而`for`迴圈通常用在已經知道要執行多少次的情況="" <blockquote="">
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-number">1</span>:
+    num = int(input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x5206;&#x6578;:&quot;</span>))
+    <span class="hljs-keyword">if</span> num == <span class="hljs-number">-1</span>:
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">if</span> num &gt;= <span class="hljs-number">60</span>:
+        print(<span class="hljs-string">&quot;&#x53CA;&#x683C;&quot;</span>)
+    <span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= num &lt; <span class="hljs-number">60</span>:
+        print(<span class="hljs-string">&quot;&#x53EF;&#x88DC;&#x8003;&quot;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&quot;&#x6B7B;&#x7576;&quot;</span>)
+</code></pre>
+<h2 id="&#x96FB;&#x8166;&#x8981;&#x95DC;&#x6A5F;&#x5B8C;&#x624D;&#x80FD;&#x96E2;&#x958B;">&#x96FB;&#x8166;&#x8981;&#x95DC;&#x6A5F;&#x5B8C;&#x624D;&#x80FD;&#x96E2;&#x958B;</h2>
+<h2 id="for&#x8FF4;&#x5708;"><code>for</code>&#x8FF4;&#x5708;</h2>
+<p><code>for</code>&#x8FF4;&#x5708;&#x5247;&#x8DDF;<code>while</code>&#x8FF4;&#x5708;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x6700;&#x4E3B;&#x8981;&#x5340;&#x5225;&#x662F;&#x5728;<code>while</code>&#x8FF4;&#x5708;&#x901A;&#x5E38;&#x6703;&#x7528;&#x5728;&#x4E0D;&#x77E5;&#x9053;&#x8981;&#x57F7;&#x884C;&#x591A;&#x5C11;&#x6B21;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x800C;<code>for</code>&#x8FF4;&#x5708;&#x901A;&#x5E38;&#x7528;&#x5728;&#x5DF2;&#x7D93;&#x77E5;&#x9053;&#x8981;&#x57F7;&#x884C;&#x591A;&#x5C11;&#x6B21;&#x7684;&#x60C5;&#x6CC1;</p>
+<blockquote>
 &#x4F8B;&#x5982;&#xFF1A;<br>
 &#x5370;&#x51FA;100&#x500B;&quot;Hello&quot;<br>
 &#x7B97;&#x51FA;&#x67D0;&#x500B;&#x6578;&#x5B57;&#x7684;&#x67D0;&#x6B21;&#x65B9;<br>
 &#x7B97;&#x51FA;&#x67D0;&#x500B;&#x6578;&#x5B57;&#x7684;&#x968E;&#x4E58;&#x2026;&#x7B49;
+</blockquote>
 
-
-&#x4E0A;&#x8FF0;&#x60C5;&#x6CC1;&#x5C31;&#x6BD4;&#x8F03;&#x9069;&#x5408;&#x4F7F;&#x7528;`for`&#x8FF4;&#x5708;
-
-### `for`&#x8FF4;&#x5708;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x69CB;
+<p>&#x4E0A;&#x8FF0;&#x60C5;&#x6CC1;&#x5C31;&#x6BD4;&#x8F03;&#x9069;&#x5408;&#x4F7F;&#x7528;<code>for</code>&#x8FF4;&#x5708;</p>
+<h3 id="for&#x8FF4;&#x5708;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x69CB;"><code>for</code>&#x8FF4;&#x5708;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x69CB;</h3>
 <blockquote>
 for&#x8FF4;&#x5708;&#x4E2D;&#x4E5F;&#x5FC5;&#x9808;&#x6709;&#x4E00;&#x500B;&#x8B8A;&#x6578;&#x7528;&#x4F86;&#x8A08;&#x7B97;&#x76EE;&#x524D;&#x57F7;&#x884C;&#x4E86;&#x5E7E;&#x5708;<br>
 &#x8A08;&#x7B97;&#x5708;&#x6578;&#x7684;&#x8B8A;&#x6578;&#x4E0D;&#x9808;&#x984D;&#x5916;&#x5BEB;&#x5728;&#x8FF4;&#x5708;&#x5916;<br>
 &#x6BCF;&#x5C64;&#x8FF4;&#x5708;&#x5B8C;&#x7562;&#x5F8C;&#x8A08;&#x7B97;&#x5708;&#x6578;&#x8B8A;&#x6578;&#x6703;&#x81EA;&#x52D5;&#x52A0;&#x4E00;
 </blockquote>
 
-```python
-for i in range(6): #&#x5F9E;0-5&#xFF0C;&#x6CE8;&#x610F;&#x4E0D;&#x5305;&#x542B;6
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">6</span>): <span class="hljs-comment">#&#x5F9E;0-5&#xFF0C;&#x6CE8;&#x610F;&#x4E0D;&#x5305;&#x542B;6</span>
     print(i)
-```
-
-```python
-for i in range(2, 6):  #&#x5F9E;2-5&#xFF0C;&#x6CE8;&#x610F;&#x4E0D;&#x5305;&#x542B;6
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>, <span class="hljs-number">6</span>):  <span class="hljs-comment">#&#x5F9E;2-5&#xFF0C;&#x6CE8;&#x610F;&#x4E0D;&#x5305;&#x542B;6</span>
     print(i)
-```
-
-```python
-for x in range(21, 3, -3): #&#x4E00;&#x6B21;-3
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">21</span>, <span class="hljs-number">3</span>, <span class="hljs-number">-3</span>): <span class="hljs-comment">#&#x4E00;&#x6B21;-3</span>
     print(x)
-```
-
-<font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
-&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x8F38;&#x51FA;&#x751A;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?
-```python
-for i in range(2, 6):  
-    i=6
-    print(i)
-print(&quot;finish&quot;)
-```
-
-<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
+</code></pre>
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;1&#x3011;</font></p>
 <blockquote>
-1. &#x9084;&#x8A18;&#x5F97;&#x90A3;&#x5E74;&#x53BB;&#x53C3;&#x52A0;&#x8DE8;&#x5E74;&#x665A;&#x6703;&#x7684;&#x60C5;&#x666F;&#x55CE;&#xFF1F;&#x7576;&#x53F0;&#x4E0A;&#x7684;&#x4E3B;&#x6301;&#x4EBA;&#x5927;&#x8072;&#x558A;&#x8457;&#xFF1A;&#x300C;&#x5012;&#x6578;&#x8A08;&#x6642;10&#x79D2;&#x3001;9&#x3001;8&#x3001;7&#x3001;6&#x2026;&#x2026;&#x300D;&#xFF0C;&#x96A8;&#x8457;&#x6578;&#x5B57;&#x6162;&#x6162;&#x63A5;&#x8FD1;&#xFF0C;&#x5927;&#x5BB6;&#x7684;&#x5FC3;&#x60C5;&#x4E5F;&#x96A8;&#x4E4B;&#x4EA2;&#x596E;&#x4E86;&#x8D77;&#x4F86;<br>
+<p>&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578;n&#xFF0C;&#x5370;&#x51FA;1-n</p>
+</blockquote>
+<pre><code class="lang-python">max = int(input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&quot;</span>))
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, max+<span class="hljs-number">1</span>):
+    print(i)
+</code></pre>
+<p>&#x82E5;&#x7528;<code>while</code>&#x6539;&#x5BEB;&#x53EF;&#x4EE5;&#x5BEB;&#x6210;&#xFF1A;</p>
+<pre><code class="lang-python">max = int(input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&quot;</span>))
+i = <span class="hljs-number">1</span>
+<span class="hljs-keyword">while</span> i &lt;= max:
+    print(i)
+    i = i + <span class="hljs-number">1</span>
+</code></pre>
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
+<blockquote>
+1. &#x6709;&#x53E5;&#x6B4C;&#x8A5E;&#x662F;&#x9019;&#x6A23;&#x7684;&#x300C;&#x8AAA;&#x4E00;&#x5343;&#x904D;&#x6211;&#x611B;&#x4F60;&#x4E5F;&#x90FD;&#x9084;&#x4E0D;&#x5920;&#x300D;(&#x6B4C;&#x66F2;&#x540D;&#xFF1A;&#x4E00;&#x5343;&#x904D;&#x6211;&#x611B;&#x4F60;&#xFF0C;&#x4F5C;&#x8A5E;/&#x6F14;&#x5531;&#xFF1A;&#x4F0A;&#x80FD;&#x975C;)&#xFF0C;&#x60C5;&#x4EBA;&#x4E4B;&#x9593;&#x7684;&#x60C5;&#x8A71;&#x6C38;&#x9060;&#x4E5F;&#x8AAA;&#x4E0D;&#x5B8C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x7528;&#x96FB;&#x8166;&#x4F86;&#x8AAA;&#x9019;&#x4E00;&#x5343;&#x904D;&#x6211;&#x611B;&#x4F60;&#xFF0C;&#x53EF;&#x662F;&#x4E00;&#x77AC;&#x9593;&#x5C31;&#x5B8C;&#x6210;&#x7684;&#x5594;&#xFF01;<br>
+<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N&#x3002;<br>
+<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8ACB;&#x8F38;&#x51FA; N &#x884C;&#x7684;&#x300C;I love you.&#x300D;&#x3002;<br><br>
+2. &#x9084;&#x8A18;&#x5F97;&#x90A3;&#x5E74;&#x53BB;&#x53C3;&#x52A0;&#x8DE8;&#x5E74;&#x665A;&#x6703;&#x7684;&#x60C5;&#x666F;&#x55CE;&#xFF1F;&#x7576;&#x53F0;&#x4E0A;&#x7684;&#x4E3B;&#x6301;&#x4EBA;&#x5927;&#x8072;&#x558A;&#x8457;&#xFF1A;&#x300C;&#x5012;&#x6578;&#x8A08;&#x6642;10&#x79D2;&#x3001;9&#x3001;8&#x3001;7&#x3001;6&#x2026;&#x2026;&#x300D;&#xFF0C;&#x96A8;&#x8457;&#x6578;&#x5B57;&#x6162;&#x6162;&#x63A5;&#x8FD1;&#xFF0C;&#x5927;&#x5BB6;&#x7684;&#x5FC3;&#x60C5;&#x4E5F;&#x96A8;&#x4E4B;&#x4EA2;&#x596E;&#x4E86;&#x8D77;&#x4F86;<br>
 <strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
 &#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N&#xFF0C;&#x4EE3;&#x8868;&#x8981;&#x958B;&#x59CB;&#x5012;&#x6578;&#x7684;&#x79D2;&#x6578;<br>
 <strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
-&#x8ACB;&#x8F38;&#x51FA;&#x5F9E; N &#x5230; 0 &#x4E4B;&#x9593;&#x7684;&#x6240;&#x6709;&#x6574;&#x6578;&#xFF0C;&#x5169;&#x500B;&#x6578;&#x5B57;&#x4E4B;&#x9593;&#x8ACB;&#x7A7A;&#x4E00;&#x683C;
+&#x8ACB;&#x8F38;&#x51FA;&#x5F9E; N &#x5230; 0 &#x4E4B;&#x9593;&#x7684;&#x6240;&#x6709;&#x6574;&#x6578;<br><br>
+3. &#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x5947;&#x6578;&#xFF0C;&#x4E26;&#x8A08;&#x7B97;1&#xD7;3&#xD7;5&#xD7;...&#xD7;n&#x7684;&#x7D50;&#x679C;<br><br>
 </blockquote>
 
+<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font></p>
 <blockquote>
-2. &#x968E;&#x5C64;&#x8A08;&#x7B97;&#xFF0C;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578;&#xFF0C;&#x8A08;&#x7B97;&#x6B64;&#x6574;&#x6578;&#x7684;&#x968E;&#x5C64;&#x3010;&#x4EC0;&#x9EBC;&#x662F;&#x968E;&#x5C64;?&#x3011;
+<p>&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x8F38;&#x51FA;&#x751A;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>, <span class="hljs-number">6</span>):  
+    i=<span class="hljs-number">6</span>
+    print(i)
+print(<span class="hljs-string">&quot;finish&quot;</span>)
+</code></pre>
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;2&#x3011;</font></p>
+<blockquote>
+&#x8F38;&#x5165;&#x5169;&#x500B;10&#x4EE5;&#x5167;&#x7684;&#x6B63;&#x6574;&#x6578;a, b &#x3010;a &lt; b&#x3011;<br>
+&#x8F38;&#x51FA;a&#xD7;(a+1)&#xD7;(a+2)&#xD7;(a+3)&#xD7;...&#xD7;(b&#x2212;2)&#xD7;(b&#x2212;1)&#xD7;b &#x7684;&#x503C;
 </blockquote>
 
-<font color="orange">&#x3010;&#x4F8B;&#x984C;&#x3011;</font>
-&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#xFF0C;&#x8A08;&#x7B97;2&#x7684;10&#x6B21;&#x65B9;&#x52A0;20&#x6B21;&#x7684;&#x7D50;&#x679C;
+<pre><code class="lang-python">a, b = map(int, input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;10&#x4EE5;&#x5167;&#x7684;&#x6B63;&#x6574;&#x6578;a&#x548C;b&#x3010;a &lt; b&#x3011;&#xFF1A;&quot;</span>).split())
 
-```python
-sum = 0
-for i in range(0, 20):
-    sum += 2**10
+sum = <span class="hljs-number">1</span> <span class="hljs-comment"># &#x70BA;&#x4EC0;&#x9EBC;&#x4E00;&#x958B;&#x59CB;&#x8981;&#x8A2D;&#x70BA;1&#x800C;&#x4E0D;&#x662F;0</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(a, b+<span class="hljs-number">1</span>):
+    sum = sum * i
 print(sum)
-```
+</code></pre>
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
+<blockquote>
+&#x5728;&#x6578;&#x5B78;&#x7684;&#x6392;&#x5217;&#x7D44;&#x5408;&#x88E1;&#xFF0C;&#x6709;&#x4E00;&#x500B;&#x7B26;&#x865F;&#x53EB;&#x505A; P&#xFF0C;&#x5B83;&#x7684;&#x5B9A;&#x7FA9;&#x5982;&#x4E0B;&#xFF1A;<br>
+P(N,R)=N!/(N-R)!=N&#xD7;(N-1)&#xD7;(N-2)&#xD7;...&#xD7;(N-R+1)<br>
+&#x4E5F;&#x5C31;&#x662F;&#x5F9E; N &#x9019;&#x500B;&#x6B63;&#x6574;&#x6578;&#x958B;&#x59CB;&#xFF0C;&#x5F80;&#x4E0B;&#x627E;&#x9023;&#x7E8C; R &#x500B;&#x6B63;&#x6574;&#x6578;(&#x5305;&#x62EC;N)&#x76F8;&#x4E58;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x4F8B;&#x5982; P(10,3)=10&#xD7;9&#xD7;8=720&#x3002;<br>
+&#x73FE;&#x5728;&#x7D66;&#x4F60;&#x5169;&#x500B;&#x6B63;&#x6574;&#x6578; N&#x3001;R (&#x5176;&#x4E2D; N&gt;=R)&#xFF0C;&#x8ACB;&#x4F60;&#x8A08;&#x7B97;&#x51FA; P(N,R) &#x7684;&#x503C;&#x3002;<br>
+<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8F38;&#x5165;&#x5169;&#x500B;&#x6B63;&#x6574;&#x6578; N&#x3001;R (&#x5176;&#x4E2D; N&gt;=R)&#x3002;<br>
+<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8ACB;&#x8F38;&#x51FA; P(N,R) &#x7684;&#x503C;&#x3002;
+</blockquote>
 
-<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-&gt; &#x8ACB;&#x5370;&#x51FA;1-50&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5947;&#x6578;
+<h3 id="for&#x8FF4;&#x5708;&#x642D;&#x914D;if"><code>for</code>&#x8FF4;&#x5708;&#x642D;&#x914D;<code>if</code></h3>
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;&#x3011;</font></p>
+<blockquote>
+<p>&#x8F38;&#x5165;&#x6B63;&#x6574;&#x6578;n&#xFF0C;&#x8F38;&#x51FA;n&#x6240;&#x6709;&#x7684;&#x56E0;&#x6578;</p>
+</blockquote>
+<pre><code class="lang-python">a = int(input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&#xFF1A;&quot;</span>))
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, a+<span class="hljs-number">1</span>):
+    <span class="hljs-keyword">if</span> a%i==<span class="hljs-number">0</span>:
+        print(i)
+</code></pre>
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
+<blockquote>
+&#x5C0D;&#x65BC;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N &#x4F86;&#x8AAA;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x7684;&#x56E0;&#x6578;&#x53EA;&#x6709; 1 &#x548C; N &#x672C;&#x8EAB;&#xFF0C;&#x6C92;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x56E0;&#x6578;&#xFF0C;&#x5247;&#x6211;&#x5011;&#x7A31;&#x5B83;&#x70BA;&#x300C;&#x8CEA;&#x6578;&#x300D;&#x3002;&#x73FE;&#x5728;&#x7D66;&#x4F60;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&#xFF0C;&#x8ACB;&#x4F60;&#x5224;&#x65B7;&#x5B83;&#x662F;&#x4E0D;&#x662F;&#x8CEA;&#x6578;&#x3002;<br>
+<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N&#x3002;<br>
+<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x82E5; N &#x70BA;&#x8CEA;&#x6578;&#xFF0C;&#x5247;&#x8F38;&#x51FA; YES&#xFF0C;&#x5426;&#x5247;&#x8F38;&#x51FA; NO&#x3002;
+</blockquote>
 
-
-<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-
-<p>&#x5617;&#x8A66;&#x88FD;&#x4F5C;&#x4E00;&#x5F35;&#x4E5D;&#x4E5D;&#x4E58;&#x6CD5;&#x8868;&#x5427;!</p>
-<p><img src="https://i.imgur.com/g8NUXlo.png" hight="150" width="500"></p>
 <h3 id="&#x5B57;&#x4E32;&#x4E2D;&#x7684;for&#x8FF4;&#x5708;">&#x5B57;&#x4E32;&#x4E2D;&#x7684;<code>for</code>&#x8FF4;&#x5708;</h3>
-<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
-&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x8F38;&#x51FA;&#x751A;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?</p>
-<pre><code class="lang-python"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;banana&quot;</span>:
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;banana&quot;</span>: <span class="hljs-comment"># x&#x8B8A;&#x6578;&#x6703;&#x5F9E;&#x5B57;&#x4E32;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x683C;&#x6578;&#x503C;&#x958B;&#x59CB;&#x5230;&#x6700;&#x5F8C;&#x4E00;&#x683C;</span>
   print(x) <span class="hljs-comment">#b a n a n a</span>
 </code></pre>
-<h3 id="&#x9663;&#x5217;&#x4E2D;&#x7684;for&#x8FF4;&#x5708;">&#x9663;&#x5217;&#x4E2D;&#x7684;<code>for</code>&#x8FF4;&#x5708;</h3>
-<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
-&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x8F38;&#x51FA;&#x751A;&#x9EBC;&#x6A23;&#x7684;&#x7D50;&#x679C;&#x5462;?</p>
-<pre><code class="lang-python">fruits = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
-<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> fruits:
-  <span class="hljs-keyword">if</span> x == <span class="hljs-string">&quot;banana&quot;</span>:
-    <span class="hljs-keyword">break</span>
-  print(x)
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;&#x3011;</font></p>
+<blockquote>
+<p>&#x5C07;&quot;b a n a n a&quot;&#x5B57;&#x4E32;&#x6539;&#x70BA;&quot;B a N a N a&quot;</p>
+</blockquote>
+<pre><code class="lang-python">ss = <span class="hljs-string">&quot;banana&quot;</span>
+result = <span class="hljs-string">&quot;&quot;</span> <span class="hljs-comment">#&#x5148;&#x5275;&#x9020;&#x4E00;&#x500B;&#x6700;&#x5F8C;&#x8981;&#x8F38;&#x51FA;&#x7684;&#x5B57;&#x4E32;</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, len(ss)):
+    <span class="hljs-keyword">if</span> ss[i] == <span class="hljs-string">&quot;b&quot;</span>:
+        result = result + <span class="hljs-string">&quot;B&quot;</span>
+    <span class="hljs-keyword">elif</span> ss[i] == <span class="hljs-string">&quot;n&quot;</span>:
+        result = result + <span class="hljs-string">&quot;N&quot;</span>
+    <span class="hljs-keyword">else</span>:
+        result = result + ss[i]
+print(result)
 </code></pre>
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
+<blockquote>
+&#x6709;&#x4E9B;&#x8A0A;&#x606F;&#x52A0;&#x5BC6;&#x7684;&#x624B;&#x6BB5;&#x6703;&#x662F;&#x5229;&#x7528;&#x7279;&#x5B9A;&#x5B57;&#x5143;&#x7684;&#x66FF;&#x63DB;&#x4F86;&#x5B8C;&#x6210;&#xFF0C;&#x4F8B;&#x5982;&#x5C07;&apos;a&apos;&#x63DB;&#x6210; &apos;%&apos; ; &apos;e&apos; &#x63DB;&#x6210; &apos;^&apos; ; &apos;i&apos; &#x63DB;&#x6210; &apos;&amp;&apos; ; &apos;o&apos; &#x63DB;&#x6210; &apos;*&apos; ; &apos;u&apos; &#x63DB;&#x6210; &apos;(&apos; ;<br>
+<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8ACB;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x8F38;&#x5165;&#x4E00;&#x6BB5;&#x5B57;&#x4E32;&#xFF0C;&#x4F8B;&#x5982;:&quot;how do you turn this on&quot;<br>
+<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8F38;&#x51FA;&#x5B57;&#x4E32;&#x52A0;&#x5BC6;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x4F8B;&#x5982;:&quot;h*w d* y*( t(rn th&amp;s *n&quot;
+</blockquote>
+
+
+
 <h3 id="&#x5DE2;&#x72C0;&#x8FF4;&#x5708;">&#x5DE2;&#x72C0;&#x8FF4;&#x5708;</h3>
+<p>&#x671D;&#x72C0;&#x8FF4;&#x5708;&#x9867;&#x540D;&#x601D;&#x7FA9;&#x5C31;&#x662F;&#x8FF4;&#x5708;&#x4E2D;&#x9084;&#x6709;&#x8FF4;&#x5708;&#x7684;&#x6982;&#x5FF5;&#x56C9;~~</p>
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;1&#x3011;</font></p>
+<blockquote>
+&#x64DA;&#x8AAA;&#x53EF;&#x611B;&#x7684;&#x4EBA;&#x90FD;&#x559C;&#x6B61;&#x6253;&#x98C4;&#x865F;~~~<br>
+&#x8F38;&#x5165;n&#x548C;m&#xFF0C;&#x8F38;&#x51FA;n&#x884C;&#x7684;m&#x500B;&#x98C4;&#x865F;<br>
+&#x4F8B;&#x5982;&#xFF1A;n&#x70BA;3&#xFF0C;m&#x70BA;5&#x6642;&#xFF0C;&#x8F38;&#x51FA;<br>
+~~~~~<br>
+~~~~~<br>
+~~~~~
+</blockquote>
+
+<pre><code class="lang-python">n, m = map(int, input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6B63;&#x6574;&#x6578;&#xFF1A;&quot;</span>).split())
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, n):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, m):
+        print(<span class="hljs-string">&quot;~&quot;</span>, end=<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">#&#x9019;&#x6A23;&#x5BEB;&#x5C31;&#x4E0D;&#x6703;&#x63DB;&#x884C;&#x56C9;!</span>
+    print(<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">#&#x63DB;&#x884C;</span>
+</code></pre>
+<p><font color="orange">&#x3010;&#x4F8B;&#x984C;2&#x3011;</font></p>
+<blockquote>
+&#x8F38;&#x5165;n&#xFF0C;&#x8F38;&#x51FA;n&#x884C;&#x98C4;&#x865F;&#xFF0C;&#x7B2C;&#x4E00;&#x884C;&#x6709;&#x4E00;&#x500B;<br>
+&#x6BCF;&#x5F80;&#x4E0B;&#x4E00;&#x884C;&#xFF0C;&#x5C31;&#x591A;&#x4E00;&#x500B;&#x661F;&#x865F;<br>
+&#x4F8B;&#x5982;&#xFF1A;n&#x70BA;4&#x6642;&#xFF0C;&#x8F38;&#x51FA;&#x5982;&#x4E0B;<br>
+*<br>
+**<br>
+***<br>
+****
+</blockquote>
+
+<pre><code class="lang-python">n = int(input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&#xFF1A;&quot;</span>))
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, n):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, i+<span class="hljs-number">1</span>): <span class="hljs-comment">#&#x96A8;i&#x8B8A;&#x5316;&#x800C;&#x8B8A;&#x5316;</span>
+        print(<span class="hljs-string">&quot;*&quot;</span>, end=<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">#&#x9019;&#x6A23;&#x5BEB;&#x5C31;&#x4E0D;&#x6703;&#x63DB;&#x884C;&#x56C9;!</span>
+    print(<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">#&#x63DB;&#x884C;</span>
+</code></pre>
 <p><font color="green">&#x3010;&#x6311;&#x6230;&#x770B;&#x770B;&#x3011;</font></p>
 <blockquote>
-1. &#x8ACB;&#x627E;&#x51FA;1-100&#x4E2D;&#x6240;&#x6709;&#x7684;&#x8CEA;&#x6578;<br>
-2. &#x627E;&#x51FA;&#x5169;&#x6578;&#x7684;&#x6700;&#x5927;&#x516C;&#x56E0;&#x6578;&#x3010;&#x8981;?&#x3011;
-</blockquote></=></=>
+&#x3010;&#x4F8B;&#x984C;2&#x3011;&#x7684;*&#x7B26;&#x865F;&#x80FD;&#x4E0D;&#x80FD;&#x5168;&#x90E8;&#x90FD;&#x9760;&#x53F3;&#x5462;?<br>
+<img src="https://i.imgur.com/ObVyQ8K.png" hight="250" width="150"><br>
+&#x3010;&#x4F8B;&#x984C;2&#x3011;&#x7684;*&#x7B26;&#x865F;&#x80FD;&#x4E0D;&#x80FD;&#x5168;&#x90E8;&#x90FD;&#x9760;&#x4E2D;&#x5462;?<br>
+<img src="https://i.imgur.com/CkPbiJp.png" hight="250" width="150">
+
+</blockquote>
+
+
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;1&#x3011;</font></p>
+<blockquote>
+&#x7D66;&#x4F60;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N&#xFF0C;&#x8ACB;&#x4F60;&#x5370;&#x51FA;&#x4EE5; 1-N &#x7684;&#x6578;&#x5B57;&#x69CB;&#x6210;&#x7684;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x5716;&#x6848;&#x3002;<br>
+<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N (1<=n<=9)，代表要印出的三角形的高。<br>
+<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
+&#x8ACB;&#x4F9D;&#x7167;&#x8F38;&#x51FA;&#x7BC4;&#x4F8B;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x8F38;&#x51FA;&#x6307;&#x5B9A;&#x9AD8;&#x5EA6;&#x7684;&#x6578;&#x5B57;&#x4E09;&#x89D2;&#x5F62;&#x3002;<br>
+&#x4F8B;&#x5982;&#xFF1A;(&#x8F38;&#x5165;&#xFF1A;3)<br>
+1<br>
+22<br>
+333
+</=n<=9)，代表要印出的三角形的高。<br></blockquote>
+
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;2&#x3011;</font></p>
+<blockquote>
+&#x5617;&#x8A66;&#x5229;&#x7528;&#x5DE2;&#x72C0;&#x8FF4;&#x5708;&#x88FD;&#x4F5C;&#x4E00;&#x5F35;&#x4E5D;&#x4E5D;&#x4E58;&#x6CD5;&#x8868;&#x5427;!<br>
+<img src="https://i.imgur.com/wRqs6FA.png" hight="150" width="500">
+</blockquote>
+
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;3&#x3011;</font></p>
+<blockquote>
+&#x8A66;&#x8A66;&#x770B;&#x80FD;&#x4E0D;&#x80FD;&#x5C07;&#x4E5D;&#x4E5D;&#x4E58;&#x6CD5;&#x8868;&#x8B8A;&#x7F8E;&#x9E97;&#x4E9B;&#x5427;!<br>
+&#x3010;&#x63D0;&#x793A;&#xFF1A;&#x53EF;&#x5229;&#x7528;&#x5B57;&#x4E32;&#x55AE;&#x5143; {: <2d} 的方式讓字串置中、靠左或靠右】<br="">
+<img src="https://i.imgur.com/KEnjkUF.png" hight="150" width="500">
+</2d}></blockquote>
+
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;4&#x3011;</font></p>
+<blockquote>
+&#x8ACB;&#x627E;&#x51FA;1-50&#x4E2D;&#x6240;&#x6709;&#x7684;&#x8CEA;&#x6578;<br>
+&#x3010;&#x4E00;&#x500B;&#x6578;&#x662F;&#x4E0D;&#x662F;&#x8CEA;&#x6578;&#x600E;&#x9EBC;&#x78BA;&#x8A8D;&#x6BD4;&#x8F03;&#x5FEB;&#x5462;?&#x3011;
+</blockquote>
+
+<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;5&#x3011;</font></p>
+<blockquote>
+&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6B63;&#x6574;&#x6578;<br>
+&#x5370;&#x51FA;&#x5169;&#x500B;&#x6B63;&#x6574;&#x6578;&#x7684;&#x6700;&#x5927;&#x516C;&#x56E0;&#x6578;<br>
+&#x3010;&#x627E;&#x516C;&#x56E0;&#x6578;&#x6709;&#x6C92;&#x6709;&#x6BD4;&#x8F03;&#x5FEB;&#x901F;&#x7684;&#x65B9;&#x6CD5;?&#x3011;
+</blockquote>
+
+
+<p><font color="green">&#x3010;&#x7D42;&#x6975;&#x6311;&#x6230;&#x3011;</font></p>
+<blockquote>
+&#x96FB;&#x8166;&#x6703;&#x51FA;5&#x500B;<strong>&#x4E0D;&#x540C;</strong>&#x7684;&#x6578;&#x5B57;&#xFF0C;&#x5982;&#xFF1A;12354&#xFF0C;&#x73A9;&#x5BB6;&#x5247;&#x731C;&#x9019;&#x500B;&#x6578;&#x5B57;&#x3002;&#x73A9;&#x5BB6;&#x731C;&#x73A9;&#x6578;&#x5B57;&#x5F8C;&#xFF0C;&#x96FB;&#x8166;&#x8981;&#x544A;&#x8A34;&#x73A9;&#x5BB6;&#x5E7E;A&#x5E7E;B&#xFF0C;A&#x4EE3;&#x8868;&#x4F4D;&#x7F6E;&#x6B63;&#x78BA;&#x7684;&#x6578;&#x5B57;&#xFF0C;B&#x4EE3;&#x8868;&#x4F4D;&#x7F6E;&#x4E0D;&#x6B63;&#x78BA;&#x7684;&#x6578;&#x5B57;&#x3002;<br>
+&#x6BCF;&#x6B21;&#x731C;&#x932F;&#x90FD;&#x8A18;&#x9304;&#xFF0C;&#x770B;&#x8AB0;&#x80FD;&#x7528;&#x6700;&#x5C11;&#x7684;&#x6B21;&#x6578;&#x731C;&#x4E2D;<br>
+&#x731C;&#x5C0D;&#x5F8C;&#x7A0B;&#x5F0F;&#x7D50;&#x675F;&#x4E26;&#x5370;&#x51FA;&#x731C;&#x932F;&#x7684;&#x6B21;&#x6578;<br>
+&#x4F8B;&#x5982;&#xFF1A;&#x7B54;&#x6848;&#x70BA;12354&#x6211;&#x731C;12948&#xFF0C;&#x6703;&#x986F;&#x793A;2A1B
+</blockquote>
+
+
                                 
                                 </section>
                             
@@ -585,7 +747,7 @@ print(sum)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.3.5","depth":2,"next":{"title":"與陣列(List)","level":"1.3.6","depth":2,"ref":"","articles":[]},"previous":{"title":"邏輯條件判斷","level":"1.3.4","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"迴圈.md","mtime":"2020-05-02T17:17:03.542Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-02T17:18:03.021Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.3.5","depth":2,"next":{"title":"與陣列(List)","level":"1.3.6","depth":2,"ref":"","articles":[]},"previous":{"title":"邏輯條件判斷","level":"1.3.4","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"迴圈.md","mtime":"2020-05-09T15:55:06.126Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-09T15:55:23.575Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
