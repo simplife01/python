@@ -601,7 +601,7 @@ print(result)
 </code></pre>
 <p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
 <blockquote>
-&#x6709;&#x4E9B;&#x8A0A;&#x606F;&#x52A0;&#x5BC6;&#x7684;&#x624B;&#x6BB5;&#x6703;&#x662F;&#x5229;&#x7528;&#x7279;&#x5B9A;&#x5B57;&#x5143;&#x7684;&#x66FF;&#x63DB;&#x4F86;&#x5B8C;&#x6210;&#xFF0C;&#x4F8B;&#x5982;&#x5C07;&apos;a&apos;&#x63DB;&#x6210; &apos;%&apos; ; &apos;e&apos; &#x63DB;&#x6210; &apos;^&apos; ; &apos;i&apos; &#x63DB;&#x6210; &apos;&amp;&apos; ; &apos;o&apos; &#x63DB;&#x6210; &apos;*&apos; ; &apos;u&apos; &#x63DB;&#x6210; &apos;(&apos; ;<br>
+&#x6709;&#x4E9B;&#x8A0A;&#x606F;&#x52A0;&#x5BC6;&#x7684;&#x624B;&#x6BB5;&#x6703;&#x662F;&#x5229;&#x7528;&#x7279;&#x5B9A;&#x5B57;&#x5143;&#x7684;&#x66FF;&#x63DB;&#x4F86;&#x5B8C;&#x6210;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x5C07;&#x3010;a&#x63DB;&#x6210; %&#x3011;&#x3010;e&#x63DB;&#x6210;^&#x3011;&#x3010;i&#x63DB;&#x6210;&amp;&#x3011;&#x3010;o&#x63DB;&#x6210;*&#x3011;&#x3010;u&#x63DB;&#x6210;(&#x3011;<br>
 <strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
 &#x8ACB;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x8F38;&#x5165;&#x4E00;&#x6BB5;&#x5B57;&#x4E32;&#xFF0C;&#x4F8B;&#x5982;:&quot;how do you turn this on&quot;<br>
 <strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
@@ -653,22 +653,18 @@ print(result)
 <img src="https://i.imgur.com/ObVyQ8K.png" hight="250" width="150"><br>
 &#x3010;&#x4F8B;&#x984C;2&#x3011;&#x7684;*&#x7B26;&#x865F;&#x80FD;&#x4E0D;&#x80FD;&#x5168;&#x90E8;&#x90FD;&#x7F6E;&#x4E2D;&#x5462;?<br>
 <img src="https://i.imgur.com/CkPbiJp.png" hight="250" width="150"><br>
-&#x63D0;&#x793A;&#xFF1A;<br>
-
-```python
-level = int(input(&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&#xFF1A;&quot;))
-
-for i in range(0, level):
-    for j in range(  ,  ): #&#x5370;&#x51FA;&#x7A7A;&#x767D;
-        print(&quot; &quot;, end=&quot;&quot;)
-    for j in range(  ,  ): #&#x5370;&#x51FA;&#x661F;&#x661F;
-        print(&quot;*&quot;, end=&quot;&quot;)
-    print(&quot;&quot;) #&#x63DB;&#x884C;
-
-```
 </blockquote>
 
+<p>&#x7A0B;&#x5F0F;&#x78BC;&#x63D0;&#x793A;&#xFF1A;<br></p>
+<pre><code class="lang-python">level = int(input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578;&#xFF1A;&quot;</span>))
 
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, level):
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(  ,  ): <span class="hljs-comment">#&#x5370;&#x51FA;&#x7A7A;&#x767D;</span>
+        print(<span class="hljs-string">&quot; &quot;</span>, end=<span class="hljs-string">&quot;&quot;</span>)
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(  ,  ): <span class="hljs-comment">#&#x5370;&#x51FA;&#x661F;&#x661F;</span>
+        print(<span class="hljs-string">&quot;*&quot;</span>, end=<span class="hljs-string">&quot;&quot;</span>)
+    print(<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">#&#x63DB;&#x884C;</span>
+</code></pre>
 <p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;1&#x3011;</font></p>
 <blockquote>
 &#x7D66;&#x4F60;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N&#xFF0C;&#x8ACB;&#x4F60;&#x5370;&#x51FA;&#x4EE5; 1-N &#x7684;&#x6578;&#x5B57;&#x69CB;&#x6210;&#x7684;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x5716;&#x6848;&#x3002;<br>
@@ -715,26 +711,22 @@ for i in range(0, level):
 &#x6BCF;&#x6B21;&#x731C;&#x932F;&#x90FD;&#x8A18;&#x9304;&#xFF0C;&#x770B;&#x8AB0;&#x80FD;&#x7528;&#x6700;&#x5C11;&#x7684;&#x6B21;&#x6578;&#x731C;&#x4E2D;<br>
 &#x731C;&#x5C0D;&#x5F8C;&#x7A0B;&#x5F0F;&#x7D50;&#x675F;&#x4E26;&#x5370;&#x51FA;&#x731C;&#x932F;&#x7684;&#x6B21;&#x6578;<br>
 &#x4F8B;&#x5982;&#xFF1A;&#x7B54;&#x6848;&#x70BA;12354&#x6211;&#x731C;12948&#xFF0C;&#x6703;&#x986F;&#x793A;2A1B<br>
-&#x7A0B;&#x5F0F;&#x78BC;&#x63D0;&#x793A;&#xFF1A;<br>
-
-```python
-ans = &quot;35180&quot;
-count = 0
-while True:
-    s_input = input(&quot;&#x8ACB;&#x8F38;&#x5165;&#x731C;&#x6E2C;&#x503C;&#xFF1A;&quot;)
-    A = 0
-    B = 0
-
-    # &#x53EF;&#x80FD;&#x8981;&#x586B;&#x5165;&#x96D9;&#x5C64;&#x8FF4;&#x5708;
-
-    print(&quot;{}A{}B&quot;.format(A, B))
-
-    # &#x6700;&#x5F8C;&#x5370;&#x51FA;&#x7E3D;&#x5171;&#x731C;&#x4E86;&#x5E7E;&#x6B21;
-
-```
-
 </blockquote>
 
+<p>&#x7A0B;&#x5F0F;&#x78BC;&#x63D0;&#x793A;&#xFF1A;<br></p>
+<pre><code class="lang-python">ans = <span class="hljs-string">&quot;35180&quot;</span>
+count = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    s_input = input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x731C;&#x6E2C;&#x503C;&#xFF1A;&quot;</span>)
+    A = <span class="hljs-number">0</span>
+    B = <span class="hljs-number">0</span>
+
+    <span class="hljs-comment"># &#x53EF;&#x80FD;&#x8981;&#x586B;&#x5165;&#x96D9;&#x5C64;&#x8FF4;&#x5708;</span>
+
+    print(<span class="hljs-string">&quot;{}A{}B&quot;</span>.format(A, B))
+
+    <span class="hljs-comment"># &#x6700;&#x5F8C;&#x5370;&#x51FA;&#x7E3D;&#x5171;&#x731C;&#x4E86;&#x5E7E;&#x6B21;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -774,7 +766,7 @@ while True:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.3.5","depth":2,"next":{"title":"與陣列(List)","level":"1.3.6","depth":2,"ref":"","articles":[]},"previous":{"title":"邏輯條件判斷","level":"1.3.4","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"迴圈.md","mtime":"2020-05-09T16:33:31.481Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-09T16:37:23.551Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"迴圈","level":"1.3.5","depth":2,"next":{"title":"與陣列(List)","level":"1.3.6","depth":2,"ref":"","articles":[]},"previous":{"title":"邏輯條件判斷","level":"1.3.4","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"迴圈.md","mtime":"2020-05-09T16:41:08.950Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-09T16:41:20.367Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
