@@ -1,0 +1,522 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>檔案讀寫 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="模組與套件.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    作者簡介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="為什麼要學程式設計.html">
+            
+                <a href="為什麼要學程式設計.html">
+            
+                    
+                    為什麼要學程式設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="新手村任務.html">
+            
+                <a href="新手村任務.html">
+            
+                    
+                    Python新手村
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="輸出.html">
+            
+                <a href="輸出.html">
+            
+                    
+                    輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="輸入與變數.html">
+            
+                <a href="輸入與變數.html">
+            
+                    
+                    輸入與變數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="邏輯條件判斷.html">
+            
+                <a href="邏輯條件判斷.html">
+            
+                    
+                    邏輯條件判斷
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="字串處理.html">
+            
+                <a href="字串處理.html">
+            
+                    
+                    字串處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="迴圈.html">
+            
+                <a href="迴圈.html">
+            
+                    
+                    迴圈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="陣列.html">
+            
+                <a href="陣列.html">
+            
+                    
+                    陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="字典_元組_集合.html">
+            
+                <a href="字典_元組_集合.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="模組與套件.html">
+            
+                <a href="模組與套件.html">
+            
+                    
+                    模組、套件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="檔案讀寫.html">
+            
+                <a href="檔案讀寫.html">
+            
+                    
+                    檔案讀寫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >檔案讀寫</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6A94;&#x6848;&#x8B80;&#x5BEB;">&#x6A94;&#x6848;&#x8B80;&#x5BEB;</h1>
+<h6 id="tags-python">tags: <code>Python</code></h6>
+<h1 id="&#x8B80;&#x6A94;">&#x8B80;&#x6A94;</h1>
+<p>&#x901A;&#x5E38;&#x6709;&#x5169;&#x7A2E;&#x65B9;&#x5F0F;&#xFF1A;<br>
+&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;<br></p>
+<pre><code class="lang-python">f = open(&lt;&#x6A94;&#x540D;&gt;) <span class="hljs-comment"># &#x8B80;&#x6A94;&#x4E00;&#x822C;&#x7FD2;&#x6163;&#x5C07;&#x5B83;&#x5B58;&#x5728;&#x540D;&#x7A31;&#x70BA;f&#x7684;&#x8B8A;&#x6578;&#x88E1;</span>
+</code></pre>
+<p>&#x4E0D;&#x904E;&#x4F7F;&#x7528;&#x5B8C;&#x7562;&#x5F8C;&#x5F8C;&#x8981;&#x8A18;&#x5F97;&#x95DC;&#x9589;&#x5B83;<br></p>
+<pre><code class="lang-python">f.close()
+</code></pre>
+<p>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;<br>&#x3010;&#x6B64;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x5B8C;&#x7562;&#x5F8C;&#x6703;&#x81EA;&#x52D5;&#x95DC;&#x9589;&#x6A94;&#x6848;&#xFF0C;&#x56E0;&#x6B64;&#x8F03;&#x63A8;&#x85A6;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4E8C;&#x3011;<br></p>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> open(&lt;&#x6A94;&#x540D;&gt;) <span class="hljs-keyword">as</span> f:
+</code></pre>
+<p><font color="green">&#x3010;&#x6BD4;&#x8F03;&#x770B;&#x770B;&#x3011;</font></p>
+<blockquote>
+&#x5047;&#x8A2D;&#x4F60;&#x73FE;&#x5728;&#x6B63;&#x5728;&#x7DE8;&#x8F2F;&#x7684;&#x6A94;&#x6848;&#x540D;&#x7A31;&#x70BA;<code>main.py</code>&#x8ACB;&#x4F60;&#x5728;&#x540C;&#x500B;&#x76EE;&#x9304;&#x4E0B;&#x5275;&#x9020;&#x51FA;&#x53E6;&#x4E00;&#x500B;<code>.py</code>(&#x5982;&#x5716;&#x4E2D;&#x7684;<code>moduleA.py</code>)&#x6A94;&#x4E26;&#x5617;&#x8A66;&#x7528;&#x7A0B;&#x5F0F;<code>open</code>&#x5B83;<br>
+
+<img src="https://i.imgur.com/OohzxQ8.png" height="220" width="200">
+</blockquote>
+
+
+<p>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;<br></p>
+<pre><code class="lang-python">f = open(<span class="hljs-string">&quot;moduleA.py&quot;</span>)
+print(f.closed) <span class="hljs-comment"># False (&#x9084;&#x672A;&#x95DC;&#x9589;)</span>
+f.close()
+</code></pre>
+<p>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;<br></p>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">&quot;moduleA.py&quot;</span>) <span class="hljs-keyword">as</span> f:
+    print(f.closed) <span class="hljs-comment"># False (&#x9084;&#x672A;&#x95DC;&#x9589;)</span>
+print(f.closed) <span class="hljs-comment"># True (&#x5DF2;&#x95DC;&#x9589;)</span>
+</code></pre>
+<h2 id="&#x958B;&#x6A94;&#x6A21;&#x5F0F;">&#x958B;&#x6A94;&#x6A21;&#x5F0F;</h2>
+<p>&#x958B;&#x555F;&#x6A94;&#x6848;&#x6642;&#x9700;&#x6307;&#x540D;&#x958B;&#x6A94;&#x6A21;&#x5F0F;&#xFF0C;&#x6839;&#x64DA;&#x958B;&#x555F;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x9650;&#x5B9A;&#x7684;&#x529F;&#x80FD;<br>
+&#x5BEB;&#x6CD5;&#xFF1A;&#x3010;<code>open(&lt;&#x6A94;&#x540D;&gt;, &lt;&#x6A21;&#x5F0F;&gt;)</code>&#x3011;<br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6A21;&#x5F0F;</th>
+<th style="text-align:center">&#x529F;&#x80FD;</th>
+<th style="text-align:center">&#x82E5;&#x5B58;&#x5728;&#x6B64;&#x6A94;&#x540D;</th>
+<th style="text-align:center">&#x5BEB;&#x5165;&#x65B9;&#x5F0F;</th>
+<th style="text-align:center">&#x82E5;&#x4E0D;&#x5B58;&#x5728;&#x6B64;&#x6A94;&#x540D;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">r</td>
+<td style="text-align:center">&#x8B80;&#x53D6;</td>
+<td style="text-align:center">&#x8B80;&#x53D6;</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Error</td>
+</tr>
+<tr>
+<td style="text-align:center">r+</td>
+<td style="text-align:center">&#x5BEB;&#x5165;+&#x8B80;&#x53D6;</td>
+<td style="text-align:center">&#x8B80;&#x53D6;</td>
+<td style="text-align:center">&#x5F9E;&#x7B2C;&#x4E00;&#x5217;&#x958B;&#x59CB;&#x8986;&#x84CB;<br>(&#x4E26;&#x6C92;&#x6709;&#x6574;&#x500B;&#x6A94;&#x6848;&#x8986;&#x84CB;)</td>
+<td style="text-align:center">Error</td>
+</tr>
+<tr>
+<td style="text-align:center">w</td>
+<td style="text-align:center">&#x5BEB;&#x5165;</td>
+<td style="text-align:center">&#x6574;&#x500B;&#x6A94;&#x6848;&#x8986;&#x84CB;</td>
+<td style="text-align:center">&#x6574;&#x500B;&#x6A94;&#x6848;&#x8986;&#x84CB;</td>
+<td style="text-align:center">&#x958B;&#x65B0;&#x6A94;&#x6848;</td>
+</tr>
+<tr>
+<td style="text-align:center">w+</td>
+<td style="text-align:center">&#x5BEB;&#x5165;+&#x8B80;&#x53D6;</td>
+<td style="text-align:center">&#x6574;&#x500B;&#x6A94;&#x6848;&#x8986;&#x84CB;</td>
+<td style="text-align:center">&#x6574;&#x500B;&#x6A94;&#x6848;&#x8986;&#x84CB;</td>
+<td style="text-align:center">&#x958B;&#x65B0;&#x6A94;&#x6848;</td>
+</tr>
+<tr>
+<td style="text-align:center">a</td>
+<td style="text-align:center">&#x5BEB;&#x5165;</td>
+<td style="text-align:center">&#x8B80;&#x53D6;</td>
+<td style="text-align:center">&#x63A5;&#x7E8C;</td>
+<td style="text-align:center">&#x958B;&#x65B0;&#x6A94;&#x6848;</td>
+</tr>
+<tr>
+<td style="text-align:center">a+</td>
+<td style="text-align:center">&#x5BEB;&#x5165;+&#x8B80;&#x53D6;</td>
+<td style="text-align:center">&#x8B80;&#x53D6;</td>
+<td style="text-align:center">&#x63A5;&#x7E8C;</td>
+<td style="text-align:center">&#x958B;&#x65B0;&#x6A94;&#x6848;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x958B;&#x6A94;&#x5F8C;&#x8B80;&#x53D6;&#x6A94;&#x6848;&#x5167;&#x5BB9;">&#x958B;&#x6A94;&#x5F8C;&#x8B80;&#x53D6;&#x6A94;&#x6848;&#x5167;&#x5BB9;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">&quot;moduleA.py&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>) <span class="hljs-keyword">as</span> f:
+    s = f.read() 
+    print(s)
+</code></pre>
+<h2 id="&#x5BEB;&#x6A94;">&#x5BEB;&#x6A94;</h2>
+<h3 id="&#x958B;&#x6A94;&#x5F8C;&#x5BEB;&#x5165;&#x6A94;&#x6848;&#x5167;&#x5BB9;">&#x958B;&#x6A94;&#x5F8C;&#x5BEB;&#x5165;&#x6A94;&#x6848;&#x5167;&#x5BB9;</h3>
+<p><font color="green">&#x3010;&#x8A66;&#x8A66;&#x770B;&#x770B;&#x3011;</font></p>
+<blockquote>
+<p>&#x4E0B;&#x5217;&#x4E09;&#x7A2E;&#x65B9;&#x6CD5;&#x7684;&#x7D50;&#x679C;&#x6709;&#x4F55;&#x4E0D;&#x540C;?</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x8ACB;&#x5148;&#x81EA;&#x884C;&#x65B0;&#x589E;file_r.txt&#x7A7A;&#x6A94;</span>
+<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;file_r.txt&apos;</span>, <span class="hljs-string">&apos;r+&apos;</span>) <span class="hljs-keyword">as</span> f:
+        f.write(f<span class="hljs-string">&apos;this is line {k}\n&apos;</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x8ACB;&#x5148;&#x81EA;&#x884C;&#x65B0;&#x589E;file_w.txt&#x7A7A;&#x6A94;</span>
+<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;file_w.txt&apos;</span>, <span class="hljs-string">&apos;w+&apos;</span>) <span class="hljs-keyword">as</span> f:
+        f.write(f<span class="hljs-string">&apos;this is line {k}\n&apos;</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x8ACB;&#x5148;&#x81EA;&#x884C;&#x65B0;&#x589E;file_a.txt&#x7A7A;&#x6A94;</span>
+<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;file_a.txt&apos;</span>, <span class="hljs-string">&apos;a+&apos;</span>) <span class="hljs-keyword">as</span> f:
+        f.write(f<span class="hljs-string">&apos;this is line {k}\n&apos;</span>)
+</code></pre>
+<h3 id="&#x958B;&#x6A94;&#x5F8C;&#x5148;&#x5BEB;&#x5165;&#x518D;&#x8B80;&#x53D6;&#x6A94;&#x6848;&#x5167;&#x5BB9;">&#x958B;&#x6A94;&#x5F8C;&#x5148;&#x5BEB;&#x5165;&#x518D;&#x8B80;&#x53D6;&#x6A94;&#x6848;&#x5167;&#x5BB9;</h3>
+<p><font color="green">&#x3010;&#x8A66;&#x8A66;&#x770B;&#x770B;&#x3011;</font></p>
+<blockquote>
+<p>&#x4E0B;&#x5217;&#x4E09;&#x7A2E;&#x500B;<code>.txt</code>&#x6A94;&#x90FD;&#x8ACB;&#x5148;&#x4E8B;&#x5148;&#x8A2D;&#x70BA;&#xFF1A;</p>
+</blockquote>
+<pre><code class="lang-python">line: <span class="hljs-number">70</span>
+line: <span class="hljs-number">80</span> 
+line: <span class="hljs-number">90</span> 
+line: <span class="hljs-number">20</span>
+line: <span class="hljs-number">10</span>
+line: <span class="hljs-number">00</span>
+</code></pre>
+<p>&#x518D;&#x958B;&#x59CB;&#x6E2C;&#x8A66;&#x4E0B;&#x5217;&#x4E09;&#x7A2E;&#x8B80;&#x5BEB;&#x6A94;&#x6848;&#x65B9;&#x5F0F;&#xFF1A;<br></p>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;file_r.txt&apos;</span>, <span class="hljs-string">&apos;r+&apos;</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+        f.write(f<span class="hljs-string">&apos;line: {k} \n&apos;</span>)
+    f.seek(<span class="hljs-number">0</span>) <span class="hljs-comment"># &#x56DE;&#x5230;&#x6A94;&#x6848;&#x7B2C;&#x4E00;&#x5217;&#x7B2C;&#x4E00;&#x884C;</span>
+    print(f.read())
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;file_w.txt&apos;</span>, <span class="hljs-string">&apos;w+&apos;</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+        f.write(f<span class="hljs-string">&apos;line: {k} \n&apos;</span>)
+    f.seek(<span class="hljs-number">0</span>) <span class="hljs-comment"># &#x56DE;&#x5230;&#x6A94;&#x6848;&#x7B2C;&#x4E00;&#x5217;&#x7B2C;&#x4E00;&#x884C;</span>
+    print(f.read())
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;file_a.txt&apos;</span>, <span class="hljs-string">&apos;a+&apos;</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+        f.write(f<span class="hljs-string">&apos;line: {k} \n&apos;</span>)
+    f.seek(<span class="hljs-number">0</span>) <span class="hljs-comment"># &#x56DE;&#x5230;&#x6A94;&#x6848;&#x7B2C;&#x4E00;&#x5217;&#x7B2C;&#x4E00;&#x884C;</span>
+    print(f.read())
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="模組與套件.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 模組、套件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"檔案讀寫","level":"1.3.9","depth":2,"previous":{"title":"模組、套件","level":"1.3.8","depth":2,"path":"模組與套件.md","ref":"模組與套件.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"檔案讀寫.md","mtime":"2020-08-20T16:34:55.778Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-20T16:35:11.364Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
