@@ -220,12 +220,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="模組_套件.html">
+        <li class="chapter " data-level="1.3.8" data-path="模組與套件.html">
             
-                <a href="模組_套件.html">
+                <a href="模組與套件.html">
             
                     
-                    模組_套件
+                    模組、套件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="檔案讀寫.html">
+            
+                <a href="檔案讀寫.html">
+            
+                    
+                    檔案讀寫
             
                 </a>
             
@@ -330,6 +343,7 @@ print(thislist[:<span class="hljs-number">3</span>]) <span class="hljs-comment">
 print(thislist[<span class="hljs-number">4</span>:]) <span class="hljs-comment">#[&apos;kiwi&apos;, &apos;melon&apos;, &apos;mango&apos;]</span>
 print(thislist[<span class="hljs-number">-4</span>:<span class="hljs-number">-1</span>]) <span class="hljs-comment">#[&apos;orange&apos;, &apos;kiwi&apos;, &apos;melon&apos;]</span>
 print(thislist[<span class="hljs-number">1</span>:<span class="hljs-number">6</span>:<span class="hljs-number">2</span>]) <span class="hljs-comment">#[&apos;banana&apos;, &apos;orange&apos;, &apos;melon&apos;]</span>
+print(thislist[::<span class="hljs-number">-1</span>]) <span class="hljs-comment"># &#x5012;&#x56DE;&#x4F86;&#x5370;&#x51FA;</span>
 </code></pre>
 <p>&#x8DDF;&#x5B57;&#x4E32;&#x9663;&#x5217;&#x7A0D;&#x5FAE;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x5728;&#x65BC;<strong>&#x80FD;&#x5920;&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x9663;&#x5217;&#x4E2D;&#x7279;&#x5B9A;&#x683C;&#x7684;&#x503C;</strong></p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
@@ -408,6 +422,19 @@ print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apo
 thislist.insert(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;orange&quot;</span>)
 print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;orange&apos;, &apos;banana&apos;, &apos;cherry&apos;]</span>
 </code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x55AE;&#x7D14;&#x5229;&#x7528;<code>+=</code>&#x65B9;&#x5F0F;&#x52A0;&#x7269;&#x4EF6;&#x9032;&#x9663;&#x5217;&#x4E2D;</p>
+<pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
+thislist += <span class="hljs-string">&quot;bike&quot;</span>
+print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;, &apos;b&apos;, &apos;i&apos;, &apos;k&apos;, &apos;e&apos;]</span>
+</code></pre>
+<pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
+thislist += [<span class="hljs-string">&quot;bike&quot;</span>]
+print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;, &apos;bike&apos;]</span>
+</code></pre>
+<pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
+thislist += [[<span class="hljs-string">&quot;bike&quot;</span>]]
+print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;, [&apos;bike&apos;]] (&#x8B8A;&#x4E8C;&#x7DAD;&#x9663;&#x5217;)</span>
+</code></pre>
 <p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font></p>
 <blockquote>
 <p>&#x5982;&#x679C;insert&#x7684;&#x4F4D;&#x7F6E;&#x8D85;&#x904E;&#x9663;&#x5217;&#x9577;&#x5EA6;&#x6703;&#x600E;&#x6A23;&#x5462;?</p>
@@ -433,12 +460,17 @@ print(thislist) <span class="hljs-comment"># ????</span>
 <p>&#x4F7F;&#x7528;<code>remove(&lt;object&gt;)</code>&#x53EF;&#x79FB;&#x9664;&#x9663;&#x5217;&#x7279;&#x5B9A;&#x7269;&#x4EF6;</p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 thislist.remove(<span class="hljs-string">&quot;banana&quot;</span>)
-print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;cherry&apos;]</span>
+print(thislist) <span class="hljs-comment"># [&apos;apple&apos;, &apos;cherry&apos;]</span>
 </code></pre>
 <p>&#x4F7F;&#x7528;<code>pop(&lt;object&gt;)</code>&#x6703;&#x79FB;&#x9664;&#x9663;&#x5217;&#x4E2D;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x7269;&#x4EF6;</p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 thislist.pop() 
-print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apos;]</span>
+print(thislist) <span class="hljs-comment"># [&apos;apple&apos;, &apos;banana&apos;]</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>&lt;listname&gt;.pop(&lt;list_index&gt;)</code>&#x6703;&#x79FB;&#x9664;&#x9663;&#x5217;&#x4E2D;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x503C;&#x7684;&#x7269;&#x4EF6;</p>
+<pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
+thislist.pop(<span class="hljs-number">1</span>) 
+print(thislist) <span class="hljs-comment"># [&apos;apple&apos;, &apos;cherry&apos;]</span>
 </code></pre>
 <p>&#x4F7F;&#x7528;<code>del &lt;list_name&gt;</code>&#x53EF;&#x79FB;&#x9664;&#x9663;&#x5217;&#x4E2D;&#x7279;&#x5B9A;&#x7D22;&#x5F15;&#x503C;&#x7684;&#x7269;&#x4EF6; &#x6216; <strong>&#x79FB;&#x9664;&#x6574;&#x500B;&#x9663;&#x5217;</strong></p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
@@ -588,14 +620,14 @@ print(sum(num_list)) <span class="hljs-comment">#346</span>
 <blockquote>
 &#x7DA0;&#x82D1;&#x96FB;&#x53F0;&#x70BA;&#x4E86;&#x65B9;&#x4FBF;&#x8B93;&#x807D;&#x773E;&#x9EDE;&#x64AD;&#x6B4C;&#x66F2;&#xFF0C;&#x4FBF;&#x5C07;&#x96FB;&#x53F0;&#x5167;&#x6240;&#x6709;&#x53D6;&#x5F97;&#x6388;&#x6B0A;&#x7684;&#x6B4C;&#x66F2;&#x7DE8;&#x865F;(1~100&#x7684;&#x6B63;&#x6574;&#x6578;)&#xFF0C;&#x807D;&#x773E;&#x5728;&#x660E;&#x4FE1;&#x7247;&#x4E0A;&#x8A3B;&#x660E;&#x6B4C;&#x66F2;&#x7DE8;&#x865F;&#xFF0C;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x9EDE;&#x64AD;&#x3002;&#x70BA;&#x4E86;&#x77E5;&#x9053;&#x672C;&#x5E74;&#x5EA6;&#x6700;&#x71B1;&#x9580;&#x7684;&#x9EDE;&#x64AD;&#x662F;&#x54EA;&#x4E00;&#x9996;&#xFF0C;&#x5C0F;&#x4EAE;&#x4EAE;&#x628A;&#x6240;&#x6709;&#x660E;&#x4FE1;&#x7247;&#x7FFB;&#x4E86;&#x51FA;&#x4F86;&#x4E00;&#x5F35;&#x4E00;&#x5F35;&#x770B;&#xFF0C;&#x767C;&#x73FE;&#x770B;&#x5230;&#x4E00;&#x534A;&#xFF0C;&#x5C31;&#x5FD8;&#x8A18;&#x6BCF;&#x4E00;&#x9996;&#x6B4C;&#x7684;&#x9EDE;&#x64AD;&#x6B21;&#x6578;&#x4E86;&#x3002;&#x73FE;&#x5728;&#x60F3;&#x8ACB;&#x4F60;&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#xFF0C;&#x5E6B;&#x5C0F;&#x4EAE;&#x4EAE;&#x627E;&#x51FA;&#x6700;&#x71B1;&#x9580;&#x7684;&#x6B4C;&#x66F2;&#x662F;&#x54EA;&#x4E00;&#x66F2;&#x3002;<br>
 <strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
-&#x4E00;&#x958B;&#x59CB;&#x6709;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N (1<=n<=20)，代表有幾張明信片的點播，接下來有 n="" 個="" 1~100="" 的正整數，代表這="" 張明信片所點播的歌曲編號。<br="">
+&#x4E00;&#x958B;&#x59CB;&#x6709;&#x4E00;&#x500B;&#x6B63;&#x6574;&#x6578; N (1&#x2264;N&#x2264;20)&#xFF0C;&#x4EE3;&#x8868;&#x6709;&#x5E7E;&#x5F35;&#x660E;&#x4FE1;&#x7247;&#x7684;&#x9EDE;&#x64AD;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;&#x6709; N &#x500B; 1~100 &#x7684;&#x6B63;&#x6574;&#x6578;&#xFF0C;&#x4EE3;&#x8868;&#x9019; N &#x5F35;&#x660E;&#x4FE1;&#x7247;&#x6240;&#x9EDE;&#x64AD;&#x7684;&#x6B4C;&#x66F2;&#x7DE8;&#x865F;<br>
 <strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
 &#x8ACB;&#x8F38;&#x51FA;&#x9EDE;&#x64AD;&#x6B21;&#x6578;&#x6700;&#x9AD8;&#x7684;&#x6B4C;&#x66F2;&#x7DE8;&#x865F;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x7684;&#x9EDE;&#x64AD;&#x6B21;&#x6578;(&#x4E0D;&#x7528;&#x8003;&#x616E;&#x6700;&#x9AD8;&#x9EDE;&#x64AD;&#x6B21;&#x6578;&#x7684;&#x6B4C;&#x66F2;&#x6709;&#x5169;&#x9996;&#x4EE5;&#x4E0A;&#x7684;&#x60C5;&#x6CC1;)&#xFF0C;&#x4E2D;&#x9593;&#x8ACB;&#x7A7A;&#x4E00;&#x683C;&#x3002;<br>
 <strong>&#x7BC4;&#x4F8B;&#x8F38;&#x5165;</strong>&#xFF1A;<br>
 6 55 33 44 33 22 33<br>
 <strong>&#x7BC4;&#x4F8B;&#x8F38;&#x51FA;</strong>&#xFF1A;<br>
 33 3
-</=n<=20)，代表有幾張明信片的點播，接下來有></blockquote>
+</blockquote>
                                 
                                 </section>
                             
@@ -638,7 +670,7 @@ print(sum(num_list)) <span class="hljs-comment">#346</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"陣列","level":"1.3.6","depth":2,"next":{"title":"字典","level":"1.3.7","depth":2,"path":"字典_元組_集合.md","ref":"字典_元組_集合.md","articles":[]},"previous":{"title":"迴圈","level":"1.3.5","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"陣列.md","mtime":"2020-08-19T17:29:03.929Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-19T17:30:45.941Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"陣列","level":"1.3.6","depth":2,"next":{"title":"字典","level":"1.3.7","depth":2,"path":"字典_元組_集合.md","ref":"字典_元組_集合.md","articles":[]},"previous":{"title":"迴圈","level":"1.3.5","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"陣列.md","mtime":"2020-08-21T07:25:55.130Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-21T07:26:05.998Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
