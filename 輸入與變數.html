@@ -313,7 +313,7 @@
 <p><code>7zz</code> <code>2u</code> &#x9019;&#x7A2E;&#x90FD;&#x4E0D;&#x5141;&#x8A31;</p>
 </blockquote>
 </li>
-<li>&#x8B8A;&#x6578;&#x540D;&#x7A31;&#x53EA;&#x80FD;&#x542B;&#x6709;(<code>A-z</code>, <code>0-9</code>, &#x548C; <code>_</code> )<blockquote>
+<li>&#x8B8A;&#x6578;&#x540D;&#x7A31;&#x53EA;&#x80FD;&#x542B;&#x6709;(<code>A~z</code>, <code>0~9</code>, &#x548C; <code>_</code> )<blockquote>
 <p><code>Act-3</code> &#x4E5F;&#x662F;&#x4E0D;&#x88AB;&#x5141;&#x8A31;&#x7684;&#x540D;&#x7A31;&#x5537;</p>
 </blockquote>
 </li>
@@ -342,6 +342,15 @@ num, ss, ff = <span class="hljs-number">300</span>, <span class="hljs-string">&q
 <li>&#x5728;&#x7A0B;&#x5F0F;&#x78BC;&#x4E2D;&#xFF0C;&#x8981;<strong>&#x6307;&#x5B9A;</strong>&#x503C;&#x7D66;&#x8B8A;&#x6578;&#x662F;&#x5229;&#x7528; <code>=</code> &#x7684;&#x7B26;&#x865F;&#xFF0C;&#x90A3;&#x9EBC;<strong>&#x7B49;&#x65BC;</strong>&#x8981;&#x7528;&#x4EC0;&#x9EBC;&#x6A23;&#x7684;&#x7B26;&#x865F;&#x5462;?</li>
 </ol>
 </blockquote>
+<h3 id="&#x5169;&#x8B8A;&#x6578;&#x4E92;&#x63DB;&#x503C;">&#x5169;&#x8B8A;&#x6578;&#x4E92;&#x63DB;&#x503C;</h3>
+<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font>
+&#x82E5;<code>a = 100</code>,<code>b = -1</code>&#xFF0C;&#x6211;&#x5982;&#x4F55;&#x5229;&#x7528;&#x4EA4;&#x63DB;&#x800C;&#x975E;&#x76F4;&#x63A5;&#x6307;&#x5B9A;<code>a = -1</code>,<code>b = 100</code>&#x7684;&#x65B9;&#x5F0F;&#x4F7F;&#x5F97;<code>print(a, b)</code>&#x7684;&#x7D50;&#x679C;&#x70BA;&#xFF1A;<code>-1 100</code></p>
+<pre><code class="lang-python">a, b = b, a
+</code></pre>
+<pre><code class="lang-python">tmp = a
+a = b
+b = tmp
+</code></pre>
 <h2 id="&#x8CC7;&#x6599;&#x578B;&#x614B;">&#x8CC7;&#x6599;&#x578B;&#x614B;</h2>
 <h3 id="python-&#x7684;&#x5167;&#x5EFA;&#x578B;&#x614B;&#x4E3B;&#x8981;&#x5206;&#x70BA;&#x4EE5;&#x4E0B;&#x4E09;&#x7A2E;&#xFF1A;">Python &#x7684;&#x5167;&#x5EFA;&#x578B;&#x614B;&#x4E3B;&#x8981;&#x5206;&#x70BA;&#x4EE5;&#x4E0B;&#x4E09;&#x7A2E;&#xFF1A;</h3>
 <ol>
@@ -456,7 +465,7 @@ print(ff) <span class="hljs-comment">#3.1416</span>
 <pre><code class="lang-python">ff = input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x5C0F;&#x6578;&quot;</span>) <span class="hljs-comment">#&#x5047;&#x8A2D;&#x9375;&#x76E4;&#x8F38;&#x5165;3.1416</span>
 print(ff) <span class="hljs-comment">#3.1416</span>
 </code></pre>
-<h3 id="&#x5229;&#x7528;--&#x4F86;&#x4E32;&#x63A5;&#x5169;&#x500B;&#x5B57;&#x4E32;&#xFF1A;">&#x5229;&#x7528; &apos;+&apos; &#x4F86;&#x4E32;&#x63A5;&#x5169;&#x500B;&#x5B57;&#x4E32;&#xFF1A;</h3>
+<h3 id="&#x5229;&#x7528;-&#x4F86;&#x4E32;&#x63A5;&#x5169;&#x500B;&#x5B57;&#x4E32;&#xFF1A;">&#x5229;&#x7528;<code>+</code> &#x4F86;&#x4E32;&#x63A5;&#x5169;&#x500B;&#x5B57;&#x4E32;&#xFF1A;</h3>
 <pre><code class="lang-python">ff = input(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x4E00;&#x500B;&#x5C0F;&#x6578;&quot;</span>) <span class="hljs-comment">#3.1416</span>
 print(<span class="hljs-string">&quot;&#x4F60;&#x8F38;&#x5165;&#x7684;&#x503C;&#x70BA;&#xFF1A;&quot;</span> + ff) <span class="hljs-comment">#&#x4F60;&#x8F38;&#x5165;&#x7684;&#x503C;&#x70BA;&#xFF1A;3.1416</span>
 </code></pre>
@@ -538,7 +547,7 @@ print(type(a)) <span class="hljs-comment"># &lt;class &apos;int&apos;&gt;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"輸入與變數","level":"1.3.2","depth":2,"next":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"previous":{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸入與變數.md","mtime":"2020-07-17T09:01:11.566Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-21T17:28:13.527Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"輸入與變數","level":"1.3.2","depth":2,"next":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"previous":{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸入與變數.md","mtime":"2020-08-23T08:43:20.752Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-23T08:43:41.115Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
