@@ -315,7 +315,8 @@
 &#x9664;&#x4E86;&#x8981;&#x5927;&#x91CF;&#x5BA3;&#x544A;&#x8B8A;&#x6578;&#x5916;&#xFF0C;&#x8B8A;&#x6578;&#x547D;&#x540D;&#x4E5F;&#x662F;&#x975E;&#x5E38;&#x4EE4;&#x4EBA;&#x982D;&#x75BC;&#x7684;&#x4E8B;<br>
 (&#x4F8B;&#x5982;&#xFF1A;a1=0, a2=-2, .... ,a123=10) &#x662F;&#x4E0D;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x547D;&#x540D;&#x5230;&#x624B;&#x8EDF;&#x5462;XD<br><br>
 &#x9019;&#x6642;&#x5019;&#x5982;&#x679C;&#x6709;&#x9663;&#x5217;&#xFF0C;&#x90A3;&#x5C31;&#x80FD;&#x5927;&#x5927;&#x6E1B;&#x5C11;&#x5927;&#x91CF;&#x8B8A;&#x6578;&#x547D;&#x540D;&#x7684;&#x75DB;&#x82E6;&#x4E86;</p>
-<h2 id="&#x9663;&#x5217;&#x5BA3;&#x544A;">&#x9663;&#x5217;&#x5BA3;&#x544A;</h2>
+<h2 id="&#x53EF;&#x8B8A;&#x52D5;&#x9663;&#x5217;list">&#x53EF;&#x8B8A;&#x52D5;&#x9663;&#x5217;(<code>List</code>)</h2>
+<h3 id="&#x9663;&#x5217;&#x5BA3;&#x544A;">&#x9663;&#x5217;&#x5BA3;&#x544A;</h3>
 <p>&#x5728;Python&#x4E2D;&#xFF0C;&#x9663;&#x5217;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x7531;&#x4E00;&#x5C0D;&#x4E2D;&#x62EC;&#x865F;&#x4F86;&#x8868;&#x793A;</p>
 <pre><code class="lang-python">thislist = [] <span class="hljs-comment">#[]</span>
 </code></pre>
@@ -326,7 +327,7 @@ print(thislist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apo
 </code></pre>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>] <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;]</span>
 </code></pre>
-<h2 id="&#x5B58;&#x53D6;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;">&#x5B58;&#x53D6;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;</h2>
+<h3 id="&#x5B58;&#x53D6;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;">&#x5B58;&#x53D6;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;</h3>
 <p>&#x57FA;&#x672C;&#x4E0A;&#x8DDF;&#x5B57;&#x4E32;&#x9663;&#x5217;&#x7684;&#x7528;&#x6CD5;&#x5E7E;&#x4E4E;&#x4E00;&#x81F4;<br></p>
 <pre><code class="lang-python">n[&lt;start&gt;:&lt;stop&gt;:&lt;step&gt;] <span class="hljs-comment">#&#x7B2C;&#x4E00;&#x683C;&#x653E;&#x8D77;&#x59CB;&#x7D22;&#x5F15;&#x503C;&#xFF0C;&#x7B2C;&#x4E8C;&#x683C;&#x653E;&#x7D42;&#x6B62;&#x7D22;&#x5F15;&#x503C;&#xFF0C;&#x7B2C;&#x4E09;&#x683C;&#x653E;&#x6BCF;&#x6B21;&#x5F80;&#x5F8C;&#x5E7E;&#x500B;&#x7D22;&#x5F15;&#x503C;</span>
 </code></pre>
@@ -372,7 +373,7 @@ print(thislist) <span class="hljs-comment">#???</span>
 
 <pre><code class="lang-python">w = [<span class="hljs-string">&quot;pen&quot;</span>, <span class="hljs-string">&quot;pineapple&quot;</span>, <span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;I&quot;</span>, <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;an&quot;</span>, <span class="hljs-string">&quot;have&quot;</span>, <span class="hljs-string">&quot;uhhh&quot;</span>]
 </code></pre>
-<h2 id="&#x9663;&#x5217;&#x642D;&#x914D;for">&#x9663;&#x5217;&#x642D;&#x914D;<code>for</code></h2>
+<h3 id="&#x9663;&#x5217;&#x642D;&#x914D;for">&#x9663;&#x5217;&#x642D;&#x914D;<code>for</code></h3>
 <p>&#x628A;&#x9663;&#x5217;&#x4E2D;&#x6BCF;&#x4E00;&#x683C;&#x90FD;&#x770B;&#x904E;&#x4E00;&#x904D;</p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> thislist:
@@ -396,7 +397,7 @@ print(l) <span class="hljs-comment">#[4225, 400, 1225, 10000, 8100, 1296]</span>
 lt = [element ** <span class="hljs-number">2</span> <span class="hljs-keyword">for</span> element <span class="hljs-keyword">in</span> lt]
 print(lt)
 </code></pre>
-<h2 id="&#x78BA;&#x8A8D;&#x9663;&#x5217;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x67D0;&#x7269;&#x4EF6;">&#x78BA;&#x8A8D;&#x9663;&#x5217;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x67D0;&#x7269;&#x4EF6;</h2>
+<h3 id="&#x78BA;&#x8A8D;&#x9663;&#x5217;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x67D0;&#x7269;&#x4EF6;">&#x78BA;&#x8A8D;&#x9663;&#x5217;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x67D0;&#x7269;&#x4EF6;</h3>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 <span class="hljs-keyword">if</span> <span class="hljs-string">&quot;apple&quot;</span> <span class="hljs-keyword">in</span> thislist:
   print(<span class="hljs-string">&quot;Yes, &apos;apple&apos; is in the fruits list&quot;</span>)
@@ -406,12 +407,12 @@ print(lt)
 fruits.index(<span class="hljs-string">&apos;banana&apos;</span>) <span class="hljs-comment">#3</span>
 fruits.index(<span class="hljs-string">&apos;banana&apos;</span>, <span class="hljs-number">4</span>) <span class="hljs-comment">#6 (&#x627E;&#x51FA;&#x7D22;&#x5F15;&#x503C;4&#x4E4B;&#x5F8C;&#x7684;&quot;banana&quot;&#x7D22;&#x5F15;&#x503C;)</span>
 </code></pre>
-<h2 id="&#x9663;&#x5217;&#x9577;&#x5EA6;">&#x9663;&#x5217;&#x9577;&#x5EA6;</h2>
+<h3 id="&#x9663;&#x5217;&#x9577;&#x5EA6;">&#x9663;&#x5217;&#x9577;&#x5EA6;</h3>
 <p>&#x5229;&#x7528;<code>len(&lt;list_name&gt;)</code>&#x5C31;&#x80FD;&#x5F97;&#x5230;&#x9663;&#x5217;&#x7684;&#x9577;&#x5EA6;&#x503C;&#x56C9;!</p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 print(len(thislist)) <span class="hljs-comment">#3</span>
 </code></pre>
-<h2 id="&#x52A0;&#x7269;&#x4EF6;&#x9032;&#x9663;&#x5217;">&#x52A0;&#x7269;&#x4EF6;&#x9032;&#x9663;&#x5217;</h2>
+<h3 id="&#x52A0;&#x7269;&#x4EF6;&#x9032;&#x9663;&#x5217;">&#x52A0;&#x7269;&#x4EF6;&#x9032;&#x9663;&#x5217;</h3>
 <p>&#x53EF;&#x4EE5;&#x5229;&#x7528;<code>append(&lt;object&gt;)</code>&#x65B9;&#x5F0F;&#x52A0;&#x7269;&#x4EF6;&#x9032;&#x9663;&#x5217;&#x6700;&#x672B;&#x4E00;&#x500B;&#x4F4D;&#x7F6E;</p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 thislist.append(<span class="hljs-string">&quot;orange&quot;</span>)
@@ -456,7 +457,7 @@ print(thislist) <span class="hljs-comment"># ????</span>
 </blockquote>
 
 
-<h2 id="&#x5C07;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;&#x79FB;&#x9664;">&#x5C07;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;&#x79FB;&#x9664;</h2>
+<h3 id="&#x5C07;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;&#x79FB;&#x9664;">&#x5C07;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;&#x79FB;&#x9664;</h3>
 <p>&#x4F7F;&#x7528;<code>remove(&lt;object&gt;)</code>&#x53EF;&#x79FB;&#x9664;&#x9663;&#x5217;&#x7279;&#x5B9A;&#x7269;&#x4EF6;</p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 thislist.remove(<span class="hljs-string">&quot;banana&quot;</span>)
@@ -481,14 +482,14 @@ print(thislist) <span class="hljs-comment">#[&apos;banana&apos;, &apos;cherry&ap
 <span class="hljs-keyword">del</span> thislist
 print(thislist) <span class="hljs-comment">#NameError: name &apos;thislist&apos; is not defined</span>
 </code></pre>
-<h2 id="&#x6E05;&#x7A7A;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;">&#x6E05;&#x7A7A;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;</h2>
+<h3 id="&#x6E05;&#x7A7A;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;">&#x6E05;&#x7A7A;&#x9663;&#x5217;&#x4E2D;&#x7269;&#x4EF6;</h3>
 <p>&#x4F7F;&#x7528;<code>.clear()</code>&#x53EF;&#x6E05;&#x9664;&#x6574;&#x500B;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7269;&#x4EF6;<br>
 <code>clear()</code> &#x540C; <code>del thislist[:]</code></p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 thislist.clear()
 print(thislist) <span class="hljs-comment">#[]</span>
 </code></pre>
-<h2 id="&#x8907;&#x88FD;&#x6574;&#x500B;&#x9663;&#x5217;">&#x8907;&#x88FD;&#x6574;&#x500B;&#x9663;&#x5217;</h2>
+<h3 id="&#x8907;&#x88FD;&#x6574;&#x500B;&#x9663;&#x5217;">&#x8907;&#x88FD;&#x6574;&#x500B;&#x9663;&#x5217;</h3>
 <p><font color="red"><strong>&#x6CE8;&#x610F;!</strong></font> Python&#x4E2D;&#x4E0D;&#x5F97;&#x76F4;&#x63A5;&#x6307;&#x5B9A;(reference)&#x6574;&#x500B;&#x9663;&#x5217;&#x5230;&#x53E6;&#x4E00;&#x500B;&#xFF0C;&#x9019;&#x6703;&#x4F7F;&#x5F97;&#x66F4;&#x52D5;&#x4E00;&#x500B;&#x9663;&#x5217;&#x53E6;&#x4E00;&#x500B;&#x4E5F;&#x6703;&#x88AB;&#x52D5;&#x5230;</p>
 <pre><code class="lang-python">thislist = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]
 li_tmp = thislist <span class="hljs-comment">#&#x9019;&#x7A2E;&#x6307;&#x5B9A;&#x65B9;&#x5F0F;&#x975E;&#x5E38;&#x5371;&#x96AA;</span>
@@ -506,7 +507,7 @@ print(mylist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apos;
 mylist = list(thislist)
 print(mylist) <span class="hljs-comment">#[&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;]</span>
 </code></pre>
-<h2 id="&#x9663;&#x5217;&#x5408;&#x4F75;">&#x9663;&#x5217;&#x5408;&#x4F75;</h2>
+<h3 id="&#x9663;&#x5217;&#x5408;&#x4F75;">&#x9663;&#x5217;&#x5408;&#x4F75;</h3>
 <p>&#x4F7F;&#x7528; <code>+</code> &#x865F;&#x5408;&#x4F75;&#x5169;&#x500B;&#x9663;&#x5217;<br>
 Python&#x9663;&#x5217;&#x4E2D;&#x5141;&#x8A31;&#x540C;&#x6642;&#x5B58;&#x5728;&#x591A;&#x7A2E;&#x5F62;&#x614B;&#x7684;&#x503C;</p>
 <pre><code class="lang-python">list1 = [<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span> , <span class="hljs-string">&quot;c&quot;</span>]
@@ -552,7 +553,7 @@ list2 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>,
 list1.extend(list2)
 print(list1) <span class="hljs-comment">#[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, 1, 2, 3]</span>
 </code></pre>
-<h2 id="&#x6392;&#x5E8F;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;">&#x6392;&#x5E8F;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;</h2>
+<h3 id="&#x6392;&#x5E8F;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;">&#x6392;&#x5E8F;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;</h3>
 <p>&#x5229;&#x7528;<code>sorted(&lt;list_name&gt;)</code>&#x6216;<code>.sort()</code>&#x5C07;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;&#x81EA;&#x52D5;&#x7531;&#x5C0F;&#x5230;&#x5927;&#x6392;&#x5217;</p>
 <pre><code class="lang-python">num_list = [<span class="hljs-number">65</span>, <span class="hljs-number">20</span>, <span class="hljs-number">35</span>, <span class="hljs-number">100</span>, <span class="hljs-number">90</span>, <span class="hljs-number">36</span>]
 thislist = [<span class="hljs-string">&quot;cherry&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;orange&quot;</span>, <span class="hljs-string">&quot;kiwi&quot;</span>, <span class="hljs-string">&quot;melon&quot;</span>, <span class="hljs-string">&quot;mango&quot;</span>]
@@ -599,7 +600,7 @@ print(thislist) <span class="hljs-comment">#????</span>
 
 
 
-<h2 id="&#x9663;&#x5217;&#x4E2D;&#x6700;&#x5927;&#x503C;&#x3001;&#x6700;&#x5C0F;&#x503C;&#x53CA;&#x7E3D;&#x5408;">&#x9663;&#x5217;&#x4E2D;&#x6700;&#x5927;&#x503C;&#x3001;&#x6700;&#x5C0F;&#x503C;&#x53CA;&#x7E3D;&#x5408;</h2>
+<h3 id="&#x9663;&#x5217;&#x4E2D;&#x6700;&#x5927;&#x503C;&#x3001;&#x6700;&#x5C0F;&#x503C;&#x53CA;&#x7E3D;&#x5408;">&#x9663;&#x5217;&#x4E2D;&#x6700;&#x5927;&#x503C;&#x3001;&#x6700;&#x5C0F;&#x503C;&#x53CA;&#x7E3D;&#x5408;</h3>
 <p>&#x5229;&#x7528;<code>max(&lt;list_name&gt;)</code> <code>min(&lt;list_name&gt;)</code> <code>sum(&lt;list_name&gt;)</code> &#x627E;&#x51FA;&#x9663;&#x5217;&#x4E2D;&#x6700;&#x5927;&#x503C;&#x3001;&#x6700;&#x5C0F;&#x503C;&#x53CA;&#x7E3D;&#x5408;</p>
 <pre><code class="lang-python">num_list = [<span class="hljs-number">65</span>, <span class="hljs-number">20</span>, <span class="hljs-number">35</span>, <span class="hljs-number">100</span>, <span class="hljs-number">90</span>, <span class="hljs-number">36</span>]
 print(max(num_list)) <span class="hljs-comment">#100</span>
@@ -640,6 +641,72 @@ print(sum(num_list)) <span class="hljs-comment">#346</span>
 <strong>&#x7BC4;&#x4F8B;&#x8F38;&#x51FA;</strong>&#xFF1A;<br>
 33 3
 </blockquote>
+
+<h2 id="&#x4E0D;&#x53EF;&#x8B8A;&#x52D5;&#x9663;&#x5217;tuple">&#x4E0D;&#x53EF;&#x8B8A;&#x52D5;&#x9663;&#x5217;(<code>Tuple</code>)</h2>
+<h3 id="&#x4F55;&#x8B02;&#x4E0D;&#x53EF;&#x8B8A;&#x52D5;&#x9663;&#x5217;">&#x4F55;&#x8B02;&#x4E0D;&#x53EF;&#x8B8A;&#x52D5;&#x9663;&#x5217;?</h3>
+<p>&#x5176;&#x5BE6;<code>Tuple</code>&#x4E5F;&#x662F;&#x4E00;&#x7A2E;&#x9663;&#x5217;&#xFF0C;&#x529F;&#x80FD;&#x8207;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x8207;<code>List</code>&#x6709;9&#x6210;&#x4EE5;&#x4E0A;&#x985E;&#x4F3C;&#xFF0C;&#x4E0D;&#x904E;&#x7279;&#x6B8A;&#x4E4B;&#x8655;&#x662F;&#x4E0D;&#x80FD;&#x8F15;&#x6613;&#x8B8A;&#x52D5;<code>Tuple</code>&#x4E2D;&#x7684;&#x503C;<br></p>
+<h3 id="&#x70BA;&#x4F55;&#x9700;&#x8981;tuple">&#x70BA;&#x4F55;&#x9700;&#x8981;<code>Tuple</code>?</h3>
+<p>&#x6709;&#x4E9B;&#x7A0B;&#x5F0F;&#x662F;&#x9700;&#x8981;&#x5B58;&#x53D6;&#x9663;&#x5217;&#x4E2D;&#x56FA;&#x5B9A;&#x67D0;&#x683C;&#x7576;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x9019;&#x6642;&#x82E5;&#x7528;<code>List</code>&#x4F86;&#x5132;&#x5B58;&#x53EF;&#x80FD;&#x6703;&#x4E0D;&#x5C0F;&#x5FC3;&#x66F4;&#x52D5;&#x5230;&#x8A72;&#x683C;&#x7684;&#x6578;&#x503C;&#x9032;&#x800C;&#x5F71;&#x97FF;&#x7D50;&#x679C;&#xFF0C;&#x9019;&#x6642;&#x4F7F;&#x7528;<code>Tuple</code>&#x5C31;&#x80FD;&#x5920;&#x907F;&#x514D;&#x9019;&#x985E;&#x554F;&#x984C;&#x767C;&#x751F;&#xFF0C;&#x56E0;&#x70BA;<code>Tuple</code>&#x662F;&#x4E0D;&#x53EF;&#x88AB;&#x8B8A;&#x52D5;&#x7684;</p>
+<h3 id="&#x5275;&#x9020;tuple">&#x5275;&#x9020;<code>Tuple</code></h3>
+<p>&#x57FA;&#x672C;&#x4E0A;<code>Tupele</code>&#x7684;&#x5275;&#x9020;&#x8DDF;<code>List</code>&#x7684;&#x5DEE;&#x5225;&#x5C31;&#x5728;<strong>&#x5C0F;&#x62EC;&#x865F;</strong>&#x8207;<strong>&#x4E2D;&#x62EC;&#x865F;</strong>&#x7684;&#x4E0D;&#x540C;</p>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>) <span class="hljs-comment"># Tuple&#x662F;&#x5C0F;&#x62EC;&#x865F;</span>
+print(thistuple) <span class="hljs-comment"># (&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;)</span>
+</code></pre>
+<p>&#x4E0D;&#x904E;&#x5982;&#x679C;Tuple&#x4E2D;&#x7684;&#x503C;&#x53EA;&#x6709;&#x4E00;&#x500B;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;</p>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>,) <span class="hljs-comment"># &#x8A18;&#x5F97;&#x6700;&#x5F8C;&#x9762;&#x8981;&#x6709;&#x500B;&#x9017;&#x865F;&#xFF0C;&#x5426;&#x5247;&#x6703;&#x8DDF;&#x5B57;&#x4E32;&#x641E;&#x6DF7;</span>
+print(type(thistuple)) <span class="hljs-comment"># &lt;class &apos;tuple&apos;&gt;</span>
+</code></pre>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>) <span class="hljs-comment"># &#x9019;&#x5C31;&#x662F;&#x5B57;&#x4E32;</span>
+print(type(thistuple)) <span class="hljs-comment"># &lt;class &apos;str&apos;&gt;</span>
+</code></pre>
+<h3 id="&#x7121;&#x6CD5;&#x76F4;&#x63A5;&#x6539;&#x52D5;tuple&#x4E2D;&#x7684;&#x503C;">&#x7121;&#x6CD5;&#x76F4;&#x63A5;&#x6539;&#x52D5;<code>Tuple</code>&#x4E2D;&#x7684;&#x503C;</h3>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)
+thistuple[<span class="hljs-number">1</span>] = <span class="hljs-string">&quot;orange&quot;</span> <span class="hljs-comment"># TypeError: &apos;tuple&apos; object does not support item assignment</span>
+print(thistuple)
+</code></pre>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)
+<span class="hljs-keyword">del</span> thistuple[<span class="hljs-number">1</span>] <span class="hljs-comment"># TypeError: &apos;tuple&apos; object doesn&apos;t support item deletion</span>
+print(thistuple)
+</code></pre>
+<h3 id="&#x9593;&#x63A5;&#x6539;&#x52D5;tuple&#x4E2D;&#x7684;&#x503C;">&#x9593;&#x63A5;&#x6539;&#x52D5;<code>Tuple</code>&#x4E2D;&#x7684;&#x503C;</h3>
+<pre><code class="lang-python">x = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)
+y = list(x) <span class="hljs-comment"># &#x5148;&#x8F49;&#x70BA;list</span>
+y[<span class="hljs-number">1</span>] = <span class="hljs-string">&quot;kiwi&quot;</span>
+x = tuple(y) <span class="hljs-comment"># &#x518D;&#x8F49;&#x56DE;tuple</span>
+print(x) <span class="hljs-comment"># (&apos;apple&apos;, &apos;kiwi&apos;, &apos;cherry&apos;)</span>
+</code></pre>
+<pre><code class="lang-python">x = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)
+y = list(x) <span class="hljs-comment"># &#x5148;&#x8F49;&#x70BA;list</span>
+<span class="hljs-keyword">del</span> y[<span class="hljs-number">1</span>]
+x = tuple(y) <span class="hljs-comment"># &#x518D;&#x8F49;&#x56DE;tuple</span>
+print(x) <span class="hljs-comment"># (&apos;apple&apos;, &apos;cherry&apos;)</span>
+</code></pre>
+<h3 id="&#x5176;&#x9918;&#x529F;&#x80FD;&#x8207;list&#x5E7E;&#x4E4E;&#x76F8;&#x540C;">&#x5176;&#x9918;&#x529F;&#x80FD;&#x8207;<code>List</code>&#x5E7E;&#x4E4E;&#x76F8;&#x540C;</h3>
+<blockquote>
+<p>&#x4F46;list&#x80FD;&#x7528;&#x7684;&#x6709;&#x7684;<code>Tuple</code>&#x672A;&#x5FC5;&#x4E5F;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x5217;&#x51FA;<code>Tuple</code>&#x80FD;&#x7528;&#x7684;</p>
+</blockquote>
+<h4 id="&#x7528;&#x8FF4;&#x5708;&#x5B58;&#x53D6;tuple&#x4E2D;&#x6240;&#x6709;&#x7684;&#x503C;">&#x7528;&#x8FF4;&#x5708;&#x5B58;&#x53D6;<code>Tuple</code>&#x4E2D;&#x6240;&#x6709;&#x7684;&#x503C;</h4>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> thistuple:
+  print(x)
+</code></pre>
+<h4 id="&#x78BA;&#x8A8D;tuple&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x60F3;&#x8981;&#x7684;&#x503C;">&#x78BA;&#x8A8D;<code>Tuple</code>&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x60F3;&#x8981;&#x7684;&#x503C;</h4>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)
+<span class="hljs-keyword">if</span> <span class="hljs-string">&quot;apple&quot;</span> <span class="hljs-keyword">in</span> thistuple:
+  print(<span class="hljs-string">&quot;Yes, &apos;apple&apos; is in the fruits tuple&quot;</span>)
+</code></pre>
+<h4 id="&#x78BA;&#x8A8D;tuple&#x5B58;&#x5728;&#x591A;&#x5C11;&#x7B46;&#x503C;">&#x78BA;&#x8A8D;<code>Tuple</code>&#x5B58;&#x5728;&#x591A;&#x5C11;&#x7B46;&#x503C;</h4>
+<pre><code class="lang-python">thistuple = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)
+print(len(thistuple))
+</code></pre>
+<h4 id="&#x5408;&#x4F75;&#x591A;&#x500B;tuple">&#x5408;&#x4F75;&#x591A;&#x500B;<code>Tuple</code></h4>
+<pre><code class="lang-python">tuple1 = (<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span> , <span class="hljs-string">&quot;c&quot;</span>)
+tuple2 = (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+
+tuple3 = tuple1 + tuple2
+print(tuple3) <span class="hljs-comment"># (&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, 1, 2, 3)</span>
+</code></pre>
+
                                 
                                 </section>
                             
@@ -682,7 +749,7 @@ print(sum(num_list)) <span class="hljs-comment">#346</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"陣列","level":"1.3.6","depth":2,"next":{"title":"字典","level":"1.3.7","depth":2,"path":"字典_元組_集合.md","ref":"字典_元組_集合.md","articles":[]},"previous":{"title":"迴圈","level":"1.3.5","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"陣列.md","mtime":"2020-08-21T17:28:00.338Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-21T17:28:13.527Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"陣列","level":"1.3.6","depth":2,"next":{"title":"字典","level":"1.3.7","depth":2,"path":"字典_元組_集合.md","ref":"字典_元組_集合.md","articles":[]},"previous":{"title":"迴圈","level":"1.3.5","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"陣列.md","mtime":"2020-08-23T08:19:09.192Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-23T08:19:41.567Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
