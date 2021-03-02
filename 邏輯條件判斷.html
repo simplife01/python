@@ -474,34 +474,24 @@
 <h6 id="tags-python">tags: <code>Python</code></h6>
 <h2 id="boolean&#x5E03;&#x6797;&#x503C;">Boolean(&#x5E03;&#x6797;&#x503C;)</h2>
 <p>&#x5E03;&#x6797;&#x503C;&#x5176;&#x5BE6;&#x5C31;&#x662F;&#x96FB;&#x8166;&#x79D1;&#x5B78;&#x4E2D;&#x7684;&#x908F;&#x8F2F;&#x5224;&#x65B7;&#x8CC7;&#x6599;&#x578B;&#x614B;&#xFF0C;&#x5176;&#x578B;&#x614B;&#x5171;&#x6709;&#x5169;&#x7A2E;<code>True</code> &#x8207; <code>False</code> &#xFF0C;&#x5206;&#x5225;&#x4EE3;&#x8868;<strong>&#x6B63;&#x78BA;</strong>&#x8207;<strong>&#x932F;&#x8AA4;</strong></p>
-<p>Python&#x4E2D; <code>0</code> &#x6216; <strong>&#x7A7A;(empty)</strong> &#x4EE3;&#x8868; <code>False</code> &#xFF0C;  <code>1</code> &#x6216; <strong>&#x5176;&#x9918;&#x5143;&#x7D20;</strong> &#x7686;&#x4EE3;&#x8868;<code>True</code> (&#x901A;&#x5E38; <code>0</code> &#x6216; <code>1</code> &#x6BD4;&#x8F03;&#x5E38;&#x7528;)</p>
-<p>Python&#x4E2D;&#xFF0C;boolean&#x7E2E;&#x5BEB;&#x70BA;&#xFF1A;<code>bool</code></p>
+<ul>
+<li>Python&#x4E2D; <code>0</code> &#x6216; <strong>&#x7A7A;(empty)</strong> &#x4EE3;&#x8868; <code>False</code> &#xFF0C;  <code>1</code> &#x6216; <strong>&#x5176;&#x9918;&#x5143;&#x7D20;</strong> &#x7686;&#x4EE3;&#x8868;<code>True</code></li>
+<li>Python&#x4E2D;&#xFF0C;boolean&#x7E2E;&#x5BEB;&#x70BA;&#xFF1A;<code>bool</code></li>
+</ul>
 <pre><code class="lang-python">statement = <span class="hljs-string">&quot;&#x4ECA;&#x5929;&#x8ACB;&#x5927;&#x5BB6;&#x5403;&#x738B;&#x54C1;&quot;</span>
 my_age = <span class="hljs-number">18</span>
 
-print(bool(statement)) <span class="hljs-comment">#True</span>
-print(bool(my_age)) <span class="hljs-comment">#True</span>
-print(bool(<span class="hljs-number">1</span>)) <span class="hljs-comment">#True</span>
+print(bool(statement)) <span class="hljs-comment"># True</span>
+print(bool(my_age)) <span class="hljs-comment"># True</span>
+print(bool(<span class="hljs-number">1</span>)) <span class="hljs-comment"># True</span>
 </code></pre>
-<pre><code class="lang-python">print(bool(<span class="hljs-keyword">False</span>)) <span class="hljs-comment">#False</span>
-print(bool(<span class="hljs-keyword">None</span>)) <span class="hljs-comment">#False</span>
-print(bool(<span class="hljs-number">0</span>)) <span class="hljs-comment">#False</span>
-</code></pre>
-<font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font>
-
-<pre><code class="lang-python">bool(<span class="hljs-number">-289</span>) <span class="hljs-comment">#???</span>
-bool(<span class="hljs-number">0.07</span>) <span class="hljs-comment">#???</span>
-bool(<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-comment">#???</span>
-bool(<span class="hljs-string">&quot;  &quot;</span>) <span class="hljs-comment">#???</span>
-bool(()) <span class="hljs-comment">#???</span>
-bool([]) <span class="hljs-comment">#???</span>
-bool({}) <span class="hljs-comment">#???</span>
+<pre><code class="lang-python">print(bool(<span class="hljs-keyword">False</span>)) <span class="hljs-comment"># False</span>
+print(bool(<span class="hljs-keyword">None</span>)) <span class="hljs-comment"># False</span>
+print(bool(<span class="hljs-number">0</span>)) <span class="hljs-comment"># False</span>
 </code></pre>
 <h2 id="&#x689D;&#x4EF6;&#x5224;&#x65B7;">&#x689D;&#x4EF6;&#x5224;&#x65B7;</h2>
 <h3 id="&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#x7B26;&#x865F;">&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#x7B26;&#x865F;</h3>
-<p>&#x96FB;&#x8166;&#x79D1;&#x5B78;&#x4E2D;&#x901A;&#x5E38;&#x6709;6&#x7A2E;&#x6BD4;&#x8F03;&#x95DC;&#x4FC2;&#xFF1A;
-&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#x7B26;&#x865F;&#x7684;&#x5169;&#x5074;&#xFF0C;&#x53EF;&#x4EE5;&#x653E;&#x5E38;&#x6578;&#x3001;&#x8B8A;&#x6578;&#x3001;&#x904B;&#x7B97;&#x5F0F;
-&#x6BD4;&#x8F03;&#x7684;&#x7D50;&#x679C;&#x578B;&#x614B;&#x70BA;boolean</p>
+<p>&#x8CC7;&#x8A0A;&#x79D1;&#x5B78;&#x4E2D;&#x901A;&#x5E38;&#x6709;6&#x7A2E;&#x6BD4;&#x8F03;&#x95DC;&#x4FC2;&#xFF1A;</p>
 <table>
 <thead>
 <tr>
@@ -524,19 +514,22 @@ bool({}) <span class="hljs-comment">#???</span>
 </tr>
 </tbody>
 </table>
-<pre><code class="lang-python">num1 = <span class="hljs-number">100</span>
-num2 = <span class="hljs-number">-10</span>
+<p style="color:red"><strong>&#x6CE8;&#x610F;!</strong> &#x6BD4;&#x8F03;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#x578B;&#x614B;&#x70BA;boolean</p>
 
-print(bool(num1 &lt;= num2)) <span class="hljs-comment">#False</span>
-print(bool(num1 != num2 + <span class="hljs-number">2</span>)) <span class="hljs-comment">#True</span>
+<pre><code class="lang-python">num1 = <span class="hljs-number">12</span>
+num2 = <span class="hljs-number">10</span>
+
+print(bool(num1 &lt;= num2)) <span class="hljs-comment"># True</span>
+print(bool(num1 != (num2 + <span class="hljs-number">2</span>))) <span class="hljs-comment"># False</span>
 </code></pre>
-<p>&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#x51FA;&#x4F86;&#x7684;&#x7D50;&#x679C;&#x4E00;&#x5B9A;&#x70BA;boolean&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x53EF;&#x4EE5;&#x7701;&#x7565;
-<code>bool()</code> &#x578B;&#x614B;&#x8F49;&#x63DB;</p>
-<pre><code class="lang-python">num1 = <span class="hljs-number">100</span>
-num2 = <span class="hljs-number">-10</span>
+<p style="color:red">&#x56E0;&#x70BA;&#x6BD4;&#x8F03;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#x4E00;&#x5B9A;&#x70BA;boolean&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x4E0D;&#x5FC5;&#x7701;&#x7565;&#x4F7F;&#x7528;
+<code>bool()</code> &#x8F49;&#x63DB;&#x578B;&#x614B;</p>
 
-print(num1 &lt;= num2) <span class="hljs-comment">#False</span>
-print(num1 != num2 + <span class="hljs-number">2</span>) <span class="hljs-comment">#True</span>
+<pre><code class="lang-python">num1 = <span class="hljs-number">12</span>
+num2 = <span class="hljs-number">10</span>
+
+print(num1 &gt;= num2) <span class="hljs-comment"># True</span>
+print(num1 != (num2 + <span class="hljs-number">2</span>)) <span class="hljs-comment"># False</span>
 </code></pre>
 <h3 id="if-&#x689D;&#x4EF6;&#x9078;&#x64C7;">if &#x689D;&#x4EF6;&#x9078;&#x64C7;</h3>
 <p>&#x689D;&#x4EF6;&#x9078;&#x64C7;&#xFF0C;&#x662F;&#x85C9;&#x7531;&#x5224;&#x65B7;&#x689D;&#x4EF6;&#xFF0C;&#x4EE5;&#x9078;&#x64C7;&#x63A5;&#x4E0B;&#x4F86;&#x8981;&#x4E0D;&#x8981;&#x57F7;&#x884C;&#x67D0;&#x4E00;&#x6BB5;&#x7A0B;&#x5F0F;</p>
@@ -568,10 +561,10 @@ print(num1 != num2 + <span class="hljs-number">2</span>) <span class="hljs-comme
 <blockquote>
 &#x4E00;&#x822C;&#x4F86;&#x8AAA;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x4EE5;60&#x5206;&#x505A;&#x70BA;&#x53CA;&#x683C;&#x8207;&#x5426;&#x7684;&#x6A19;&#x6E96;&#xFF0C;60&#x5206;(&#x542B;)&#x4EE5;&#x4E0A;&#x70BA;&#x53CA;&#x683C;&#xFF0C;&#x4E0D;&#x6EFF;60&#x5206;&#x5247;&#x662F;&#x4E0D;&#x53CA;&#x683C;&#xFF0C;&#x73FE;&#x5728;&#x7D66;&#x4F60;&#x4E00;&#x500B;&#x5206;&#x6578;&#xFF0C;&#x8ACB;&#x4F60;&#x5224;&#x65B7;&#x662F;&#x5426;&#x53CA;&#x683C;<br>
 <strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
-&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578; N (0<=n<=100) 代表要判斷的分數，不需要檢查它是否超出="" 0~100="" 的範圍<br="">
+&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578; N (0 <= n="" <="100)" 代表要判斷的分數，不需要檢查它是否超出="" 0~100="" 的範圍="" <br="">
 <strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
 &#x82E5;&#x8F38;&#x5165;&#x7684;&#x662F;&#x53CA;&#x683C;&#x7684;&#x5206;&#x6578;&#xFF0C;&#x8ACB;&#x8F38;&#x51FA; PASS&#xFF0C;&#x5426;&#x5247;&#x8F38;&#x51FA; FAIL
-</=n<=100)></blockquote>
+</=></blockquote>
 <blockquote>
 &#x5982;&#x679C;&#x4E00;&#x500B;&#x6574;&#x6578;&#x662F;2&#x7684;&#x500D;&#x6578;&#xFF0C;&#x5247;&#x5B83;&#x5C31;&#x662F;&#x4E00;&#x500B;&#x5076;&#x6578;&#xFF0C;&#x5426;&#x5247;&#x70BA;&#x5947;&#x6578;&#x3002;&#x7D66;&#x4F60;&#x4E00;&#x500B;&#x6574;&#x6578;&#xFF0C;&#x8ACB;&#x4F60;&#x5224;&#x65B7;&#x5B83;&#x662F;&#x5947;&#x6578;&#x9084;&#x662F;&#x5076;&#x6578;<br>
 <strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
@@ -883,7 +876,7 @@ d = int(d)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"next":{"title":"迴圈","level":"1.3.4","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"previous":{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"邏輯條件判斷.md","mtime":"2020-08-19T17:03:39.488Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-18T06:47:00.365Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"next":{"title":"迴圈","level":"1.3.4","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"previous":{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"邏輯條件判斷.md","mtime":"2021-03-02T16:45:06.632Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T16:47:13.320Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
