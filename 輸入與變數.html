@@ -517,7 +517,9 @@
 <pre><code class="lang-python">Age = <span class="hljs-number">50</span> <span class="hljs-comment"># Age&#x8B8A;&#x6578;&#xFF0C;&#x653E;&#x5165;50</span>
 _weight = <span class="hljs-number">64</span> <span class="hljs-comment"># _weight&#x8B8A;&#x6578;&#xFF0C;&#x653E;&#x5165;64</span>
 name = <span class="hljs-string">&quot;Alan&quot;</span> <span class="hljs-comment"># name&#x8B8A;&#x6578;&#xFF0C;&#x653E;&#x5165;Alan</span>
-Age, _weight, name = <span class="hljs-number">50</span>, <span class="hljs-number">64</span>, <span class="hljs-string">&quot;Alan&quot;</span> <span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4E00;&#x6B21;&#x653E;&#x5165;&#x591A;&#x500B;&#x503C;&#x5230;&#x591A;&#x9805;&#x8B8A;&#x6578;&#x88E1;</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4E00;&#x6B21;&#x653E;&#x5165;&#x591A;&#x500B;&#x503C;&#x5230;&#x591A;&#x500B;&#x8B8A;&#x6578;&#x88E1;</p>
+<pre><code class="lang-python">Age, _weight, name = <span class="hljs-number">50</span>, <span class="hljs-number">64</span>, <span class="hljs-string">&quot;Alan&quot;</span>
 </code></pre>
 <p><font color="red"><strong>&#x6CE8;&#x610F;!</strong></font> &#x8CC7;&#x6599;&#x653E;&#x5165;&#x81F3;&#x8B8A;&#x6578;&#x7684;&#x76D2;&#x5B50;&#x4E2D;&#x5728;&#x7A0B;&#x5F0F;&#x7684;&#x4E16;&#x754C;&#x7A31;&#x70BA;&#xFF1A;<strong>&#x6307;&#x5B9A;</strong>(assign)</p>
 <blockquote>
@@ -554,23 +556,23 @@ print(n1 % n2) <span class="hljs-comment"># 3</span>
 <p>&#x5617;&#x8A66;&#x628A; <code>%</code> &#x63DB;&#x6210;&#x5176;&#x5B83;&#x56DB;&#x5247;&#x904B;&#x7B97;&#x7B26;&#x865F;</p>
 </blockquote>
 <h4 id="&#x76F8;&#x52A0;">&#x76F8;&#x52A0;</h4>
-<p>&#x6578;&#x5B57;&#x578B;&#x614B;&#xFF1A;</p>
+<p>&#x6578;&#x5B57;&#x578B;&#x614B;</p>
 <pre><code class="lang-python">TSMC = <span class="hljs-number">2230</span>
 MTK = <span class="hljs-number">2454</span>
 
-TSMC + <span class="hljs-number">3</span>
+TSMC + <span class="hljs-number">3</span> <span class="hljs-comment"># &#x6574;&#x578B;&#x5316;&#x599D;&#x554F;&#x984C;</span>
 print(TSMC) <span class="hljs-comment"># 2230</span>
 
-TSMC + MTK
+TSMC + MTK <span class="hljs-comment"># &#x6574;&#x578B;&#x5316;&#x599D;&#x554F;&#x984C;</span>
 print(TSMC) <span class="hljs-comment"># 2230</span>
 
 TSMC = TSMC + MTK
 print(TSMC) <span class="hljs-comment"># 4684</span>
 
-TSMC += MTK
+TSMC += MTK <span class="hljs-comment"># &#x6B64;&#x70BA; TSMC = TSMC + MTK &#x7684;&#x7C21;&#x6613;&#x5BEB;&#x6CD5;</span>
 print(TSMC) <span class="hljs-comment"># 7138</span>
 </code></pre>
-<p>&#x5B57;&#x4E32;&#x578B;&#x614B;&#xFF1A;</p>
+<p>&#x5B57;&#x4E32;&#x578B;&#x614B;</p>
 <pre><code class="lang-python">TSMC = <span class="hljs-string">&apos;2230&apos;</span>
 MTK = <span class="hljs-string">&apos;2454&apos;</span>
 
@@ -609,7 +611,7 @@ b = tmp
 
 print(a, b) <span class="hljs-comment"># &#x96DE;&#x817F; &#x8FA3;&#x6912;</span>
 </code></pre>
-<h3 id="f-&#x8B8A;&#x6578;&#x578B;&#x614B;">F. &#x8B8A;&#x6578;&#x578B;&#x614B;</h3>
+<h3 id="g-&#x8B8A;&#x6578;&#x578B;&#x614B;">G. &#x8B8A;&#x6578;&#x578B;&#x614B;</h3>
 <h4 id="python-&#x7684;&#x8B8A;&#x6578;&#x578B;&#x614B;&#x4E3B;&#x8981;&#x5206;&#x70BA;&#x4EE5;&#x4E0B;&#x4E09;&#x985E;">Python &#x7684;&#x8B8A;&#x6578;&#x578B;&#x614B;&#x4E3B;&#x8981;&#x5206;&#x70BA;&#x4EE5;&#x4E0B;&#x4E09;&#x985E;</h4>
 <p><img src="https://i.imgur.com/3jFHbG7.png" height="280" width="650"></p>
 <h4 id="&#x8B8A;&#x6578;&#x578B;&#x614B;&#x7684;&#x8F49;&#x63DB;">&#x8B8A;&#x6578;&#x578B;&#x614B;&#x7684;&#x8F49;&#x63DB;</h4>
@@ -630,7 +632,7 @@ int(ss) <span class="hljs-comment"># ValueError: invalid literal for int() with 
 print(type(<span class="hljs-number">10</span>)) <span class="hljs-comment"># &lt;class &apos;int&apos;&gt;</span>
 print(type(<span class="hljs-string">&apos;&#x4EBA;&#x751F;&#x7684;&#x7B46;&#x756B;&#x932F;&#x4E86;&#x7121;&#x6CD5;&#x62B9;&#x6EC5;&#xFF0C; &#x537B;&#x53EF;&#x4EE5;&#x591A;&#x52A0;&#x5E7E;&#x7B46;&#x8B93;&#x932F;&#x8AA4;&#x8B8A;&#x7F8E;&#x9E97;&apos;</span>)) <span class="hljs-comment"># &lt;class &apos;str&apos;&gt;</span>
 </code></pre>
-<h3 id="g-&#x522A;&#x9664;&#x8B8A;&#x6578;">G. &#x522A;&#x9664;&#x8B8A;&#x6578;</h3>
+<h3 id="h-&#x522A;&#x9664;&#x8B8A;&#x6578;">H. &#x522A;&#x9664;&#x8B8A;&#x6578;</h3>
 <pre><code class="lang-python">box = <span class="hljs-string">&quot;&#x6253;&#x6211;&#x5440;&#x7B28;&#x86CB;&quot;</span>
 <span class="hljs-keyword">del</span> box <span class="hljs-comment"># &#x522A;&#x9664;&#x8B8A;&#x6578; box</span>
 <span class="hljs-keyword">print</span> (box) <span class="hljs-comment"># NameError: name &apos;box&apos; is not defined</span>
@@ -640,8 +642,8 @@ print(type(<span class="hljs-string">&apos;&#x4EBA;&#x751F;&#x7684;&#x7B46;&#x75
 <blockquote>
 <p>&#x5728;Python&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5229;&#x7528;<code>input()</code> &#x8B80;&#x53D6;&#x9375;&#x76E4;&#x8F38;&#x5165;&#x8CC7;&#x6599;</p>
 </blockquote>
-<pre><code class="lang-python=">get = input() # &#x5047;&#x8A2D;&#x9375;&#x76E4;&#x8F38;&#x5165; hao da
-print(get) # hao da
+<pre><code class="lang-python">get = input() <span class="hljs-comment"># &#x5047;&#x8A2D;&#x9375;&#x76E4;&#x8F38;&#x5165; hao da</span>
+print(get) <span class="hljs-comment"># hao da</span>
 </code></pre>
 <p><code>get</code> &#x8B8A;&#x6578;&#x6703;&#x5B58;&#x653E;&#x6211;&#x5011;&#x9375;&#x76E4;&#x6240;&#x8F38;&#x5165;&#x7684;&#x503C;(&#x4E5F;&#x5C31;&#x662F;&#x8A18;&#x61B6;&#x9AD4;&#x7684;&#x67D0;&#x6BB5;&#x7A7A;&#x9593;)</p>
 <p style="color:orange"><strong>&#x7167;&#x6253;&#x4E0A;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x7DF4;&#x7FD2;&#x57F7;&#x884C;&#x770B;&#x770B;</strong></p>
@@ -730,7 +732,7 @@ print(n1 + n2) <span class="hljs-comment"># 12.1</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"輸入與變數","level":"1.3.2","depth":2,"next":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"previous":{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸入與變數.md","mtime":"2021-03-02T16:44:57.549Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T16:47:13.320Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"輸入與變數","level":"1.3.2","depth":2,"next":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"previous":{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸入與變數.md","mtime":"2021-03-03T05:05:26.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T05:07:08.658Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
