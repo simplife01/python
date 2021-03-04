@@ -478,10 +478,10 @@
 <li>Python&#x4E2D; <code>0</code> &#x6216; <strong>&#x7A7A;(empty)</strong> &#x4EE3;&#x8868; <code>False</code> &#xFF0C;  <code>1</code> &#x6216; <strong>&#x5176;&#x9918;&#x5143;&#x7D20;</strong> &#x7686;&#x4EE3;&#x8868;<code>True</code></li>
 <li>Python&#x4E2D;&#xFF0C;boolean&#x7E2E;&#x5BEB;&#x70BA;&#xFF1A;<code>bool</code></li>
 </ul>
-<pre><code class="lang-python">statement = <span class="hljs-string">&quot;&#x4ECA;&#x5929;&#x8ACB;&#x5927;&#x5BB6;&#x5403;&#x738B;&#x54C1;&quot;</span>
+<pre><code class="lang-python">trash_talk = <span class="hljs-string">&quot;&#x5728;&#x975E;&#x6D32;&#xFF0C;&#x6BCF;&#x516D;&#x5341;&#x79D2;&#xFF0C;&#x5C31;&#x6709;&#x4E00;&#x5206;&#x9418;&#x904E;&#x53BB;&quot;</span>
 my_age = <span class="hljs-number">18</span>
 
-print(bool(statement)) <span class="hljs-comment"># True</span>
+print(bool(trash_talk)) <span class="hljs-comment"># True</span>
 print(bool(my_age)) <span class="hljs-comment"># True</span>
 print(bool(<span class="hljs-number">1</span>)) <span class="hljs-comment"># True</span>
 </code></pre>
@@ -489,8 +489,7 @@ print(bool(<span class="hljs-number">1</span>)) <span class="hljs-comment"># Tru
 print(bool(<span class="hljs-keyword">None</span>)) <span class="hljs-comment"># False</span>
 print(bool(<span class="hljs-number">0</span>)) <span class="hljs-comment"># False</span>
 </code></pre>
-<h2 id="&#x689D;&#x4EF6;&#x5224;&#x65B7;">&#x689D;&#x4EF6;&#x5224;&#x65B7;</h2>
-<h3 id="&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#x7B26;&#x865F;">&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#x7B26;&#x865F;</h3>
+<h2 id="&#x6BD4;&#x8F03;&#x904B;&#x7B97;">&#x6BD4;&#x8F03;&#x904B;&#x7B97;</h2>
 <p>&#x8CC7;&#x8A0A;&#x79D1;&#x5B78;&#x4E2D;&#x901A;&#x5E38;&#x6709;6&#x7A2E;&#x6BD4;&#x8F03;&#x95DC;&#x4FC2;&#xFF1A;</p>
 <table>
 <thead>
@@ -531,50 +530,59 @@ num2 = <span class="hljs-number">10</span>
 print(num1 &gt;= num2) <span class="hljs-comment"># True</span>
 print(num1 != (num2 + <span class="hljs-number">2</span>)) <span class="hljs-comment"># False</span>
 </code></pre>
-<h3 id="if-&#x689D;&#x4EF6;&#x9078;&#x64C7;">if &#x689D;&#x4EF6;&#x9078;&#x64C7;</h3>
-<p>&#x689D;&#x4EF6;&#x9078;&#x64C7;&#xFF0C;&#x662F;&#x85C9;&#x7531;&#x5224;&#x65B7;&#x689D;&#x4EF6;&#xFF0C;&#x4EE5;&#x9078;&#x64C7;&#x63A5;&#x4E0B;&#x4F86;&#x8981;&#x4E0D;&#x8981;&#x57F7;&#x884C;&#x67D0;&#x4E00;&#x6BB5;&#x7A0B;&#x5F0F;</p>
-<pre><code class="lang-python">s = <span class="hljs-string">&quot;cool&quot;</span>
+<h2 id="&#x689D;&#x4EF6;&#x5224;&#x65B7;">&#x689D;&#x4EF6;&#x5224;&#x65B7;</h2>
+<h3 id="if-&#x5982;&#x679C;"><code>if</code> &#x5982;&#x679C;</h3>
+<p>&#x5224;&#x65B7;&#x7684;&#x7D50;&#x679C;&#x70BA;<code>True</code>&#xFF0C;&#x624D;&#x5F97;&#x4EE5;&#x57F7;&#x884C;<code>if</code>&#x5167;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;</p>
+<pre><code class="lang-python">your_age = <span class="hljs-number">77</span>
 
-<span class="hljs-keyword">if</span> s == <span class="hljs-string">&quot;cool&quot;</span>:   <span class="hljs-comment">#&#x5B57;&#x4E32;&#x4E5F;&#x9069;&#x7528;</span>
-    print(<span class="hljs-string">&quot;Yes!&quot;</span>) <span class="hljs-comment">#&#x689D;&#x4EF6;&#x6210;&#x7ACB;&#x6240;&#x4EE5;&#x80FD;&#x57F7;&#x884C;&#x9019;&#x5217;&#x7A0B;&#x5F0F;</span>
+<span class="hljs-keyword">if</span> your_age &gt;= <span class="hljs-number">70</span>:
+    print(<span class="hljs-string">&quot;&#x4EBA;&#x751F;&#x4E03;&#x5341;&#x53E4;&#x4F86;&#x7A00;!&quot;</span>) <span class="hljs-comment"># &#x689D;&#x4EF6;&#x6210;&#x7ACB;&#x624D;&#x80FD;&#x57F7;&#x884C;&#x9019;&#x884C;&#x7A0B;&#x5F0F;</span>
 </code></pre>
-<p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span> Python&#x4E2D;<strong>&#x7E2E;&#x6392;</strong>&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x4EE3;&#x8868;&#x7E2E;&#x6392;&#x7684;&#x90A3;&#x5E7E;&#x5217;&#x7A0B;&#x5F0F;&#x78BC;&#x90FD;&#x5C6C;&#x65BC;if&#x5224;&#x65B7;&#x5F0F;&#x4E0B;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x82E5;&#x5224;&#x65B7;&#x7D50;&#x679C;&#x70BA;<code>False</code>&#xFF0C;&#x5247;&#x5C6C;&#x65BC;&#x5176;&#x4E0B;&#x65B9;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x90FD;&#x4E0D;&#x6703;&#x88AB;&#x57F7;&#x884C;</p>
-<p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span> &#x7A0B;&#x5F0F;&#x4E2D;&#x7684;&#x7E2E;&#x6392;&#x901A;&#x5E38;&#x6309;<code>Tab</code>&#x9375;&#x5373;&#x53EF;&#xFF0C;&#x4E0D;&#x904E;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x5728;Python&#x4E2D;&#xFF0C;<code>Tab</code>&#x6309;&#x5E7E;&#x6B21;&#x6703;&#x5F71;&#x97FF;&#x7A0B;&#x5F0F;&#x57F7;&#x884C;&#x7684;&#x6B63;&#x78BA;&#x8207;&#x5426;&#xFF0C;&#x4E0D;&#x5F97;&#x96A8;&#x5FC3;&#x6240;&#x6B32;&#x5730;&#x6309;&#x5537;~</p>
-<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">1</span>:
-    print(<span class="hljs-string">&quot;Yes!&quot;</span>) <span class="hljs-comment">#&#x689D;&#x4EF6;&#x6210;&#x7ACB;&#x6240;&#x4EE5;&#x80FD;&#x57F7;&#x884C;&#x9019;&#x5217;&#x7A0B;&#x5F0F;</span>
+<p><span style="color:red"><strong>&#x6CE8;&#x610F;!</strong></span> Python &#x7A0B;&#x5F0F;&#x78BC;&#x7684;<span style="color:red"><strong> &#x7E2E;&#x6392; </strong></span>&#x76F8;&#x7576;&#x91CD;&#x8981;&#xFF0C;&#x7E2E;&#x6392;&#x7684;&#x90A3;&#x5E7E;&#x884C;&#x7A0B;&#x5F0F;&#x78BC;&#x90FD;&#x5C6C;&#x65BC;<code>if</code>&#x5224;&#x65B7;&#x5F0F;&#x88E1;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x3002;&#x82E5;&#x5224;&#x65B7;&#x7D50;&#x679C;&#x70BA;<code>False</code>&#xFF0C;&#x5247;&#x4E0D;&#x57F7;&#x884C;&#x88E1;&#x982D;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#xFF1B;&#x53CD;&#x4E4B;&#xFF0C;&#x82E5;&#x5224;&#x65B7;&#x7D50;&#x679C;&#x70BA;<code>True</code>&#xFF0C;&#x5247;&#x57F7;&#x884C;&#x4E4B;</p>
+
+<p><span style="color:red"><strong>&#x6CE8;&#x610F;! </strong>&#x7A0B;&#x5F0F;&#x4E2D;&#x7684;&#x7E2E;&#x6392;&#x6309;<code>Tab</code>&#x9375;&#x5373;&#x53EF;</span></p>
+
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5617;&#x8A66;&#x57F7;&#x884C;&#x4E0B;&#x65B9;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E26;&#x89C0;&#x5BDF;&#x7D50;&#x679C;</span>
+<span class="hljs-keyword">if</span> <span class="hljs-number">1</span>:
+    print(<span class="hljs-string">&quot;&#x7B2C;&#x4E00;&#x500B;&#x7D50;&#x679C;!&quot;</span>)
+<span class="hljs-keyword">if</span> <span class="hljs-number">0</span>:
+    print(<span class="hljs-string">&quot;&#x7B2C;&#x4E8C;&#x500B;&#x7D50;&#x679C;!&quot;</span>)
 </code></pre>
-<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">0</span>:
-    print(<span class="hljs-string">&quot;NO!&quot;</span>) <span class="hljs-comment">#&#x689D;&#x4EF6;&#x4E0D;&#x6210;&#x7ACB;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x57F7;&#x884C;&#x9019;&#x5217;&#x7A0B;&#x5F0F;</span>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5617;&#x8A66;&#x57F7;&#x884C;&#x4E0B;&#x65B9;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E26;&#x89C0;&#x5BDF;&#x7D50;&#x679C;</span>
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">False</span>:
+    print(<span class="hljs-string">&quot;&#x7B2C;&#x4E00;&#x500B;&#x7D50;&#x679C;!&quot;</span>)
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">True</span>:
+    print(<span class="hljs-string">&quot;&#x7B2C;&#x4E8C;&#x500B;&#x7D50;&#x679C;!&quot;</span>)
 </code></pre>
-<h3 id="else">else</h3>
-<p><code>else</code> &#x51FA;&#x73FE;&#x7684;&#x6642;&#x6A5F;&#x5C31;&#x662F;&#x4E0D;&#x7B26;&#x5408;&#x67D0;&#x500B;&#x5224;&#x65B7;&#x689D;&#x4EF6;&#x6642;&#x624D;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4E00;&#x5B9A;&#x8981;&#x63A5;&#x5728;&#x67D0;&#x500B;<code>if</code>&#x5F8C;&#x9762;</p>
-<p>&#x8ACB;&#x8A18;&#x5F97;<code>if</code>&#x7684;&#x5340;&#x584A;&#x548C;<code>else</code>&#x7684;&#x5340;&#x584A;&#x4E4B;&#x9593;&#x7D55;&#x4E0D;&#x80FD;&#x653E;&#x4EFB;&#x4F55;&#x7A0B;&#x5F0F;(&#x9664;&#x4E86;&#x7121;&#x610F;&#x7FA9;&#x7684;&#x7A7A;&#x884C;&#x6216;&#x7A7A;&#x767D;&#x4EE5;&#x5916;)</p>
-<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">2</span> &gt; <span class="hljs-number">3</span>:
-    print(<span class="hljs-string">&quot;&#x8D85;&#x904E;100&#x5206;&quot;</span>)
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5617;&#x8A66;&#x57F7;&#x884C;&#x4E0B;&#x65B9;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E26;&#x89C0;&#x5BDF;&#x7D50;&#x679C;</span>
+<span class="hljs-keyword">if</span> <span class="hljs-number">1</span> != <span class="hljs-number">1</span>:
+    print(<span class="hljs-string">&quot;&#x7B2C;&#x4E00;&#x500B;&#x7D50;&#x679C;!&quot;</span>)
+<span class="hljs-keyword">if</span> <span class="hljs-number">2</span> &gt;= <span class="hljs-number">-1</span>:
+    print(<span class="hljs-string">&quot;&#x7B2C;&#x4E8C;&#x500B;&#x7D50;&#x679C;!&quot;</span>)
+</code></pre>
+<h3 id="else-&#x5426;&#x5247;"><code>else</code> &#x5426;&#x5247;</h3>
+<p><code>else</code> &#x51FA;&#x73FE;&#x7684;&#x6642;&#x6A5F;&#x5C31;&#x662F;&#x4E0D;&#x7B26;&#x5408;&#x67D0;&#x500B;<code>if</code>&#x5224;&#x65B7;&#x689D;&#x4EF6;&#x6642;&#x624D;&#x9700;&#x8981;&#x88AB;&#x57F7;&#x884C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4E00;&#x5B9A;&#x8981;&#x63A5;&#x5728;&#x67D0;&#x500B;<code>if</code>&#x5F8C;&#x9762;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5617;&#x8A66;&#x57F7;&#x884C;&#x4E0B;&#x65B9;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E26;&#x89C0;&#x5BDF;&#x7D50;&#x679C;</span>
+<span class="hljs-keyword">if</span> <span class="hljs-number">2</span> &gt; <span class="hljs-number">3</span>:
+    print(<span class="hljs-string">&apos;&#x767E;&#x5E74;&#x96E3;&#x5F97;&#x4E00;&#x898B;&#x7684;&#x6578;&#x5B78;&#x5929;&#x624D;&apos;</span>)
+
 <span class="hljs-keyword">else</span>:
-    print(<span class="hljs-string">&quot;&#x932F;&#x8AA4;&quot;</span>) <span class="hljs-comment">#if&#x689D;&#x4EF6;&#x4E0D;&#x6210;&#x7ACB;&#x6703;&#x57F7;&#x884C;&#x9019;&#x5217;&#xFF0C;&#x82E5;&#x6210;&#x7ACB;&#x5247;&#x4E0D;&#x57F7;&#x884C;</span>
+    print(<span class="hljs-string">&quot;&#x9019;&#x6A23;&#x624D;&#x5C0D;&#x561B;~&quot;</span>)
+</code></pre>
+<p>&#x8ACB;&#x8A18;&#x5F97;<code>if</code>&#x7684;&#x5340;&#x584A;&#x548C;<code>else</code>&#x7684;&#x5340;&#x584A;&#x4E4B;&#x9593;&#x7D55;&#x4E0D;&#x80FD;&#x653E;&#x4EFB;&#x4F55;&#x7A0B;&#x5F0F;(&#x9664;&#x4E86;&#x7121;&#x610F;&#x7FA9;&#x7684;&#x7A7A;&#x884C;&#x6216;&#x7A7A;&#x767D;&#x4EE5;&#x5916;)</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5617;&#x8A66;&#x57F7;&#x884C;&#x4E0B;&#x65B9;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x4E26;&#x89C0;&#x5BDF;&#x7D50;&#x679C;</span>
+<span class="hljs-keyword">if</span> <span class="hljs-number">2</span> &gt; <span class="hljs-number">3</span>:
+    print(<span class="hljs-string">&apos;&#x767E;&#x5E74;&#x96E3;&#x5F97;&#x4E00;&#x898B;&#x7684;&#x6578;&#x5B78;&#x5947;&#x624D;&apos;</span>)
+
+print(<span class="hljs-string">&apos;&#x4F86;&#x8ABF;&#x76AE;&#x4E00;&#x4E0B;&apos;</span>)
+
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&quot;&#x9019;&#x6A23;&#x624D;&#x5C0D;&#x561B;~&quot;</span>)
 </code></pre>
 <p>&#x53E6;&#x7A2E;&#x5BEB;&#x6CD5;</p>
 <pre><code class="lang-python">print(<span class="hljs-string">&quot;&#x8D85;&#x904E;100&#x5206;&quot;</span>) <span class="hljs-keyword">if</span> <span class="hljs-number">2</span> &gt; <span class="hljs-number">3</span> <span class="hljs-keyword">else</span> print(<span class="hljs-string">&quot;&#x932F;&#x8AA4;&quot;</span>)
 </code></pre>
-<p><font color="green">&#x3010;&#x63DB;&#x4F60;&#x8A66;&#x8A66;&#x3011;</font></p>
-<blockquote>
-&#x4E00;&#x822C;&#x4F86;&#x8AAA;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x4EE5;60&#x5206;&#x505A;&#x70BA;&#x53CA;&#x683C;&#x8207;&#x5426;&#x7684;&#x6A19;&#x6E96;&#xFF0C;60&#x5206;(&#x542B;)&#x4EE5;&#x4E0A;&#x70BA;&#x53CA;&#x683C;&#xFF0C;&#x4E0D;&#x6EFF;60&#x5206;&#x5247;&#x662F;&#x4E0D;&#x53CA;&#x683C;&#xFF0C;&#x73FE;&#x5728;&#x7D66;&#x4F60;&#x4E00;&#x500B;&#x5206;&#x6578;&#xFF0C;&#x8ACB;&#x4F60;&#x5224;&#x65B7;&#x662F;&#x5426;&#x53CA;&#x683C;<br>
-<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
-&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578; N (0 <= n="" <="100)" 代表要判斷的分數，不需要檢查它是否超出="" 0~100="" 的範圍="" <br="">
-<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
-&#x82E5;&#x8F38;&#x5165;&#x7684;&#x662F;&#x53CA;&#x683C;&#x7684;&#x5206;&#x6578;&#xFF0C;&#x8ACB;&#x8F38;&#x51FA; PASS&#xFF0C;&#x5426;&#x5247;&#x8F38;&#x51FA; FAIL
-</=></blockquote>
-<blockquote>
-&#x5982;&#x679C;&#x4E00;&#x500B;&#x6574;&#x6578;&#x662F;2&#x7684;&#x500D;&#x6578;&#xFF0C;&#x5247;&#x5B83;&#x5C31;&#x662F;&#x4E00;&#x500B;&#x5076;&#x6578;&#xFF0C;&#x5426;&#x5247;&#x70BA;&#x5947;&#x6578;&#x3002;&#x7D66;&#x4F60;&#x4E00;&#x500B;&#x6574;&#x6578;&#xFF0C;&#x8ACB;&#x4F60;&#x5224;&#x65B7;&#x5B83;&#x662F;&#x5947;&#x6578;&#x9084;&#x662F;&#x5076;&#x6578;<br>
-<strong>&#x8F38;&#x5165;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
-&#x8F38;&#x5165;&#x4E00;&#x500B;&#x6574;&#x6578; N&#xFF0C;&#x5373;&#x70BA;&#x8981;&#x5224;&#x65B7;&#x7684;&#x6578;<br>
-<strong>&#x8F38;&#x51FA;&#x8AAA;&#x660E;</strong>&#xFF1A;<br>
-&#x82E5;&#x8F38;&#x5165;&#x7684;&#x6574;&#x6578;&#x70BA;&#x5947;&#x6578;&#xFF0C;&#x5247;&#x8F38;&#x51FA; ODD&#xFF0C;&#x82E5;&#x70BA;&#x5076;&#x6578;&#x5247;&#x8F38;&#x51FA; EVEN
-</blockquote>
-
-
-<h3 id="&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x7B26;&#x865F;">&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x7B26;&#x865F;</h3>
+<h2 id="&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x7B26;&#x865F;">&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x7B26;&#x865F;</h2>
 <p>&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x7B26;&#x865F;&#x53EF;&#x4EE5;&#x5C07;&#x5169;&#x500B;&#x4EE5;&#x4E0A;&#x7684;&#x5224;&#x65B7;&#x5F0F;&#x9023;&#x63A5;&#x8D77;&#x4F86;</p>
 <table>
 <thead>
@@ -592,7 +600,7 @@ print(num1 != (num2 + <span class="hljs-number">2</span>)) <span class="hljs-com
 </tr>
 </tbody>
 </table>
-<h4 id="&#x4E14;">&#x4E14;</h4>
+<h3 id="&#x4E14;">&#x4E14;</h3>
 <table>
 <thead>
 <tr>
@@ -614,7 +622,7 @@ print(num1 != (num2 + <span class="hljs-number">2</span>)) <span class="hljs-com
 </tr>
 </tbody>
 </table>
-<h4 id="&#x6216;">&#x6216;</h4>
+<h3 id="&#x6216;">&#x6216;</h3>
 <table>
 <thead>
 <tr>
@@ -636,15 +644,12 @@ print(num1 != (num2 + <span class="hljs-number">2</span>)) <span class="hljs-com
 </tr>
 </tbody>
 </table>
-<pre><code class="lang-python">n &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> n &lt; <span class="hljs-number">100</span>
-n &lt; <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> n &gt; <span class="hljs-number">50</span> <span class="hljs-keyword">or</span> n == <span class="hljs-number">30</span>
-</code></pre>
-<p><span style="background-color: #FFD700"><strong>&#x6CE8;&#x610F;!</strong></span> &#x904B;&#x7B97;&#x7B26;&#x865F;&#x6709;&#x512A;&#x5148;&#x9806;&#x5E8F;&#x5DEE;&#x7570;</p>
-<p><font color="green">&#x3010;&#x60F3;&#x60F3;&#x770B;&#x3011;</font></p>
-<blockquote>
-&#x60F3;&#x60F3;&#x770B; <code>1 or 1 or 0</code>&#x3001;<code>1 and 1 and 0</code> &#x5F97;&#x5230;&#x7684;&#x7D50;&#x679C;&#x5206;&#x5225;&#x70BA;&#x4F55;
-</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5617;&#x8A66;&#x57F7;&#x884C;&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;</span>
+n = <span class="hljs-number">30</span>
 
+print(n &gt; <span class="hljs-number">50</span> <span class="hljs-keyword">and</span> n &lt; <span class="hljs-number">100</span>)
+print(n &lt; <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> n &gt; <span class="hljs-number">50</span> <span class="hljs-keyword">or</span> n == <span class="hljs-number">30</span>)
+</code></pre>
 <pre><code class="lang-python">num1, num2, num3 = <span class="hljs-number">100</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">100</span>
 
 <span class="hljs-keyword">if</span> num1 == num3:
@@ -876,7 +881,7 @@ d = int(d)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"next":{"title":"迴圈","level":"1.3.4","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"previous":{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"邏輯條件判斷.md","mtime":"2021-03-03T05:06:52.712Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T05:07:08.658Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"next":{"title":"迴圈","level":"1.3.4","depth":2,"path":"迴圈.md","ref":"迴圈.md","articles":[]},"previous":{"title":"輸入與變數","level":"1.3.2","depth":2,"path":"輸入與變數.md","ref":"輸入與變數.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"邏輯條件判斷.md","mtime":"2021-03-04T23:15:36.609Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-04T23:19:06.414Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
