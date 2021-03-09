@@ -556,7 +556,7 @@ print(n1 % n2) <span class="hljs-comment"># 3</span>
 <p>&#x5617;&#x8A66;&#x628A; <code>%</code> &#x63DB;&#x6210;&#x5176;&#x5B83;&#x56DB;&#x5247;&#x904B;&#x7B97;&#x7B26;&#x865F;</p>
 </blockquote>
 <h4 id="&#x76F8;&#x52A0;">&#x76F8;&#x52A0;</h4>
-<p>&#x6578;&#x5B57;&#x578B;&#x614B;</p>
+<h5 id="&#x6578;&#x5B57;&#x578B;&#x614B;">&#x6578;&#x5B57;&#x578B;&#x614B;</h5>
 <pre><code class="lang-python">TSMC = <span class="hljs-number">2230</span>
 MTK = <span class="hljs-number">2454</span>
 
@@ -565,30 +565,48 @@ print(TSMC) <span class="hljs-comment"># 2230</span>
 
 TSMC + MTK <span class="hljs-comment"># &#x6574;&#x578B;&#x5316;&#x599D;&#x554F;&#x984C;</span>
 print(TSMC) <span class="hljs-comment"># 2230</span>
+</code></pre>
+<pre><code class="lang-python">TSMC = <span class="hljs-number">2230</span>
+MTK = <span class="hljs-number">2454</span>
 
 TSMC = TSMC + MTK
 print(TSMC) <span class="hljs-comment"># 4684</span>
-
-TSMC += MTK <span class="hljs-comment"># &#x6B64;&#x70BA; TSMC = TSMC + MTK &#x7684;&#x7C21;&#x6613;&#x5BEB;&#x6CD5;</span>
-print(TSMC) <span class="hljs-comment"># 7138</span>
 </code></pre>
-<p>&#x5B57;&#x4E32;&#x578B;&#x614B;</p>
+<p>&#x4E0A;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x53EF;&#x7C21;&#x5BEB;&#x70BA;</p>
+<pre><code class="lang-python">TSMC = <span class="hljs-number">2230</span>
+MTK = <span class="hljs-number">2454</span>
+
+TSMC += MTK
+print(TSMC) <span class="hljs-comment"># 4684</span>
+</code></pre>
+<h5 id="&#x5B57;&#x4E32;&#x578B;&#x614B;">&#x5B57;&#x4E32;&#x578B;&#x614B;</h5>
 <pre><code class="lang-python">TSMC = <span class="hljs-string">&apos;2230&apos;</span>
 MTK = <span class="hljs-string">&apos;2454&apos;</span>
 
-TSMC + <span class="hljs-number">3</span>
-print(TSMC) <span class="hljs-comment"># TypeError: can only concatenate str (not &quot;int&quot;) to str</span>
+<span class="hljs-comment"># &#x5B57;&#x4E32;&#x8207;&#x6578;&#x5B57;&#x4E0D;&#x5F97;&#x76F4;&#x63A5;&#x76F8;&#x52A0;&#x3001;&#x76F8;&#x6E1B;&#x3001;&#x76F8;&#x9664;...</span>
+TSMC + <span class="hljs-number">3</span> <span class="hljs-comment"># TypeError: can only concatenate str (not &quot;int&quot;) to str</span>
+print(TSMC)
+</code></pre>
+<pre><code class="lang-python">TSMC = <span class="hljs-string">&apos;2230&apos;</span>
+MTK = <span class="hljs-string">&apos;2454&apos;</span>
 
-TSMC + MTK
+TSMC + MTK <span class="hljs-comment"># &#x6574;&#x578B;&#x5316;&#x599D;&#x554F;&#x984C;</span>
 print(TSMC) <span class="hljs-comment"># 2230</span>
+</code></pre>
+<pre><code class="lang-python">TSMC = <span class="hljs-string">&apos;2230&apos;</span>
+MTK = <span class="hljs-string">&apos;2454&apos;</span>
 
 TSMC = TSMC + MTK
 print(TSMC) <span class="hljs-comment"># 22302454</span>
+</code></pre>
+<p>&#x4E0A;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x53EF;&#x7C21;&#x5BEB;&#x70BA;</p>
+<pre><code class="lang-python">TSMC = <span class="hljs-string">&apos;2230&apos;</span>
+MTK = <span class="hljs-string">&apos;2454&apos;</span>
 
 TSMC += MTK
-print(TSMC) <span class="hljs-comment"># 223024542454</span>
+print(TSMC) <span class="hljs-comment"># 22302454</span>
 </code></pre>
-<p><span style="color:red"><strong>&#x6CE8;&#x610F;&#x5230;&#x4E86;&#x55CE;?</strong></span> <code>a = a + b</code> &#x53EF;&#x4EE5;&#x7C21;&#x5BEB;&#x70BA; <code>a += b</code>&#x3010;+= &#x4E4B;&#x9593;&#x4E0D;&#x53EF;&#x6709;&#x7A7A;&#x683C;&#x3011;</p>
+<p><span style="color:red"><strong>&#x6CE8;&#x610F;&#x5230;&#x4E86;&#x55CE;?</strong></span> <code>a = a + b</code> &#x53EF;&#x4EE5;&#x7C21;&#x5BEB;&#x70BA; <code>a += b</code>&#x3010;<code>+=</code> &#x4E4B;&#x9593;&#x4E0D;&#x53EF;&#x6709;&#x7A7A;&#x683C;&#x3011;</p>
 
 <p>&#x540C;&#x7406;&#xFF0C;<code>a = a % b</code> &#x6216; <code>a = a // b</code> &#x9019;&#x985E;&#x56DB;&#x5247;&#x904B;&#x7B97;&#x4E5F;&#x53EF;&#x4EE5;&#x7C21;&#x5BEB;&#x70BA; <code>a %= b</code> &#x6216; <code>a //= b</code></p>
 
@@ -618,6 +636,14 @@ print(a, b) <span class="hljs-comment"># &#x96DE;&#x817F; &#x8FA3;&#x6912;</span
 <p><code>int(a)</code>&#xFF1A;&#x5C07;&#x8B8A;&#x6578;<code>a</code>&#x8F49;&#x63DB;&#x6210;&#x70BA;&#x6574;&#x6578;</p>
 <p><code>float(b)</code>&#xFF1A;&#x5C07;&#x8B8A;&#x6578;<code>b</code>&#x8F49;&#x63DB;&#x6210;&#x70BA;&#x6D6E;&#x9EDE;&#x6578;</p>
 <p><code>str(c)</code>&#xFF1A;&#x5C07;&#x8B8A;&#x6578;<code>c</code>&#x8F49;&#x63DB;&#x6210;&#x70BA;<strong>&#x5B57;&#x4E32;</strong></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x60F3;&#x60F3;&#x770B;&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x57F7;&#x884C;&#x7D50;&#x679C;&#x70BA;&#x4F55;&#x662F;&#x5982;&#x6B64;?</span>
+s = <span class="hljs-string">&apos;80&apos;</span> <span class="hljs-comment"># &#x5B57;&#x4E32;&#x578B;&#x614B;&#x7684;80</span>
+print(s) <span class="hljs-comment"># 80</span>
+print(s*<span class="hljs-number">3</span>) <span class="hljs-comment"># 808080</span>
+s = int(s) <span class="hljs-comment"># &#x5C07;&#x8B8A;&#x5165;&#x578B;&#x614B;&#x7531;&#x5B57;&#x4E32;&#x8F49;&#x70BA;&#x6574;&#x6578;</span>
+print(s) <span class="hljs-comment"># 80</span>
+print(s*<span class="hljs-number">3</span>) <span class="hljs-comment"># 240</span>
+</code></pre>
 <p><span style="color:red">&#x4F46;&#x662F;</span>&#xFF0C;&#x4E0D;&#x80FD;&#x8F49;&#x7684;&#x578B;&#x614B;&#x5C31;&#x7121;&#x6CD5;&#x8F49;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
 
 <pre><code class="lang-python">ss = <span class="hljs-string">&quot;hello&quot;</span> 
@@ -627,7 +653,6 @@ int(ss) <span class="hljs-comment"># ValueError: invalid literal for int() with 
 <p><code>type(a)</code>&#xFF1A;&#x8B8A;&#x6578;<code>a</code>&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;</p>
 <p><code>type(3.14)</code>&#xFF1A;<code>3.14</code>&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;</p>
 <p><code>type(&quot;It&apos;s always a good time&quot;)</code>&#xFF1A;<code>It&apos;s always a good time</code>&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;</p>
-<p>&#x5370;&#x51FA;</p>
 <pre><code class="lang-python">print(type(<span class="hljs-number">3.14</span>)) <span class="hljs-comment"># &lt;class &apos;float&apos;&gt;</span>
 print(type(<span class="hljs-number">10</span>)) <span class="hljs-comment"># &lt;class &apos;int&apos;&gt;</span>
 print(type(<span class="hljs-string">&apos;&#x4EBA;&#x751F;&#x7684;&#x7B46;&#x756B;&#x932F;&#x4E86;&#x7121;&#x6CD5;&#x62B9;&#x6EC5;&#xFF0C; &#x537B;&#x53EF;&#x4EE5;&#x591A;&#x52A0;&#x5E7E;&#x7B46;&#x8B93;&#x932F;&#x8AA4;&#x8B8A;&#x7F8E;&#x9E97;&apos;</span>)) <span class="hljs-comment"># &lt;class &apos;str&apos;&gt;</span>
@@ -660,13 +685,13 @@ print(<span class="hljs-string">&quot;&#x60A8;&#x7684;&#x9AD4;&#x91CD;&#x70BA;&q
 <blockquote>
 <p><code>split()</code> &#x5C07;&#x8F38;&#x5165;&#x7684;&#x503C;&#x5229;&#x7528;<strong>&#x7A7A;&#x683C;</strong>&#x505A;&#x5206;&#x9694;&#xFF0C;&#x653E;&#x9032;&#x4E0D;&#x540C;&#x8B8A;&#x6578;&#x4E2D;</p>
 </blockquote>
-<pre><code class="lang-python">a, b, c = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x4E09;&#x5B57;&#x7D93;&#xFF1A;&apos;</span>).split() <span class="hljs-comment"># &#x4EBA;&#x4E4B;&#x521D; &#x6027;&#x672C;&#x5584; &#x6027;&#x76F8;&#x8FD1;</span>
-print(a, b, c)
+<pre><code class="lang-python">a, b, c = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x4E09;&#x5B57;&#x7D93;&#xFF1A;&apos;</span>).split() <span class="hljs-comment"># &#x5047;&#x8A2D;&#x8F38;&#x5165;&#xFF1A;&#x4EBA;&#x4E4B;&#x521D; &#x6027;&#x672C;&#x5584; &#x6027;&#x76F8;&#x8FD1;</span>
+print(a, b, c) <span class="hljs-comment"># &#x4EBA;&#x4E4B;&#x521D; &#x6027;&#x672C;&#x5584; &#x6027;&#x76F8;&#x8FD1;</span>
 </code></pre>
-<pre><code class="lang-python">n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split() <span class="hljs-comment"># 55 66</span>
+<pre><code class="lang-python">n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split() <span class="hljs-comment"># &#x5047;&#x8A2D;&#x8F38;&#x5165;&#xFF1A;55 66</span>
 print(n1 + n2) <span class="hljs-comment"># 5566</span>
 
-n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x5C0F;&#x6578;&#xFF1A;&apos;</span>).split() <span class="hljs-comment"># 5.5 6.6</span>
+n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x5C0F;&#x6578;&#xFF1A;&apos;</span>).split() <span class="hljs-comment"># &#x5047;&#x8A2D;&#x8F38;&#x5165;&#xFF1A;5.5 6.6</span>
 print(n1 + n2) <span class="hljs-comment"># 5.56.6</span>
 </code></pre>
 <p><span style="color:red"><strong>&#x6CE8;&#x610F;!</strong></span> <code>input()</code> &#x8B80;&#x9032;&#x4F86;&#x7684;&#x503C;&#x578B;&#x614B;&#x4E00;&#x5F8B;&#x70BA; <code>string(str)</code> &#x5B57;&#x4E32;&#x578B;&#x614B;</p>
@@ -674,17 +699,20 @@ print(n1 + n2) <span class="hljs-comment"># 5.56.6</span>
 <blockquote>
 <p><code>split()</code> &#x5C0F;&#x62EC;&#x865F;&#x4E2D;&#x82E5;&#x653E;&#x5165;&#x4E0D;&#x540C;&#x7B26;&#x865F;&#x3002;&#x5247;&#x8868;&#x793A;&#x7528;&#x8A72;&#x7B26;&#x865F;&#x7576;&#x5206;&#x9694;</p>
 </blockquote>
-<pre><code class="lang-python">n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split(<span class="hljs-string">&apos;*&apos;</span>) <span class="hljs-comment"># 55 66</span>
+<pre><code class="lang-python">n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split(<span class="hljs-string">&apos;*&apos;</span>) <span class="hljs-comment"># &#x5047;&#x8A2D;&#x8F38;&#x5165;&#xFF1A;55 66</span>
 print(n1, n2) <span class="hljs-comment"># ValueError: not enough values to unpack (expected 2, got 1)</span>
 </code></pre>
-<pre><code class="lang-python">n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split(<span class="hljs-string">&apos;*&apos;</span>) <span class="hljs-comment"># 55*66</span>
+<pre><code class="lang-python">n1, n2 = input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split(<span class="hljs-string">&apos;*&apos;</span>) <span class="hljs-comment"># &#x5047;&#x8A2D;&#x8F38;&#x5165;&#xFF1A;55*66</span>
 print(n1, n2) <span class="hljs-comment"># 55 66</span>
 </code></pre>
 <h4 id="&#x8F38;&#x5165;&#x591A;&#x500B;&#x503C;&#x4E26;&#x540C;&#x6642;&#x8F49;&#x578B;&#x614B;">&#x8F38;&#x5165;&#x591A;&#x500B;&#x503C;&#x4E26;&#x540C;&#x6642;&#x8F49;&#x578B;&#x614B;</h4>
-<pre><code class="lang-python">n1, n2 = map(int, input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split()) <span class="hljs-comment"># 55 66</span>
+<blockquote>
+<p>&#x4E0B;&#x65B9;&#x7A0B;&#x5F0F;&#x78BC;&#x4E2D;&#x7684; <code>map</code> &#x662F;&#x7FFB;&#x8B6F;&#x4F5C;&#xFF1A;&#x6620;&#x5C04;&#x3001;&#x6295;&#x5F71;</p>
+</blockquote>
+<pre><code class="lang-python">n1, n2 = map(int, input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x6574;&#x6578;&#xFF1A;&apos;</span>).split()) <span class="hljs-comment"># &#x5047;&#x8A2D;&#x8F38;&#x5165;&#xFF1A;55 66</span>
 print(n1 + n2) <span class="hljs-comment"># 121</span>
 
-n1, n2 = map(float, input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x5C0F;&#x6578;&#xFF1A;&apos;</span>).split()) <span class="hljs-comment"># 5.5 6.6</span>
+n1, n2 = map(float, input(<span class="hljs-string">&apos;&#x8ACB;&#x8F38;&#x5165;&#x5169;&#x500B;&#x5C0F;&#x6578;&#xFF1A;&apos;</span>).split()) <span class="hljs-comment"># &#x5047;&#x8A2D;&#x8F38;&#x5165;&#xFF1A;5.5 6.6</span>
 print(n1 + n2) <span class="hljs-comment"># 12.1</span>
 </code></pre>
 <h2 id="iii-&#x5B78;&#x7FD2;&#x55AE;">III. &#x5B78;&#x7FD2;&#x55AE;</h2>
@@ -732,7 +760,7 @@ print(n1 + n2) <span class="hljs-comment"># 12.1</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"輸入與變數","level":"1.3.2","depth":2,"next":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"previous":{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸入與變數.md","mtime":"2021-03-04T23:15:58.173Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-04T23:19:06.414Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"輸入與變數","level":"1.3.2","depth":2,"next":{"title":"邏輯條件判斷","level":"1.3.3","depth":2,"path":"邏輯條件判斷.md","ref":"邏輯條件判斷.md","articles":[]},"previous":{"title":"輸出","level":"1.3.1","depth":2,"path":"輸出.md","ref":"輸出.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"輸入與變數.md","mtime":"2021-03-09T16:09:53.245Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-09T16:10:19.059Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
